@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>KB4554364</id>
-        <version>1.0.1</version>
+        <version>1.0.0</version>
         <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/WindowsUpdates/KB4554364</packageSourceUrl>
         <owners>Bjoern Strausmann</owners>
         <title>Update for Microsoft Windows (KB4554364)</title>
@@ -17,8 +17,7 @@
 This update, KB4554364, fixes an issue that may cause restricted or no Internet connection status to appear in the notification area on devices that use a manually or automatically configured proxy, especially on a virtual private network (VPN). In addition, this issue may prevent some devices from connecting to the Internet by using applications that use WinHTTP or WinINet.
         </description>
         <releaseNotes>
-1.0.1: fix the packageSourceUrl and tags.
-1.0.0: initial update.
+1.0.0: initial update
         </releaseNotes>
         <dependencies>
             <dependency id="chocolatey-windowsupdate.extension" version="1.0.4" />
