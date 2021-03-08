@@ -3,11 +3,11 @@
     <metadata>
         <id>kb4554364</id>
         <version>1.0.0</version>
-        <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/WindowsUpdates/KB4554364</packageSourceUrl>
+        <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/Microsoft/WindowsUpdates/KB4554364</packageSourceUrl>
         <owners>Bjoern Strausmann</owners>
         <title>Update for Microsoft Windows (KB4554364)</title>
         <authors>Microsoft</authors>
-        <projectUrl>https://support.microsoft.com/help/4554364</projectUrl>
+        <projectUrl>https://fedorapeople.org/groups/virt/virtio-win/CHANGELOG</projectUrl>
         <iconUrl>https://assets.onestore.ms/cdnfiles/onestorerolling-1509-17011/shell/v1_2/images/logo/microsoft.png</iconUrl>
         <licenseUrl>https://support.microsoft.com/help/4554364</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
