@@ -3,7 +3,8 @@
   <metadata>
     <id>microsoft-sql-server-migration-assistant-for-access</id>
     <version>8.17.0</version>
-	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/Microsoft/Microsoft-SQL-Server-Migration-Assistant-for-Access</packageSourceUrl>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/Microsoft/Microsoft-SQL-Server-Migration-Assistant-for-Access</packageSourceUrl>
+	<projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54255</projectUrl>
     <owners>Bjoern Strausmann</owners>
     <title>Microsoft SQL Server Migration Assistant for Access (Install)</title>
     <authors>Microsoft Corporation</authors>
@@ -34,8 +35,12 @@ To append install arguments to the current silent arguments passed to the instal
  Example: `choco install packageId [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 	</description>
+	<releaseNotes>
+8.17.0.0: initial update
+	</releaseNotes>
 	<dependencies>
-      <dependency id="dotnet4.7.2"/>
+      <dependency id="dotnet4.7.2" version="4.7.2.20180712"/>
+	  <dependency id="access2016runtime" version="4288.1001.1"/>
     </dependencies>
   </metadata>
   <files>
