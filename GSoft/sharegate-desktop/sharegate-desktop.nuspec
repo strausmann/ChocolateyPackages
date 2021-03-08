@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>sharegate-desktop</id>
+    <version>13.1.3</version>
+    <title>ShareGate Desktop (Install)</title>
+    <authors>ShareGate</authors>
+    <owners>ShareGate</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ShareGate-Desktop
+
+### Package Specific
+#### Installer Properties
+The following install arguments can be passed:
+ * `LAUNCHSHAREGATEONEXIT`
+ * `SHAREGATETARGETEXECUTABLE`
+ * `CLICKONCEAPPNAME`
+ * `PRODUCTNAMESTOUNINSTALL`
+ * `NEWERFOUND`
+ * `OLDAPPFOUND`
+ * `PREVIOUSFOUND`
+ * `WIXNETFX4RELEASEINSTALLED`
+ * `APPLICATIONFOLDER`
+
+To append install arguments to the current silent arguments passed to the installer, use `--install-arguments="''"` or `--install-arguments-sensitive="''"`. To completely override the silent arguments with your own, also pass `--override-arguments`.
+ Example: `choco install packageId [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
+    <copyright>ShareGate</copyright>
+    <tags>sharegate-desktop admin</tags>
+  </metadata>
+  <files>
+    <file src="tools\chocolateyinstall.ps1" target="tools\chocolateyinstall.ps1" />
+    <file src="tools\chocolateyuninstall.ps1" target="tools\chocolateyuninstall.ps1" />
+  </files>
+</package>
