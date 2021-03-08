@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>microsoft-sql-server-migration-assistant-for-access</id>
+    <version>8.17.0</version>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/Microsoft/Microsoft-SQL-Server-Migration-Assistant-for-Access</packageSourceUrl>
+    <owners>Bjoern Strausmann</owners>
+    <title>Microsoft SQL Server Migration Assistant for Access (Install)</title>
+    <authors>Microsoft Corporation</authors>
+    <copyright>Microsoft Corporation</copyright>
+	<iconUrl>https://rawcdn.githack.com/flcdrg/au-packages/ed266b63ad6adb86d35c355a86ba1ca74fe674d2/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
+	<licenseUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54255</licenseUrl>
+	<requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>microsoft sql server migration assistant for access</tags>
+    <description>Microsoft-SQL-Server-Migration-Assistant-for-Access
+
+### Package Specific
+#### Installer Properties
+The following install arguments can be passed:
+ * `BROWSER`
+ * `LICENSE_ACCEPTED`
+ * `ALLUSERS`
+ * `DISABLEADVTSHORTCUTS`
+ * `SSMA_DIFFERENT_ARCHITECTURE_EXISTS`
+ * `WIXNETFX4RELEASEINSTALLED`
+ * `SSMA_OLDERVERSION_EXISTS`
+ * `OLEDB_PROVIDER_FOR_ACCESS`
+ * `REG_DISABLE_TELEMETRY`
+ * `REG_DISABLE_AUTO_UPDATE`
+ * `REG_USE_PREVIEW_CHANNEL`
+ * `LAUNCHBROWSERURL`
+
+To append install arguments to the current silent arguments passed to the installer, use `--install-arguments="''"` or `--install-arguments-sensitive="''"`. To completely override the silent arguments with your own, also pass `--override-arguments`.
+ Example: `choco install packageId [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+	</description>
+	<dependencies>
+      <dependency id="dotnet4.7.2"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
