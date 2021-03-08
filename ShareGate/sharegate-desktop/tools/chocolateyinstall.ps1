@@ -32,7 +32,7 @@ $packageArgs = @{
   #installDir   = "" # passed when you want to override install directory - requires licensed editions 1.9.0+
 }
 
-Install-ChocolateyInstallPackage @packageArgs
+Install-ChocolateyPackage @packageArgs
 
 <#
 == MSI Properties ==
