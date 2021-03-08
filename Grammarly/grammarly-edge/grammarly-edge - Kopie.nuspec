@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>grammarly-edge</id>
-    <version>1.0.0</version>
+    <version>14.971.0</version>
     <title>Grammarly for Edge Chromium</title>
     <authors>grammarly.com</authors>
     <owners>strausmann</owners>
