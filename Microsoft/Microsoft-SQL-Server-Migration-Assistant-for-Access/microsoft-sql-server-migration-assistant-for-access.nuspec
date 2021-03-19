@@ -40,7 +40,6 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 	</releaseNotes>
 	<dependencies>
       <dependency id="dotnet4.7.2" version="4.7.2.20180712"/>
-	  <dependency id="access2016runtime" version="4288.1001.1"/>
     </dependencies>
   </metadata>
   <files>

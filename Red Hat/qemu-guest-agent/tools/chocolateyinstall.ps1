@@ -1,7 +1,9 @@
-﻿$ErrorActionPreference = 'Stop';
-$toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url                   = 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.173-9/virtio-win-gt-x64.msi'
-$checksum              = 'c5a3a52a78a2e63f5f2950ffff6cf777b5b01b1fe78d449728ea86ec6accca8b'
+﻿$ErrorActionPreference	= 'Stop';
+$toolsDir				= '$(Split-Path -parent $MyInvocation.MyCommand.Definition)'
+$url					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.173-9/virtio-win-gt-x86.msi'
+$url64					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.173-9/virtio-win-gt-x64.msi'
+$checksum				= '58b527cdcbdb05ef96a9c43206f3f45492a8d6613496ad9159c4c0e35fe00946'
+$checksum64				= 'c5a3a52a78a2e63f5f2950ffff6cf777b5b01b1fe78d449728ea86ec6accca8b'
 
 #Items that could be replaced based on what you call chocopkgup.exe with
 #{{PackageName}} - Package Name (should be same as nuspec file and folder) |/p
@@ -19,13 +21,16 @@ $checksum              = 'c5a3a52a78a2e63f5f2950ffff6cf777b5b01b1fe78d449728ea86
 
 $packageArgs = @{
 	packageName    = $env:ChocolateyPackageName
-	softwareName  = 'QEMU guest agent*'
+	softwareName   = 'QEMU guest agent*'
 	installerType  = 'MSI'
 	url            = $url
-	silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
-	validExitCodes = @(0)
 	checksum       = $checksum
 	checksumType   = 'sha256'
+	url64bit       = $url64
+	checksum64     = $checksum64
+	checksumType64 = 'sha256'
+	silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+	validExitCodes = @(0)
 }
 
 Install-ChocolateyPackage @packageArgs
