@@ -23,4 +23,7 @@ This update, KB5001567, fixes an issue with the Printer BlueScreen [Windows 10 K
             <dependency id="chocolatey-windowsupdate.extension" version="1.0.4" />
         </dependencies>
     </metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
 </package>

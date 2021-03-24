@@ -4,7 +4,7 @@
     <id>qemu-guest-agent</id>
     <version>0.1.173</version>
     <owners>Bjoern Strausmann</owners>
-    <title>Virtio-win-guest-tools (Install)</title>
+    <title>Virtio Win Guest Tools (Install)</title>
     <authors>Red Hat Inc.</authors>
     <copyright>Red Hat, Inc.</copyright>
 	<projectUrl>https://fedorapeople.org/groups/virt/virtio-win/CHANGELOG</projectUrl>
