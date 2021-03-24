@@ -9,7 +9,7 @@
 	<title>ShareGate Desktop (Install)</title>
     <authors>GROUPE SHAREGATE INC.</authors>
     <projectUrl>https://sharegate.com/products/sharegate-desktop</projectUrl>
-	<iconUrl>https://sharegate.com/app/uploads/2019/03/logo-sharegate1.svg</iconUrl>
+	<iconUrl>https://raw.githubusercontent.com/strausmann/ChocolateyPackages/master/ShareGate/assets/sharegate-desktop.svg</iconUrl>
 	<licenseUrl>https://sharegate.com/terms</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<summary>ShareGate Desktop’s easy-to-use interface packs a powerful set of features that make migrating to Office 365 and Microsoft 365 a breeze. Get everything you need for a successful move (and more), plus unlimited support from our award-winning team.</summary>
