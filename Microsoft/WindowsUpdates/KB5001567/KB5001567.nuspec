@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>kb5001567</id>
+        <version>1.0.0</version>
+        <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/Microsoft/WindowsUpdates/KB5001567</packageSourceUrl>
+        <owners>Bjoern Strausmann</owners>
+        <title>Update for Microsoft Windows (KB5001567)</title>
+        <authors>Microsoft</authors>
+        <projectUrl>https://support.microsoft.com/en-us/topic/march-15-2021-kb5001567-os-builds-19041-868-and-19042-868-out-of-band-6e0844a2-7551-4b2d-9c4b-4274a5949bf3</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/strausmann/ChocolateyPackages/master/Microsoft/assets/microsoft.png</iconUrl>
+        <licenseUrl>https://support.microsoft.com/help/4554364</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <tags>Microsoft Windows Update KB5001567 Printer BlueScreen</tags>
+        <summary>On March 15, Microsoft published four optional ’emergency’ updates – KB5001567, KB5001566, KB5001568 and KB5001565 – to address recent printing and blue screens some users have experienced in version 20H2, version 2004, version 1909, and older.</summary>
+        <description>
+This update, KB5001567, fixes an issue with the Printer BlueScreen [Windows 10 KB5000802, KB5001567 causing new critical printing issue](https://www.windowslatest.com/2021/03/18/windows-10-march-and-hotfix-updates-have-issues/).
+        </description>
+        <releaseNotes>
+1.0.0: initial update
+        </releaseNotes>
+        <dependencies>
+            <dependency id="chocolatey-windowsupdate.extension" version="1.0.4" />
+        </dependencies>
+    </metadata>
+</package>
