@@ -32,6 +32,7 @@ To append install arguments to the current silent arguments passed to the instal
  Example: `choco install sharegate-desktop [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
     </description>
+	<docsUrl>https://support-desktop.sharegate.com/hc/en-us</docsUrl>
 	<releaseNotes>https://support-desktop.sharegate.com/hc/en-us/sections/360005954571-Release-Notes</releaseNotes>
     <tags>sharegate desktop admin sharepoint microsoft365 migration tools</tags>
   </metadata>
