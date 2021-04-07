@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://www.grammarly.com/terms</licenseUrl>
     <projectUrl>https://microsoftedge.microsoft.com/addons/detail/grammarly-for-microsoft-e/cnlefmmeadmemmdciolhbnfeacpdfbkd</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/strausmann/ChocolateyPackages/master/Grammarly/assets/grammarly-edge.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/Grammarly/assets/grammarly-edge.png</iconUrl>
     <description>## Enhance your written communication everywhere you type!
 
 Grammarly will make sure your messages, documents, and social media posts are clear, mistake-free, and impactful. Adding Grammarly to Edge means that your spelling and grammar will be vetted on Gmail, Facebook, Twitter, Linkedin, Tumblr, and nearly everywhere else you write on the web. Once you register your new account, you will start to receive weekly emails with personalized insights and performance stats (one of our most popular new features). Working on a large project, an essay, or a blog post? No sweat. You can create and store all of your documents in your new online editor.
