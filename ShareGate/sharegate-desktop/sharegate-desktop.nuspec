@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>sharegate-desktop</id>
-    <version>13.1.3</version>
+    <version>14.2.0</version>
 	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/ShareGate/sharegate-desktop</packageSourceUrl>
 	<copyright>GROUPE SHAREGATE INC.</copyright>
     <owners>Bjoern Strausmann</owners>
 	<title>ShareGate Desktop (Install)</title>
     <authors>GROUPE SHAREGATE INC.</authors>
     <projectUrl>https://sharegate.com/products/sharegate-desktop</projectUrl>
-	<iconUrl>https://raw.githubusercontent.com/strausmann/ChocolateyPackages/master/ShareGate/assets/sharegate-desktop.svg</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/ShareGate/assets/sharegate-desktop.svg</iconUrl>
 	<licenseUrl>https://sharegate.com/terms</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<summary>ShareGate Desktop’s easy-to-use interface packs a powerful set of features that make migrating to Office 365 and Microsoft 365 a breeze. Get everything you need for a successful move (and more), plus unlimited support from our award-winning team.</summary>
