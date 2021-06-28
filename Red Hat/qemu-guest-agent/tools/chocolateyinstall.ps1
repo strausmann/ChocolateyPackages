@@ -1,27 +1,19 @@
 ﻿$ErrorActionPreference	= 'Stop';
 $toolsDir				= '$(Split-Path -parent $MyInvocation.MyCommand.Definition)'
-$url					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.173-9/virtio-win-gt-x86.msi'
-$url64					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.173-9/virtio-win-gt-x64.msi'
-$checksum				= '58b527cdcbdb05ef96a9c43206f3f45492a8d6613496ad9159c4c0e35fe00946'
-$checksum64				= 'c5a3a52a78a2e63f5f2950ffff6cf777b5b01b1fe78d449728ea86ec6accca8b'
+$url					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.185-2/virtio-win-gt-x86.msi'
+$url64					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.185-2/virtio-win-gt-x64.msi'
+$checksum				= 'af97068ec651bd8d0d51debc4787babef4ef176ae0739b522d0e0a09fdb4cd90'
+$checksum64				= '9fadc27c75638f7fc52366b5f3dcccf5564bbdafc4a04d1eabbfc052c7f4fc6d'
 
-#Items that could be replaced based on what you call chocopkgup.exe with
-#{{PackageName}} - Package Name (should be same as nuspec file and folder) |/p
-#{{PackageVersion}} - The updated version | /v
-#{{DownloadUrl}} - The url for the native file | /u
-#{{PackageFilePath}} - Downloaded file if including it in package | /pp
-#{{PackageGuid}} - This will be used later | /pg
-#{{DownloadUrlx64}} - The 64-bit url for the native file | /u64
-#{{Checksum}} - The checksum for the url | /c
-#{{Checksumx64}} - The checksum for the 64-bit url | /c64
-#{{ChecksumType}} - The checksum type for the url | /ct
-#{{ChecksumTypex64}} - The checksum type for the 64-bit url | /ct64
-
-#Based on Msi
+$cert = Get-ChildItem Cert:\CurrentUser\TrustedPublisher -Recurse | Where-Object { $_.Thumbprint -eq 'F01DAC89598C52D94FE8CA91187E1853947D115A' }
+if (!$cert) {
+    $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
+    Start-ChocolateyProcessAsAdmin "certutil -addstore 'TrustedPublisher' '$toolsPath\redhat.cer'"
+}
 
 $packageArgs = @{
 	packageName    = $env:ChocolateyPackageName
-	softwareName   = 'QEMU guest agent*'
+	softwareName   = 'Virtio-win-driver-installer*'
 	installerType  = 'MSI'
 	url            = $url
 	checksum       = $checksum
