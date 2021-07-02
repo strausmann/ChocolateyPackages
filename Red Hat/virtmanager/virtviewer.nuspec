@@ -8,7 +8,7 @@
     <authors>Virt Viewer Project</authors>
     <projectUrl>https://www.virt-manager.org</projectUrl>
 	<projectSourceUrl>https://github.com/virt-manager/virt-manager</projectSourceUrl>
-	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/Red%20Hat/virtmanager</projectSourceUrl>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/Red%20Hat/virtmanager</packageSourceUrl>
 	<bugTrackerUrl>https://github.com/virt-manager/virt-manager/issues</bugTrackerUrl>
 	<licenseUrl>https://github.com/virt-manager/virt-manager/blob/master/COPYING</licenseUrl>
 	<mailingListUrl>https://www.redhat.com/mailman/listinfo/virt-tools-list</mailingListUrl>
