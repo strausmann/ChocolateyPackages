@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>virtviewer</id>
+    <version>10.0.256</version>
+    <owners>Bjoern Strausmann</owners>
+    <title>VirtViewer (Install)</title>
+    <authors>Virt Viewer Project</authors>
+    <projectUrl>https://www.virt-manager.org</projectUrl>
+	<packageSourceUrl>https://github.com/virt-manager/virt-manager</packageSourceUrl>
+	<bugTrackerUrl>https://github.com/virt-manager/virt-manager/issues</bugTrackerUrl>
+	<licenseUrl>https://github.com/virt-manager/virt-manager/blob/master/COPYING</licenseUrl>
+	<mailingListUrl>https://www.redhat.com/mailman/listinfo/virt-tools-list</mailingListUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/Red%20Hat/assets/VirtManager.png</iconUrl>
+    <copyright>Virt Viewer Project</copyright>
+    <docsUrl>https://virt-manager.org/documentation/</docsUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>virtviewer admin</tags>
+	<summary>Desktop tool for managing virtual machines via libvirt</summary>
+    <description>virt-manager is a graphical tool for managing virtual machines via libvirt. Most usage is with QEMU/KVM virtual machines, but Xen and libvirt LXC containers are well supported. Common operations for any libvirt driver should work.</description>
+    <releaseNotes>
+		https://github.com/virt-manager/virt-manager/blob/master/NEWS.md
+	</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+
