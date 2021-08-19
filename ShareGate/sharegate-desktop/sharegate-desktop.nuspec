@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>sharegate-desktop</id>
-    <version>15.0.1</version>
+    <version>15.0.6</version>
 	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/ShareGate/sharegate-desktop</packageSourceUrl>
 	<copyright>GROUPE SHAREGATE INC.</copyright>
     <owners>Bjoern Strausmann</owners>
