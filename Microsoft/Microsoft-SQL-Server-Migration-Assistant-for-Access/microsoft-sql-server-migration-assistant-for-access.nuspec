@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>microsoft-sql-server-migration-assistant-for-access</id>
-    <version>8.20.0</version>
+    <version>8.21.0</version>
 	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/Microsoft/Microsoft-SQL-Server-Migration-Assistant-for-Access</packageSourceUrl>
 	<projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54255</projectUrl>
     <owners>Bjoern Strausmann</owners>
@@ -19,10 +19,10 @@
 	<releaseNotes>
 8.17.0.0: initial update
 8.20.0.0: maintenance update
+8.21.0.0: maintenance update
 	</releaseNotes>
 	<dependencies>
       <dependency id="dotnet4.7.2" version="4.7.2.20180712"/>
-	  <dependency id="chocolatey-fastanswers.extension" version="0.0.2"/>
     </dependencies>
   </metadata>
   <files>
