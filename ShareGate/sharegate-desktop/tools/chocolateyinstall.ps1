@@ -7,11 +7,11 @@ $packageArgs = @{
   fileType      = 'MSI'
   silentArgs    = "/qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`" SHAREGATEINSTALLSCOPE=PERUSER LAUNCHSHAREGATEONEXIT=0"
   validExitCodes= @(0,1641,3010)
-  url           = "https://assets.sharegate.com/sharegate/desktop/downloads/Sharegate.15.0.6.msi"
-  checksum      = 'ef44af175109d3ccba5954718e84e6ebabc9a8c9f30237042dc728174bb42b4d'
+  url           = "https://assets.sharegate.com/sharegate/desktop/downloads/Sharegate.15.1.1.msi"
+  checksum      = '64f28ef74467dc00e5196c2e202994c84aaaa07aefca71c44298bb94233161ba'
   checksumType  = 'sha256'
-  url64bit      = "https://assets.sharegate.com/sharegate/desktop/downloads/Sharegate.15.0.6.msi"
-  checksum64    = 'ef44af175109d3ccba5954718e84e6ebabc9a8c9f30237042dc728174bb42b4d'
+  url64bit      = "https://assets.sharegate.com/sharegate/desktop/downloads/Sharegate.15.1.1.msi"
+  checksum64    = '64f28ef74467dc00e5196c2e202994c84aaaa07aefca71c44298bb94233161ba'
   checksumType64= 'sha256'
   destination   = $toolsDir
 }
