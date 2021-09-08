@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>grammarly-edge</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>Grammarly for Edge Chromium</title>
-    <authors>grammarly.com</authors>
+    <authors>Grammarly Inc.</authors>
     <owners>strausmann</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://www.grammarly.com/terms</licenseUrl>
-    <projectUrl>https://microsoftedge.microsoft.com/addons/detail/grammarly-for-microsoft-e/cnlefmmeadmemmdciolhbnfeacpdfbkd</projectUrl>
+    <projectUrl>https://microsoftedge.microsoft.com/addons/detail/cnlefmmeadmemmdciolhbnfeacpdfbkd</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/Grammarly/assets/grammarly-edge.png</iconUrl>
     <description>## Enhance your written communication everywhere you type!
 
@@ -37,9 +37,9 @@ If you want to supercharge your writing performance and leave no error unchecked
 * Get suggestions for different writing styles, including academic, technical, and creative
     </description>
     <summary>Grammarly leaves outdated spelling and grammar checkers in the dust.</summary>
-    <tags>grammarly spellchecker spell checker grammar edge extension</tags>
+    <tags>grammarly spellchecker spell checker grammar edge chromium extension</tags>
     <dependencies>
-      <dependency id="microsoft-edge" version="87.0.664.75" />
+      <dependency id="microsoft-edge" />
     </dependencies>
 	<releaseNotes>https://github.com/strausmann/ChocolateyPackages/blob/master/Grammarly/grammarly-edge/readme.md</releaseNotes>
   </metadata>
