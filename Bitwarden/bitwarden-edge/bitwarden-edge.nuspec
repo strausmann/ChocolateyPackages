@@ -10,6 +10,7 @@
     <licenseUrl>https://bitwarden.com/terms/</licenseUrl>
     <projectUrl>https://microsoftedge.microsoft.com/addons/detail/jbkfoedolllekgbhcbcoahefnbanhhlh</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/Bitwarden/assets/bitwarden.png</iconUrl>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/Bitwarden/bitwarden-edge</packageSourceUrl>
     <description>Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.
 
 Password theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.
@@ -25,6 +26,7 @@ Bitwarden is 100% open source software. The source code for Bitwarden is hosted 
     <dependencies>
       <dependency id="microsoft-edge" version="87.0.664.75" />
     </dependencies>
+	<docsUrl>https://bitwarden.com/help/article/getting-started-browserext/</docsUrl>
 	<releaseNotes>https://github.com/bitwarden/browser/releases</releaseNotes>
   </metadata>
   <files>
