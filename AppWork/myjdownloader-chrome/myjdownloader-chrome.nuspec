@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>myjdownloader-chrome</id>
+    <version>1.0.0</version>
+    <title>MyJDownloader for Google Chrome</title>
+    <authors>AppWork UG</authors>
+    <owners>strausmann</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://my.jdownloader.org/legal/terms.html</licenseUrl>
+    <projectUrl>https://chrome.google.com/webstore/detail/fbcohnmimjicjdomonkcbcpbpnhggkip</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/AppWork/assets/jdownloader.png</iconUrl>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/AppWork/myjdownloader-chrome</packageSourceUrl>
+    <description>Integriert MyJDownloader in deinen Browser. MyJDownloader ist der Fernsteuerungsservice für deinen JDownloader.
+Dieses Addon integriert "MyJDownloader" in Ihren Browser.
+Es ermöglicht Ihnen Links, Selektionen und Bild-URLs direkt an einen Ihrer angeschlossenen JDownloader zu senden.
+
+Was diese Erweiterung kann:
+* Es ermöglicht Ihnen die Fernsteuerung Ihres laufenden JDownloaders
+* Links zu Ihrer Warteschlange hinzufügen:
+* Verschaffen Sie sich einen schnellen Überblick über den Download-Status
+
+Was diese Erweiterung NICHT kann:
+Dies ist kein eigenständiger Download-Manager. Sie benötigen JDownloader auf Ihrem Computer und müssen mit MyJDownloader verbunden sein.
+
+Was du brauchst:
+* Ein MyJDownloader-Konto (https://my.jdownloader.org)
+* Einen laufenden JDownloader, der mit MyJDownloader verbunden ist
+
+-----------------
+JDownloader ist ein kostenloses, quelloffenes Download-Management-Tool mit einer riesigen Community von Entwicklern, das den Download so einfach und schnell macht, wie er sein sollte. Benutzer können Downloads starten, stoppen oder anhalten, Bandbreitenbeschränkungen festlegen, Archive automatisch extrahieren und vieles mehr. Es handelt sich um ein einfach zu erweiterndes Framework, das jeden Tag Stunden Ihrer wertvollen Zeit einsparen kann!
+    </description>
+    <summary>Integration von MyJdownloader Links per Klick Button</summary>
+    <tags>jdownloader myjdownloader chrome extension</tags>
+    <dependencies>
+      <dependency id="googlechrome" />
+    </dependencies>
+	<docsUrl>https://beta.jdownloader.org/support</docsUrl>
+	<copyright>AppWork GmbH Copyright 2011-2018</copyright>
+  </metadata>
+  <files>
+    <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
+    <file src="tools\ChocolateyUninstall.ps1" target="tools\ChocolateyUninstall.ps1" />
+  </files>
+</package>
