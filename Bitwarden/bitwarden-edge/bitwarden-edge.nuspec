@@ -28,6 +28,8 @@ Bitwarden is 100% open source software. The source code for Bitwarden is hosted 
     </dependencies>
 	<docsUrl>https://bitwarden.com/help/article/getting-started-browserext/</docsUrl>
 	<releaseNotes>https://github.com/bitwarden/browser/releases</releaseNotes>
+	<bugTrackerUrl>https://github.com/bitwarden/browser/issues</bugTrackerUrl>
+	<licenseUrl>https://github.com/bitwarden/browser/blob/master/LICENSE.txt</licenseUrl>
   </metadata>
   <files>
     <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
