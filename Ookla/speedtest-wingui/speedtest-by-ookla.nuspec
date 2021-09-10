@@ -3,7 +3,6 @@
   <metadata>
     <id>speedtest-by-ookla</id>
     <version>1.9.159.001</version>
-    <owners>Ookla</owners>
     <title>Speedtest by Ookla WinGUI</title>
     <authors>Ookla</authors>
 	<owners>strausmann</owners>
