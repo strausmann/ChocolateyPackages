@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dellcommandmonitor</id>
+    <version>10.5.1.114</version>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/Dell/dellcommandmonitor</packageSourceUrl>
+    <owners>strausmann</owners>
+    <title>Dell Command | Monitor</title>
+    <authors>Dell Inc.</authors>
+    <projectUrl>https://www.dell.com/support/kbdoc/de-de/000177080/dell-command-monitor</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/Dell/assets/DellCommand.png</iconUrl>
+    <copyright>Copyright © 2021 Dell Inc. All rights reserved</copyright>
+    <licenseUrl>https://www.dell.com/learn/us/en/uscorp1/terms-of-sale-consumer-license-agreements</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.dell.com/support/home/de-de/product-support/product/command-monitor/docs</docsUrl>
+    <tags>dell command monitor</tags>
+    <summary>Learn how to deploy, manage, Secure and virtualize Byod, Enterprise Client, and Mobility Solutions from Experts and Peers</summary>
+    <description>The Dell Command | Monitor software application enables IT administrators to easily manage fleet inventory, monitor system health, modify BIOS settings, and remotely collect information for deployed Dell client systems. Active system health state monitoring can help reduce the total cost of system ownership and is part of a holistic approach to managing all networked devices.
+
+Dell Command | Monitor interfaces with leading enterprise management consoles that support industry standards. This approach helps to ensure that Dell systems can be managed by a broad array of existing enterprise management tools. It also interfaces with the Dell Integration Suite for System Center 2012, Dell KACE K1000 Management Appliance , Dell OpenManage Essentials and our Client Management Pack for System Center Operations Manager (SCOM). Finally, tight integration with Windows Management Instrumentation (WMI) allows customers to take advantage of the rich scripting capabilities for collecting information and customizing system settings. This product is provided at no additional charge to Dell customers.
+ </description>
+ <releaseNotes>https://www.dell.com/support/manuals/de-de/command-monitor/dellcommandmonitor_rn/dell-command-%7C-monitor-version-10.5.1?guid=guid-01e5042b-8642-4e57-a380-592ebf024609&lang=en-us</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
