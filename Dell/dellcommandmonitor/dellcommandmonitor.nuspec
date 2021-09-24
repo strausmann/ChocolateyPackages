@@ -19,9 +19,9 @@
 
 Dell Command | Monitor interfaces with leading enterprise management consoles that support industry standards. This approach helps to ensure that Dell systems can be managed by a broad array of existing enterprise management tools. It also interfaces with the Dell Integration Suite for System Center 2012, Dell KACE K1000 Management Appliance , Dell OpenManage Essentials and our Client Management Pack for System Center Operations Manager (SCOM). Finally, tight integration with Windows Management Instrumentation (WMI) allows customers to take advantage of the rich scripting capabilities for collecting information and customizing system settings. This product is provided at no additional charge to Dell customers.
  </description>
- <releaseNotes>https://www.dell.com/support/manuals/de-de/command-monitor/dellcommandmonitor_rn/dell-command-%7C-monitor-version-10.5.1?guid=guid-01e5042b-8642-4e57-a380-592ebf024609&lang=en-us</releaseNotes>
+ <releaseNotes>https://www.dell.com/support/manuals/de-de/command-monitor/dellcommandmonitor_rn/dell-command-%7C-monitor-version-10.5.1?guid=guid-01e5042b-8642-4e57-a380-592ebf024609</releaseNotes>
     <dependencies>
-      <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
+      <dependency id="dotnet4.6.1" />
     </dependencies>
   </metadata>
   <files>
