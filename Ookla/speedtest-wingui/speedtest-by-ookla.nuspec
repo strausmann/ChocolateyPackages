@@ -22,6 +22,9 @@
 * Ping rate
 * Available in 17 languages.
 	</description>
+	<dependencies>
+		<dependency id="dotnet4.6.1" />
+	</dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

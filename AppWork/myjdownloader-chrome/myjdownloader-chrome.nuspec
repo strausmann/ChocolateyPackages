@@ -11,24 +11,23 @@
     <projectUrl>https://chrome.google.com/webstore/detail/fbcohnmimjicjdomonkcbcpbpnhggkip</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/AppWork/assets/jdownloader.png</iconUrl>
 	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/AppWork/myjdownloader-chrome</packageSourceUrl>
-    <description>Integriert MyJDownloader in deinen Browser. MyJDownloader ist der Fernsteuerungsservice für deinen JDownloader.
-Dieses Addon integriert "MyJDownloader" in Ihren Browser.
-Es ermöglicht Ihnen Links, Selektionen und Bild-URLs direkt an einen Ihrer angeschlossenen JDownloader zu senden.
+    <description>Integrates MyJDownloader into your browser. MyJDownloader is the remote control service for your JDownloader.
+This addon integrates "MyJDownloader" into your browser.
+It allows you to send links, selections and image URLs directly to one of your connected JDownloader.
 
-Was diese Erweiterung kann:
-* Es ermöglicht Ihnen die Fernsteuerung Ihres laufenden JDownloaders
-* Links zu Ihrer Warteschlange hinzufügen:
-* Verschaffen Sie sich einen schnellen Überblick über den Download-Status
+What this extension can do:
 
-Was diese Erweiterung NICHT kann:
-Dies ist kein eigenständiger Download-Manager. Sie benötigen JDownloader auf Ihrem Computer und müssen mit MyJDownloader verbunden sein.
+It allows you to remotely control your running JDownloader.
+Add links to your queue:
+Get a quick overview of the download status
+What this extension can NOT do:
+This is not a standalone download manager. You need JDownloader on your computer and you need to be connected to MyJDownloader.
 
-Was du brauchst:
-* Ein MyJDownloader-Konto (https://my.jdownloader.org)
-* Einen laufenden JDownloader, der mit MyJDownloader verbunden ist
+What you need:
 
------------------
-JDownloader ist ein kostenloses, quelloffenes Download-Management-Tool mit einer riesigen Community von Entwicklern, das den Download so einfach und schnell macht, wie er sein sollte. Benutzer können Downloads starten, stoppen oder anhalten, Bandbreitenbeschränkungen festlegen, Archive automatisch extrahieren und vieles mehr. Es handelt sich um ein einfach zu erweiterndes Framework, das jeden Tag Stunden Ihrer wertvollen Zeit einsparen kann!
+A MyJDownloader account (https://my.jdownloader.org).
+A running JDownloader connected to MyJDownloader
+JDownloader is a free, open-source download management tool with a huge community of developers that makes downloading as easy and fast as it should be. Users can start, stop or pause downloads, set bandwidth limits, automatically extract archives and much more. It is an easy-to-expand framework that can save hours of your valuable time every day!
     </description>
     <summary>Integration von MyJdownloader Links per Klick Button</summary>
     <tags>jdownloader myjdownloader chrome extension</tags>
