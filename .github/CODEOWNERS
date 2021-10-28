@@ -1,0 +1,15 @@
+# The following file is only used to request reviews from
+# specific users that is handling a certain package (or file)
+# and has write permission to the repository.
+# If you wishes to be requested as a reviewer and has write permission
+# to the repository, feel free to add yourself to the list
+
+# Global user/team
+*  @strausmann @strausmann-services
+
+# Packages
+# Multiple users can be set for the same match
+
+# Other
+# This can be any file other that won't be matched as a package
+# You can use the same matches as normally would be used in .gitignore/.gitattributes
