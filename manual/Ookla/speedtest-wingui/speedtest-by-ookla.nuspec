@@ -2,16 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>speedtest-by-ookla</id>
-    <version>1.9.159.001</version>
+    <version>1.10.163.001</version>
     <title>Speedtest by Ookla WinGUI</title>
     <authors>Ookla</authors>
 	<owners>strausmann</owners>
     <copyright>Copyright © 2006-2021 Ookla, LLC. All Rights Reserved</copyright>
 	<licenseUrl>https://www.speedtest.net/about/terms</licenseUrl>
 	<projectUrl>https://www.speedtest.net/de/apps/windows</projectUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/Ookla/assets/ookla.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/ookla.png</iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/Ookla/speedtest-wingui</packageSourceUrl>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Ookla/speedtest-wingui</packageSourceUrl>
     <docsUrl>https://support.speedtest.net/hc/en-us</docsUrl>
     <tags>speedtest internet bandwidth network ookla windows gui</tags>
     <summary>Use Speedtest® for a quick, easy, one-tap connection internet speed test—accurate anywhere thanks to our global server network.</summary>

@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference	= 'Stop';
 $toolsDir				= '$(Split-Path -parent $MyInvocation.MyCommand.Definition)'
-$url					= 'https://install.speedtest.net/app/windows/1.9.159/speedtestbyookla_x86.msi'
-$checksum				= '5B231DB7F1F439920124092AAB3DB1F801BD5ADD1A061C8A1A74E9EFCE27946F'
-$url64					= 'https://install.speedtest.net/app/windows/1.9.159/speedtestbyookla_x64.msi'
-$checksum64				= '1DD23AE6D330EF6BB650C2420A0D5AE87023D5D88B9CB37A5FED4BEA0403A72D'
+$url					= 'https://install.speedtest.net/app/windows/1.10.163/speedtestbyookla_x86.msi'
+$checksum				= '934A5ED894432FADC07B7CCA9ED1BDC0B67F970E19D1E6E209BA35162FC9227B'
+$url64					= 'https://install.speedtest.net/app/windows/1.10.163/speedtestbyookla_x64.msi'
+$checksum64				= '0C4FC9E11056DBC5AC3FEC66F8CBFB5DEA9A327FEF3CBEA878C347B70D89DF30'
 
 $packageArgs = @{
 	packageName    = $env:ChocolateyPackageName
