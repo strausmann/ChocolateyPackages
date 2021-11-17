@@ -6,12 +6,12 @@
     <title>Snagit 2020 (Install)</title>
     <authors>TechSmith</authors>
 	<owners>strausmann</owners>
-    <copyright>Copyright © 2020 TechSmith. All Rights Reserved</copyright>
+    <copyright>Copyright © 2021 TechSmith. All Rights Reserved</copyright>
 	<licenseUrl>https://www.techsmith.com/snagit-eula.html</licenseUrl>
 	<projectUrl>https://www.techsmith.com/screen-capture.html</projectUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/TechSmith/assets/snagit.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/snagit.png</iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/TechSmith/snagit-2020</packageSourceUrl>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/TechSmith/snagit-2020</packageSourceUrl>
     <docsUrl>https://support.techsmith.com/hc/en-us/categories/200174548-Snagit-Windows-Technical-Issues</docsUrl>
     <tags>screenshot screen capture techsmith snagit</tags>
     <summary>Snagit Version 2020 is a image capture program from TechSmith.</summary>
