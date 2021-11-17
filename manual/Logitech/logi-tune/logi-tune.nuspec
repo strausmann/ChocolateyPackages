@@ -10,7 +10,7 @@
 	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/logi-tune.png</iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<tags>logitech logi-tune webcam webcam-software logitech-webcam zone wired earbuds admin</tags>
-	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/logitech/logi-tune</packageSourceUrl>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Logitech/logi-tune</packageSourceUrl>
 	<docsUrl>https://prosupport.logi.com/hc/en-us/articles/360040568233</docsUrl>
 	<projectUrl>https://www.logitech.com/en-us/video-collaboration/software/logi-tune-software.html</projectUrl>
 	<bugTrackerUrl>https://support.logitech.com/contact-support</bugTrackerUrl>
