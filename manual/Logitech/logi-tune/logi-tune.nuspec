@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>logi-tune</id>
+    <version>2.206.12.0</version>
+    <owners>Logitech</owners>
+    <title>Logi Tune (Install)</title>
+    <authors>Logitech</authors>
+    <copyright>Copyright (c) Logitech. All rights reserved.</copyright>
+	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/logi-tune.png</iconUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<tags>logitech logi-tune webcam webcam-software logitech-webcam zone wired earbuds admin</tags>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/logitech/logi-tune</packageSourceUrl>
+	<docsUrl>https://prosupport.logi.com/hc/en-us/articles/360040568233</docsUrl>
+	<projectUrl>https://www.logitech.com/en-us/video-collaboration/software/logi-tune-software.html</projectUrl>
+	<bugTrackerUrl>https://support.logitech.com/contact-support</bugTrackerUrl>
+	<licenseUrl>https://www.logitech.com/footer/terms-of-use</licenseUrl>
+	<releaseNotes>https://prosupport.logi.com/hc/en-us/articles/1500002852741</releaseNotes>
+    <summary>Simplifies headset and webcam control for some Logitech Products</summary>
+	<description>
+	
+SUPPORTED DEVICES
+Webcams:
+
+* 4K Pro Magnetic Webcam
+* Brio Ultra HD Pro Business Webcam
+* C930e Business Webcam
+* C930c HD Smart 1080p Webcam
+* C925e Business Webcam
+* and more
+
+Headsets:
+
+* Zone True Wireless
+* Zone Wired Earbuds
+* Zone Wireless Plus
+* Zone Wired
+* Zone 900
+* Zone 750
+* and more
+
+See full list of supported devices [here](https://prosupport.logi.com/hc/articles/360062762853).
+
+	</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
