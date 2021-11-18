@@ -13,6 +13,7 @@
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/TechSmith/snagit-2020</packageSourceUrl>
     <docsUrl>https://support.techsmith.com/hc/en-us/categories/200174548-Snagit-Windows-Technical-Issues</docsUrl>
+	<releaseNotes>https://support.techsmith.com/hc/de/articles/115006435067-Versionsverlauf-von-Snagit-Windows-</releaseNotes>
     <tags>screenshot screen capture techsmith snagit</tags>
     <summary>Snagit Version 2020 is a image capture program from TechSmith.</summary>
     <description>This package is fixed to Snagit version 2020.
@@ -64,7 +65,7 @@ Example: **-params='"/licensekey:ABCD-EFGH-IJKL /licensename:""Joe Bloggs"" /nod
 **NOTE**: This is an automatically updated package. If you find it is out of date by more than a week, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 	</description>
 	<dependencies>
-		<dependency id="dotnet4.6.1" />
+		<dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
 	</dependencies>
   </metadata>
   <files>
