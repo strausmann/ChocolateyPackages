@@ -14,7 +14,7 @@
 	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/TechSmith/snagit-2020</packageSourceUrl>
     <docsUrl>https://support.techsmith.com/hc/en-us/categories/200174548-Snagit-Windows-Technical-Issues</docsUrl>
 	<releaseNotes>https://support.techsmith.com/hc/de/articles/115006435067-Versionsverlauf-von-Snagit-Windows-</releaseNotes>
-    <tags>screenshot screen capture techsmith snagit</tags>
+    <tags>screenshot screen capture techsmith snagit trial</tags>
     <summary>Snagit Version 2020 is a image capture program from TechSmith.</summary>
     <description>This package is fixed to Snagit version 2020.
 	
