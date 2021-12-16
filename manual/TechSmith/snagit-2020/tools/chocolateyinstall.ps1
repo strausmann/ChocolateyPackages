@@ -6,7 +6,7 @@ $url64 = 'https://download.techsmith.com/snagit/releases/2016/snagit.msi'
 
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
-	softwareName   = 'Speedtest by Ookla*'
+	softwareName   = 'Snagit 2020'
     installerType  = 'msi'
     url64bit       = $url64
     checksum64     = '82ED8FEC5EB12279030D7037DACEAEFDD0E9951E60FB342406B49BBDF6D22692'
