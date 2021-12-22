@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>snagit-2020</id>
-    <version>20.1.6.100</version>
+    <version>2020.1.7</version>
     <title>Snagit 2020 (Install)</title>
     <authors>TechSmith</authors>
 	<owners>strausmann</owners>
@@ -13,7 +13,7 @@
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/TechSmith/snagit-2020</packageSourceUrl>
     <docsUrl>https://support.techsmith.com/hc/en-us/categories/200174548-Snagit-Windows-Technical-Issues</docsUrl>
-	<releaseNotes>https://support.techsmith.com/hc/de/articles/115006435067-Versionsverlauf-von-Snagit-Windows-</releaseNotes>
+	<releaseNotes>https://support.techsmith.com/hc/en-us/articles/115006435067#si-2020-list</releaseNotes>
     <tags>screenshot screen capture techsmith snagit trial</tags>
     <summary>Snagit Version 2020 is a image capture program from TechSmith.</summary>
     <description>This package is fixed to Snagit version 2020.
@@ -52,13 +52,13 @@ NOTE: This is a trial install of Snagit. To use your license key see Parameters 
 * /licensekey:ABCD-EFGH-IJKL
  Registered license key. If this is missing a 30 day trial is installed.
 
-* /licensename:""Joe Bloggs""
+* /licensename:`"Joe Bloggs`"
  Registered name for the license. Can only be used if a /licensekey is specified
 
 * /nodesktopshortcut
  Does not install an application shortcut on the desktop.
 
-Example: **-params='"/licensekey:ABCD-EFGH-IJKL /licensename:""Joe Bloggs"" /nodesktopshortcut"'**
+Example: **-params='"/licensekey:ABCD-EFGH-IJKL /licensename:`"Joe Bloggs`" /nodesktopshortcut"'**
 
 **NOTE**: TechSmith seem to be okay with releasing a new version of the same version. This throws out the checksum of the package. If you find this happening, please raise an issue at https://github.com/pauby/chocopackages/issues. Thanks.
 

@@ -2,14 +2,14 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 # Old Techsmith software versions can be found at https://www.techsmith.com/download/oldversions
-$url64 = 'https://download.techsmith.com/snagit/releases/2016/snagit.msi'
+$url64 = 'https://download.techsmith.com/snagit/releases/2017/snagit.msi'
 
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
 	softwareName   = 'Snagit 2020'
     installerType  = 'msi'
     url64bit       = $url64
-    checksum64     = '82ED8FEC5EB12279030D7037DACEAEFDD0E9951E60FB342406B49BBDF6D22692'
+    checksum64     = '05b28cc613dd8d235ab7ce6e1499ca0f5de561dba5e5142837dd32c23072beda'
     checksumType64 = 'SHA256'
     silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" # ALLUSERS=1 DISABLEDESKTOPSHORTCUT=1 ADDDESKTOPICON=0 ADDSTARTMENU=0
     validExitCodes = @(0, 3010, 1641)
