@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>microsoft-edge-update</id>
+    <version>1.3.153.55</version>
+    <title>Microsoft Edge Update (Install)</title>
+    <authors>Microsoft Corporation</authors>
+	<owners>strausmann</owners>
+    <copyright>Copyright Microsoft Corporation</copyright>
+	<licenseUrl>https://go.microsoft.com/fwlink/?LinkID=206977</licenseUrl>
+	<projectUrl>https://developer.microsoft.com/en-us/microsoft-edge/webview2</projectUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/microsoft-edge.png</iconUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Microsoft/microsoft-edge-update</packageSourceUrl>
+    <docsUrl>https://docs.microsoft.com/de-de/microsoft-edge/webview2/</docsUrl>
+	<releaseNotes>
+1.3.153.55: initial update
+	</releaseNotes>
+    <tags>microsoft webview2 runtime edge update</tags>
+    <summary>Embed web content (HTML, CSS, and JavaScript) in your native applications with Microsoft Edge WebView2.</summary>
+    <description>
+	The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.
+	The WebView2 control uses Microsoft Edge as the rendering engine to display the web content in native apps. With WebView2,
+	you can embed web code in different parts of your native app, or build all of the native app within a single WebView instance.
+	</description>
+	<dependencies>
+		<dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
+	</dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
