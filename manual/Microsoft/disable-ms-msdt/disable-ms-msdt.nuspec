@@ -21,11 +21,14 @@
 	
     </description>
     <summary>Disables the ms-msdt protocol of Windows Devices (CVE-2022-30190)</summary>
-    <tags>microsoft windows registry disable ms-msdt cve-2022-30190</tags>
+    <tags>microsoft windows registry disable ms-msdt cve-2022-30190 follina</tags>
 	<docsUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Microsoft/disable-ms-msdt</docsUrl>
 	<releaseNotes>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Microsoft/disable-ms-msdt</releaseNotes>
 	<bugTrackerUrl>https://github.com/strausmann/ChocolateyPackages/issues</bugTrackerUrl>
 	<licenseUrl>https://github.com/strausmann/ChocolateyPackages/blob/master/LICENSE</licenseUrl>
+	<dependencies>
+	  <dependency id="chocolatey-fastanswers.extension" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
