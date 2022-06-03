@@ -8,7 +8,7 @@
     <owners>strausmann</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Microsoft/disable-hiberboot</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/disable-hiberboot.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/ms-registry.png</iconUrl>
 	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Microsoft/disable-hiberboot</packageSourceUrl>
     <description>
 	This Chocolatey package changes the registry entry that allows disabling Fast Startup under Windows 10/11.
