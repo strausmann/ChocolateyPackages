@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>disable-hiberboot</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Disable Fast Startup - hiberboot (Windows Registry)</title>
     <authors>Strausmann</authors>
     <owners>strausmann</owners>
@@ -27,6 +27,9 @@
 	<releaseNotes>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Microsoft/disable-hiberboot</releaseNotes>
 	<bugTrackerUrl>https://github.com/strausmann/ChocolateyPackages/issues</bugTrackerUrl>
 	<licenseUrl>https://github.com/strausmann/ChocolateyPackages/blob/master/LICENSE</licenseUrl>
+	<dependencies>
+	  <dependency id="chocolatey-fastanswers.extension" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
