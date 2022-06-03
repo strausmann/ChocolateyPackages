@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>disable-ms-msdt</id>
+    <version>1.0.0</version>
+    <title>Disable ms-msdt: protocol (CVE-2022-30190) (Windows Registry)</title>
+    <authors>Strausmann</authors>
+    <owners>strausmann</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Microsoft/disable-ms-msdt</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/ms-registry.png</iconUrl>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Microsoft/disable-ms-msdt</packageSourceUrl>
+    <description>
+	Vulnerability **CVE-2022-30190** allows the Microsoft Support Diagnostics Utility to be abused via the **ms-msdt:** protocol to download malicious Word documents (or Excel spreadsheets) from the web or downloads with wget.
+	
+	This package removes the **ms-msdt:** protocol from the Windows Registry until Microsoft releases a hotfix for the CVE-2022-30190 vulnerability.
+
+	Uninstalling the package restores the original state of the Windows Registry entry for **ms-msdt:**. If Microsoft itself has not restored the entry in a modified version with its hotfix.
+	
+	![Fast Startup](https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/manual/Microsoft/disable-ms-msdt/follina.png)
+	
+    </description>
+    <summary>Disables the ms-msdt protocol of Windows Devices (CVE-2022-30190)</summary>
+    <tags>microsoft windows registry disable ms-msdt cve-2022-30190</tags>
+	<docsUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Microsoft/disable-ms-msdt</docsUrl>
+	<releaseNotes>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Microsoft/disable-ms-msdt</releaseNotes>
+	<bugTrackerUrl>https://github.com/strausmann/ChocolateyPackages/issues</bugTrackerUrl>
+	<licenseUrl>https://github.com/strausmann/ChocolateyPackages/blob/master/LICENSE</licenseUrl>
+  </metadata>
+  <files>
+    <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
+    <file src="tools\ChocolateyUninstall.ps1" target="tools\ChocolateyUninstall.ps1" />
+	<file src="tools\backup-ms-msdt.reg" target="tools\backup-ms-msdt.reg" />
+  </files>
+</package>
