@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dell-supportassist</id>
+    <version>1.0.0.1</version>
+    <owners>strausmann</owners>
+    <title>Dell SupportAssist (Install)</title>
+    <authors>Dell Inc.</authors>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://www.dell.com/support/kbdoc/en-us/000178308/supportassist-install-uninstall-and-set-up?lang=en</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/dell-supportassist.webp</iconUrl>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Dell/dell-supportassist</packageSourceUrl>
+    <copyright>Copyright Dell Inc. All Rights Reserved.</copyright>
+	<summary>SupportAssist is the smart technology, available on your PC that will keep it running like new by removing viruses, detecting issues, optimizing settings and telling you when you need to make updates.</summary>
+    <tags>dell supportassist</tags>
+    <description>
+	SupportAssist is the smart technology, available on your PC that will keep it running like new by removing viruses, detecting issues, optimizing settings and telling you when you need to make updates. Premium Support Plus customers enjoy the full set of SupportAssist features including predictive issue detection and proactive resolution. Review the User Guide for more details.
+    </description>
+	<docsUrl>https://www.dell.com/support/kbdoc/en-us/000178308/supportassist-install-uninstall-and-set-up?lang=en</docsUrl>
+	<releaseNotes>See Docs...</releaseNotes>
+	<bugTrackerUrl>https://github.com/strausmann/ChocolateyPackages/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="icons\**" target="icons" />
+  </files>
+</package>
