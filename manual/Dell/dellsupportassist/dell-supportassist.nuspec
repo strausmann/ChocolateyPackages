@@ -19,6 +19,9 @@
 	<docsUrl>https://www.dell.com/support/kbdoc/en-us/000178308/supportassist-install-uninstall-and-set-up?lang=en</docsUrl>
 	<releaseNotes>See Docs...</releaseNotes>
 	<bugTrackerUrl>https://github.com/strausmann/ChocolateyPackages/issues</bugTrackerUrl>
+	<dependencies>
+	  <dependency id="chocolatey-fastanswers.extension" />
+    </dependencies>  
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

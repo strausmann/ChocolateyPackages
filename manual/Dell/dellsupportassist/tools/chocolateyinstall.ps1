@@ -18,4 +18,8 @@ $packageArgs = @{
   destination   = $toolsDir
 }
 
-Install-ChocolateyPackage @packageArgs
+if (Get-IsWin10) {
+	Install-ChocolateyPackage @packageArgs
+} else {
+	Write-Host "The installation is only possible on Windows 10 devices, other Windows client versions and Windows Servers are excluded." -ForegroundColor "Magenta" 
+}
