@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url                   = 'https://download.microsoft.com/download/D/B/D/DBDECC99-4DCA-4674-983A-CC1ABABA2B37/SSMAforAccess_8.23.0_x86.msi'
-$checksum              = '0df47a580f4c3a06e1224aab524cde3cf92455f43a42a961ae1c2634fead3387'
-$urlx64                = 'https://download.microsoft.com/download/D/B/D/DBDECC99-4DCA-4674-983A-CC1ABABA2B37/SSMAforAccess_8.23.0.msi'
-$checksumx64           = '57139cf24ddc7326c391e6ebd78d128c8a58ab27ad1159ebcfd8af4dc0254758'
+$url                   = 'https://download.microsoft.com/download/D/B/D/DBDECC99-4DCA-4674-983A-CC1ABABA2B37/SSMAforAccess_9.0.0_x86.msi'
+$checksum              = '1bdae244909a47061bf39a616a6dbcc53eff338931c4a50367c748928eaae008'
+$urlx64                = 'https://download.microsoft.com/download/D/B/D/DBDECC99-4DCA-4674-983A-CC1ABABA2B37/SSMAforAccess_9.0.0.msi'
+$checksumx64           = '4b7c0c087c776b46a0d31584b27d19cc9777cb323a10ee23cfd6ac188e477e91'
 
 $packageArgs = @{
 	packageName    = $env:ChocolateyPackageName
