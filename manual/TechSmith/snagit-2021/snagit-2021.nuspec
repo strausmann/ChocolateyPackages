@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>snagit-2021</id>
-    <version>2021.4.4</version>
+    <version>2021.4.5</version>
     <title>Snagit 2021 (Install)</title>
     <authors>TechSmith</authors>
 	<owners>strausmann</owners>
@@ -11,7 +11,7 @@
 	<projectUrl>https://www.techsmith.com/screen-capture.html</projectUrl>
 	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/snagit.png</iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/TechSmith/snagit-2020</packageSourceUrl>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/TechSmith/snagit-2021</packageSourceUrl>
     <docsUrl>https://support.techsmith.com/hc/en-us/categories/200174548-Snagit-Windows-Technical-Issues</docsUrl>
 	<releaseNotes>https://support.techsmith.com/hc/en-us/articles/115006435067#si-2021-list</releaseNotes>
     <tags>screenshot screen capture techsmith snagit 2021 trial</tags>
