@@ -8,9 +8,10 @@
     <authors>Dell Inc.</authors>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.dell.com/support/kbdoc/en-us/000178308/supportassist-install-uninstall-and-set-up?lang=en</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/dell-supportassist.webp</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/dell-supportassist.png</iconUrl>
 	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Dell/dell-supportassist</packageSourceUrl>
     <copyright>Copyright Dell Inc. All Rights Reserved.</copyright>
+	<licenseUrl>https://www.dell.com/support/kbdoc/en-us/000178308/supportassist-install-uninstall-and-set-up?lang=en</licenseUrl>
 	<summary>SupportAssist is the smart technology, available on your PC that will keep it running like new by removing viruses, detecting issues, optimizing settings and telling you when you need to make updates.</summary>
     <tags>dell supportassist</tags>
     <description>
@@ -20,7 +21,7 @@
 	<releaseNotes>See Docs...</releaseNotes>
 	<bugTrackerUrl>https://github.com/strausmann/ChocolateyPackages/issues</bugTrackerUrl>
 	<dependencies>
-	  <dependency id="chocolatey-fastanswers.extension" />
+	  <dependency id="chocolatey-fastanswers.extension" version="0.0.2" />
     </dependencies>  
   </metadata>
   <files>
