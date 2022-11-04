@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>teleport-cli</id>
+    <version>11.0.1</version>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/Gravitational/teleport-cli</packageSourceUrl>
+    <owners>strausmann</owners>
+    <title>Teleport CLI (tsh)</title>
+    <authors>Gravitational Inc.</authors>
+    <copyright>2022 Gravitational Inc.</copyright>
+    <tags>teleport tsh cli commandline</tags>
+    <description>Teleport replaces the #1 source of data breaches — secrets — with true identity to deliver phishing-proof zero trust access for every engineer and service connected to your global infrastructure.</description>
+	<summary>The Windows Teleport CLI Client to working with Teleport Clusters (SSH, Kubernetes, Database, Applications and Windows)</summary>
+	<releaseNotes>https://github.com/gravitational/teleport/releases</releaseNotes>
+	<bugTrackerUrl>https://github.com/gravitational/teleport/issues</bugTrackerUrl>
+	<iconUrl>https://raw.githubusercontent.com/strausmann/ChocolateyPackages/master/icons/Teleport.png</iconUrl>
+	<packageSourceUrl>https://github.com/gravitational/teleport</packageSourceUrl>
+	<projectUrl>https://goteleport.com/</projectUrl>
+	<licenseUrl>https://github.com/gravitational/teleport/blob/master/LICENSE</licenseUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
