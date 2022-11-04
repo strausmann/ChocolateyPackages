@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference	= 'Stop';
 $toolsDir				= '$(Split-Path -parent $MyInvocation.MyCommand.Definition)'
-$url					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.208-1/virtio-win-gt-x86.msi'
-$url64					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.208-1/virtio-win-gt-x64.msi'
-$checksum				= '0116900b2cf49d786793768f50888b836415e78b180d4868a0ee38c69d89ac01'
-$checksum64				= 'fdcf77898ad8765358d621338a91544c93fdbc3a113b2b35bc09b704860171cb'
+$url					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.221-1/virtio-win-gt-x86.msi'
+$url64					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.221-1/virtio-win-gt-x64.msi'
+$checksum				= '44a765d259214f3bf504dcaf168d6cc09e85e72fd03d3d99e48eafe6a4017193'
+$checksum64				= '71888d2f258bfc2e8035f6be2335c82727a85c971b061ee64b7e618463680456'
 
 $cert = Get-ChildItem Cert:\CurrentUser\TrustedPublisher -Recurse | Where-Object { $_.Thumbprint -eq 'F01DAC89598C52D94FE8CA91187E1853947D115A' }
 if (!$cert) {
