@@ -14,7 +14,7 @@
 	<releaseNotes>https://github.com/gravitational/teleport/releases</releaseNotes>
 	<bugTrackerUrl>https://github.com/gravitational/teleport/issues</bugTrackerUrl>
 	<iconUrl>https://raw.githubusercontent.com/strausmann/ChocolateyPackages/master/icons/Teleport.png</iconUrl>
-	<packageSourceUrl>https://github.com/gravitational/teleport</packageSourceUrl>
+	<projectSourceUrl>https://github.com/gravitational/teleport</projectSourceUrl>
 	<projectUrl>https://goteleport.com/</projectUrl>
 	<licenseUrl>https://github.com/gravitational/teleport/blob/master/LICENSE</licenseUrl>
   </metadata>
