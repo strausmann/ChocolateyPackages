@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>qemu-guest-agent</id>
-    <version>0.1.221</version>
+    <version>0.1.229</version>
     <owners>Bjoern Strausmann</owners>
     <title>Virtio Win Guest Tools (Install)</title>
     <authors>Red Hat Inc.</authors>
@@ -12,6 +12,9 @@
 	<bugTrackerUrl>https://github.com/virtio-win/kvm-guest-drivers-windows</bugTrackerUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>virtio win qemu guest tools admin</tags>
+	<licenseUrl>https://github.com/virtio-win/kvm-guest-drivers-windows/blob/master/LICENSE</licenseUrl>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/RedHat/qemu-guest-agent</packageSourceUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/qemu.png</iconUrl>
     <summary>KVM Qemu Guest Agent / Driver - Binary drivers are provided by some Linux distributions including WHQL Certified drivers.</summary>
 	<description>Virtio-win-guest-tools
 
