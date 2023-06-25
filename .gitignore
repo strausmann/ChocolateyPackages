@@ -1,3 +1,17 @@
 *.nupkg
+/update_vars.ps1
+/Update-AUPackages.md
+/update_info.xml
+/api_key
+/Update-History.md
+/Update-Force-Test*.md
+.vscode
+*.jar
 *.exe
+*.7z
 *.msi
+*.rar
+*.zip
+/invoke-build/tools/InvokeBuild
+/plantuml/tools/PlantUML_Language_Reference_Guide.pdf
+/Test-Sandbox_Temp
