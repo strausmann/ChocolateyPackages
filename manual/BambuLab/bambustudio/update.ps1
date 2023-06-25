@@ -1,5 +1,5 @@
 import-module au
-. $PSScriptRoot\..\_scripts\all.ps1
+. $PSScriptRoot\..\..\_scripts\all.ps1
 
 $releases = ''
 

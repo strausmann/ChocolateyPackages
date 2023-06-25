@@ -1,7 +1,7 @@
 import-module au
 . $PSScriptRoot\..\..\_scripts\all.ps1
 
-$releases = 'https://github.com/bambulab/BambuStudio/releases'
+$releases = ''
 
 function global:au_SearchReplace {
    @{
