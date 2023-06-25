@@ -1,0 +1,22 @@
+---
+---
+
+@import 'jekyll-theme-architect';
+
+.navigation {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.inner {
+  width: 990px;
+}
+
+aside#sidebar {
+  width: 250px;
+}
+
+.navigation li.active a {
+  color: lightgray;
+  cursor: default;
+}
