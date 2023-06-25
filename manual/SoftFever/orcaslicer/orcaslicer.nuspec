@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>orcaslicer</id>
+    <version>1.6.3</version>
+    <owners>strausmann</owners>
+    <title>Orca Slicer (Portable)</title>
+    <authors>SoftFever</authors>
+    <copyright>SoftFever</copyright>
+    <projectUrl>https://github.com/SoftFever/OrcaSlicer</projectUrl>
+    <bugTrackerUrl>https://github.com/SoftFever/OrcaSlicer/issues</bugTrackerUrl>
+    <tags>orca slicer 3d bambu lab fork</tags>
+    <licenseUrl>https://github.com/SoftFever/OrcaSlicer/blob/main/LICENSE</licenseUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/SoftFever/orcaslicer</packageSourceUrl>
+    <summary>Orca Slicer is a fork of Bambu Studio. It was previously known as BambuStudio-SoftFever.
+Bambu Studio is based on PrusaSlicer by Prusa Research, which is from Slic3r by Alessandro Ranellucci and the RepRap community. Orca Slicer incorporates a lot of features from SuperSlicer</summary>
+    <description>Main features
+Auto calibrations for all printers
+Sandwich(inner-outer-inner) mode - an improved version of the External perimeters first mode
+Precise wall
+Klipper support
+More granular controls
+More features can be found in change notes
+    </description>
+    <releaseNotes>https://github.com/SoftFever/OrcaSlicer/releases/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
