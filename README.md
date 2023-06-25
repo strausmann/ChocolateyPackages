@@ -1,7 +1,7 @@
 # Chocolatey Packages
 
 [![Appveyor Build](https://ci.appveyor.com/api/projects/status/github/strausmann/ChocolateyPackages?svg=true)](https://ci.appveyor.com/project/strausmann/ChocolateyPackages)
-[![Update status](https://img.shields.io/badge/Update-Status-blue.svg)](https://gist.github.com/strausmann/113649984d5ef59e0ec2d529dfc28df4)
+[![Update status](https://img.shields.io/badge/Update-Status-blue.svg)](https://gist.github.com/strausmann/33cff89acf29181df2e5c7d2a3792d47)
 [![chocolatey/virtualex](https://img.shields.io/badge/Chocolatey-strausmann-yellowgreen.svg)](https://community.chocolatey.org/profiles/strausmann)
 
 If you have any issues with one of the packages hosted in this repository, please feel free to open an issue (preferred instead of using `Contact Maintainers` on chocolatey.org).
