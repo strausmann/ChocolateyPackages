@@ -34,5 +34,5 @@ It contains project-based workflows, systematically optimized slicing algorithms
 
 [Software Site](https://bambulab.com/de/download/studio)
 
-[Package Source](https://github.com/strausmann/ChocolateyPackages/tree/master/manual/BambuLab/bambustudio)
+[Package Source](https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/bambustudio)
 

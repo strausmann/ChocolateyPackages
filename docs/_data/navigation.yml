@@ -3,4 +3,6 @@
     subfolderitems:
       - page: "Bambu Studio (Install)"
         url: /packages/bambustudio.html
+      - page: "Orca Slicer (Portable)"
+        url: /packages/orcaslicer.html
 
