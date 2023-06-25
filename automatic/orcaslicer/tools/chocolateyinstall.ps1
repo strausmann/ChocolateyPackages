@@ -15,7 +15,6 @@ $ChecksumType64        = 'sha256'
 
 #Based on Custom
 $packageArgs = @{
-  softwareName          = 'orcaslicer*'
   fileType              = 'zip'
   packageName           = $env:ChocolateyPackageName
   fileFullPath          = "$toolsDir\OrcaSlicer.zip"
