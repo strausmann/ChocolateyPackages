@@ -41,7 +41,6 @@ For daily operations check out the AU packages [template README](https://github.
 1. Head into the `setup` folder and perform the proper steps for your choice of setup (or both if you plan to use both methods).
 1. Edit this README. Update the badges at the top.
 
-
 ### Recommendation on Auto Packaging
 
 AU provides more in the process of being completely automated, sending emails when things go wrong, and providing a nice report at the end.
@@ -64,3 +63,7 @@ You want to bring in all of your packages into the proper folders. We suggest us
 1. Inspect the following file and add the differences:
 
 * `.gitignore`
+
+### Notes
+
+* https://github.com/majkinetor/au/wiki
