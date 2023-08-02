@@ -2,16 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>bitwarden-chrome</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Bitwarden for Google Chrome</title>
     <authors>Bitwarden Inc.</authors>
     <owners>strausmann</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/bitwarden/browser/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb</projectUrl>
-	<projectSourceUrl>https://github.com/bitwarden/browser/</projectSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/Bitwarden/assets/bitwarden.png</iconUrl>
-	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/Bitwarden/bitwarden-chrome</packageSourceUrl>
+	  <projectSourceUrl>https://github.com/bitwarden/browser/</projectSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/bitwarden.png</iconUrl>
+	  <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/bitwarden-chrome</packageSourceUrl>
     <description>Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.
 
 Password theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.
@@ -24,13 +24,14 @@ Bitwarden is 100% open source software. The source code for Bitwarden is hosted 
     </description>
     <summary>A secure and free password manager for all of your devices.</summary>
     <tags>bitwarden password safe vault warden chrome extension vaultwarden</tags>
+	  <docsUrl>https://bitwarden.com/help/article/getting-started-browserext/</docsUrl>
+	  <releaseNotes>https://github.com/bitwarden/browser/releases</releaseNotes>
+	  <bugTrackerUrl>https://github.com/bitwarden/browser/issues</bugTrackerUrl>
+    <licenseUrl>https://github.com/bitwarden/browser/blob/master/LICENSE.txt</licenseUrl>
+	  <copyright>Copyright © 2015-2023 Bitwarden Inc.</copyright>
     <dependencies>
       <dependency id="googlechrome" />
     </dependencies>
-	<docsUrl>https://bitwarden.com/help/article/getting-started-browserext/</docsUrl>
-	<releaseNotes>https://github.com/bitwarden/browser/releases</releaseNotes>
-	<bugTrackerUrl>https://github.com/bitwarden/browser/issues</bugTrackerUrl>
-	<copyright>Copyright © 2015-2021 Bitwarden Inc.</copyright>
   </metadata>
   <files>
     <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />

@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>grammarly-edge</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>Grammarly for Edge Chromium</title>
     <authors>Grammarly Inc.</authors>
     <owners>strausmann</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://www.grammarly.com/terms</licenseUrl>
     <projectUrl>https://microsoftedge.microsoft.com/addons/detail/cnlefmmeadmemmdciolhbnfeacpdfbkd</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/Grammarly/assets/grammarly-edge.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/grammarly-edge.png</iconUrl>
     <description>## Enhance your written communication everywhere you type!
 
 Grammarly will make sure your messages, documents, and social media posts are clear, mistake-free, and impactful. Adding Grammarly to Edge means that your spelling and grammar will be vetted on Gmail, Facebook, Twitter, Linkedin, Tumblr, and nearly everywhere else you write on the web. Once you register your new account, you will start to receive weekly emails with personalized insights and performance stats (one of our most popular new features). Working on a large project, an essay, or a blog post? No sweat. You can create and store all of your documents in your new online editor.
@@ -41,7 +41,7 @@ If you want to supercharge your writing performance and leave no error unchecked
     <dependencies>
       <dependency id="microsoft-edge" />
     </dependencies>
-	<releaseNotes>https://github.com/strausmann/ChocolateyPackages/blob/master/Grammarly/grammarly-edge/readme.md</releaseNotes>
+	<releaseNotes>https://github.com/strausmann/ChocolateyPackages/blob/master/automatic/grammarly-edge/readme.md</releaseNotes>
   </metadata>
   <files>
     <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
