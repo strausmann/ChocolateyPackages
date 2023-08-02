@@ -1,4 +1,4 @@
-﻿# <img src="https://raw.githubusercontent.com/strausmann/ChocolateyPackages/36067a6ca0fde5ea168df1ebe192c9ffc55f614d/icons/orcaslicer.png" width="48" height="48"/> [orcaslicer](https://community.chocolatey.org/packages/orcaslicer)
+# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/36067a6ca0fde5ea168df1ebe192c9ffc55f614d/icons/orcaslicer.png" width="48" height="48"/> [orcaslicer](https://community.chocolatey.org/packages/orcaslicer)
 
 Main features
 - Auto calibrations for all printers
