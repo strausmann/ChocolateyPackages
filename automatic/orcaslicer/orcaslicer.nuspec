@@ -30,6 +30,7 @@ More features can be found in change notes
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
+    <file src="tools\VERIFICATION.txt" target="tools" />
   </files>
 </package>

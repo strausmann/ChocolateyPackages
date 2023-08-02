@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - command: pwsh
+
+vscode:
+  extensions:
+    - ms-vscode.powershell-preview
