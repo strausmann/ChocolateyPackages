@@ -7,10 +7,10 @@ $shortcutFilePath = Join-Path $programs $linkName
 $targetPath   = Join-Path $toolsDir $fileName
 
 $url                   = 'https://github.com/SoftFever/OrcaSlicer/releases/download/v1.6.3/OrcaSlicer_V1.6.3_Win64.zip'
-$checksum              = ''
+$checksum              = '39a69bd16591be80f4f77e01f0fed8596c6466d96ed560e1a7236cacfe7b6b8e'
 $ChecksumType          = 'sha256'
 $url64                 = 'https://github.com/SoftFever/OrcaSlicer/releases/download/v1.6.3/OrcaSlicer_V1.6.3_Win64.zip'
-$checksum64            = ''
+$checksum64            = '39a69bd16591be80f4f77e01f0fed8596c6466d96ed560e1a7236cacfe7b6b8e'
 $ChecksumType64        = 'sha256'
 
 #Based on Custom

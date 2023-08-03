@@ -49,7 +49,7 @@ $Options = [ordered]@{
             UserMessage = "[Ignored](#ignored) | [History](#update-history) | [Force Test](https://gist.github.com/$Env:gist_id_test) | [Releases](https://github.com/$Env:github_user_repo/tags) | **TESTING AU NEXT VERSION**"       #  Markdown, Text: Custom user message to show
             NoIcons     = $false                            #  Markdown: don't show icon[Releases](https://github.com/$Env:github_user_repo/tags)
             IconSize    = 32                                #  Markdown: icon size
-            Title       = ''                                #  Markdown, Text: TItle of the report, by default 'Update-AUPackages'
+            Title       = ''                                #  Markdown, Text: Title of the report, by default 'Update-AUPackages'
         }
     }
 

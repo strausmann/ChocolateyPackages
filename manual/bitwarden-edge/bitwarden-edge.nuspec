@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>bitwarden-edge</id>
+    <version>1.0.1</version>
+    <title>Bitwarden for Edge Chromium</title>
+    <authors>Bitwarden Inc.</authors>
+    <owners>strausmann</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://bitwarden.com/terms/</licenseUrl>
+    <projectUrl>https://microsoftedge.microsoft.com/addons/detail/jbkfoedolllekgbhcbcoahefnbanhhlh</projectUrl>
+    <projectSourceUrl>https://github.com/bitwarden/browser/</projectSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/bitwarden.png</iconUrl>
+	  <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/bitwarden-edge</packageSourceUrl>
+    <description>Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.
+
+Password theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.
+
+Security experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? Bitwarden makes it easy for you to create, store, and access your passwords.
+
+Bitwarden stores all of your logins in an encrypted vault that syncs across all of your devices. Since it's fully encrypted before it ever leaves your device, only you have access to your data. Not even the team at Bitwarden can read your data, even if we wanted to. Your data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256.
+
+Bitwarden is 100% open source software. The source code for Bitwarden is hosted on GitHub and everyone is free to review, audit, and contribute to the Bitwarden codebase.
+    </description>
+    <summary>A secure and free password manager for all of your devices.</summary>
+    <tags>bitwarden password vault warden edge extension chromium</tags>
+	  <docsUrl>https://bitwarden.com/help/article/getting-started-browserext/</docsUrl>
+	  <releaseNotes>https://github.com/bitwarden/browser/releases</releaseNotes>
+ 	  <bugTrackerUrl>https://github.com/bitwarden/browser/issues</bugTrackerUrl>
+	  <licenseUrl>https://github.com/bitwarden/browser/blob/master/LICENSE.txt</licenseUrl>
+    <copyright>Copyright © 2015-2023 Bitwarden Inc.</copyright>
+    <dependencies>
+      <dependency id="microsoft-edge" version="87.0.664.75" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
+    <file src="tools\ChocolateyUninstall.ps1" target="tools\ChocolateyUninstall.ps1" />
+  </files>
+</package>

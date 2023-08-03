@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bambustudio</id>
-    <version>01.06.02.04</version>
+    <version>01.07.01.62</version>
     <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/bambustudio</packageSourceUrl>
     <owners>strausmann</owners>
     <title>Bambu Studio (Install)</title>
@@ -15,20 +15,21 @@
     <docsUrl>https://wiki.bambulab.com/en/software</docsUrl>
     <bugTrackerUrl>https://github.com/bambulab/BambuStudio/issues</bugTrackerUrl>
     <tags>bambu lab slicer studio 3d print foss</tags>
-    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/bambulab.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/2c34b56b9ed7520943c70939f8c4e33ec8196bc6/icons/bambulab.png</iconUrl>
     <summary>Bambu Studio is an open-source, cutting-edge, feature-rich slicing software. It contains project-based workflows, systematically optimized slicing algorithms, and an easy-to-use graphical interface, bringing users an incredibly smooth printing experience.</summary>
     <description><![CDATA[Bambu Studio is a cutting-edge, feature-rich slicing software.
 It contains project-based workflows, systematically optimized slicing algorithms, and an easy-to-use graphic interface, bringing users an incredibly smooth printing experience.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 ]]></description>
-    <releaseNotes>https://github.com/bambulab/BambuStudio/releases/tag/v01.06.02.04</releaseNotes>
+    <releaseNotes>https://github.com/bambulab/BambuStudio/releases/tag/v01.07.01.62</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" />
       <dependency id="webview2-runtime" />
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
+    <file src="tools\VERIFICATION.txt" target="tools" />
   </files>
 </package>
