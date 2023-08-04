@@ -3,8 +3,8 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 1. Download release from
-    32-Bit: <https://github.com/SoftFever/OrcaSlicer/releases/download/v1.6.4-beta/OrcaSlicer_V1.6.4-beta_Win64.zip>
-    64-Bit: <https://github.com/SoftFever/OrcaSlicer/releases/download/v1.6.4-beta/OrcaSlicer_V1.6.4-beta_Win64.zip>
+    32-Bit: <https://github.com/SoftFever/OrcaSlicer/releases/download/v1.6.4-beta2/OrcaSlicer_V1.6.4-beta2_Win64.zip>
+    64-Bit: <https://github.com/SoftFever/OrcaSlicer/releases/download/v1.6.4-beta2/OrcaSlicer_V1.6.4-beta2_Win64.zip>
 
 2. Get sha256 checksum with utility of choice
 
