@@ -33,6 +33,5 @@ Bambu Studio is based on PrusaSlicer by Prusa Research, which is from Slic3r by 
   </metadata>
   <files>
     <file src="tools\chocolateyinstall.ps1" target="tools" />
-    <file src="tools\VERIFICATION.txt" target="tools" />
   </files>
 </package>
