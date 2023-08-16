@@ -30,6 +30,5 @@ It contains project-based workflows, systematically optimized slicing algorithms
   </metadata>
   <files>
     <file src="tools\chocolateyinstall.ps1" target="tools" />
-    <file src="tools\VERIFICATION.txt" target="tools" />
   </files>
 </package>
