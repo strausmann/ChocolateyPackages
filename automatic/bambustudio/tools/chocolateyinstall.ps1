@@ -2,11 +2,11 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                   = 'https://github.com/bambulab/BambuStudio/releases/download/v01.07.03.50/Bambu_Studio_win_public-v01.07.03.50-20230808103800.exe'
-$checksum              = 'd26bbedc61f7a16fdd5ad43b77e2f6ce710ea22957ea4684b09c362f4d8b729e'
+$url                   = 'https://github.com/bambulab/BambuStudio/releases/download/v01.07.04.52/Bambu_Studio_win_public-v01.07.04.52-20230816204101.exe'
+$checksum              = '65dfcd1f64cfad101f8e2a54585314ad1414005a7f41c05f25e6c8aa9063a85b'
 $ChecksumType          = 'sha256'
-$url64                 = 'https://github.com/bambulab/BambuStudio/releases/download/v01.07.03.50/Bambu_Studio_win_public-v01.07.03.50-20230808103800.exe'
-$checksum64            = 'd26bbedc61f7a16fdd5ad43b77e2f6ce710ea22957ea4684b09c362f4d8b729e'
+$url64                 = 'https://github.com/bambulab/BambuStudio/releases/download/v01.07.04.52/Bambu_Studio_win_public-v01.07.04.52-20230816204101.exe'
+$checksum64            = '65dfcd1f64cfad101f8e2a54585314ad1414005a7f41c05f25e6c8aa9063a85b'
 $ChecksumType64        = 'sha256'
 
 $packageArgs = @{
