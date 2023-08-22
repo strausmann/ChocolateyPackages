@@ -6,7 +6,7 @@ Import-Module "../../scripts/au_extensions.psm1"
 $release = Get-GitHubRelease SoftFever OrcaSlicer
 
 function global:au_GetLatest {
-  $Url32 = $release.assets | ? {$_.name -match 'Windows' } | ? { $_.name.endswith('.zip') } | select -First 1 -ExpandProperty browser_download_url
+  $Url32 = $release.assets | ? {$_.name -match 'Windows' } | ? { $_.name.endswith('_portable.zip') } | select -First 1 -ExpandProperty browser_download_url
   $Url64 = $Url32
 
   $version = $release.tag_name.Trim('v')
