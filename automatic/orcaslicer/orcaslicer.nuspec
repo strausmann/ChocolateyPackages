@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/SoftFever/OrcaSlicer</projectUrl>
     <bugTrackerUrl>https://github.com/SoftFever/OrcaSlicer/issues</bugTrackerUrl>
     <tags>orca slicer 3d bambu lab fork</tags>
-    <licenseUrl>https://github.com/SoftFever/OrcaSlicer/blob/main/LICENSE</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/SoftFever/OrcaSlicer/main/LICENSE.txt</licenseUrl>
     <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/orcaslicer</packageSourceUrl>
     <summary>Orca Slicer is a fork of Bambu Studio. It was previously known as BambuStudio-SoftFever.
 Bambu Studio is based on PrusaSlicer by Prusa Research, which is from Slic3r by Alessandro Ranellucci and the RepRap community. Orca Slicer incorporates a lot of features from SuperSlicer</summary>
