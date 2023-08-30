@@ -7,7 +7,7 @@ $releases = "https://documentation.sharegate.com/hc/en-us/sections/360005954591-
 
 function global:au_GetLatest {
 
-	$response = Invoke-WebRequest -Uri $releases
+	$response = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$versionPattern = 'Patch (\d+\.\d+\.\d+)'
 	$versionMatches = [regex]::Matches($response.Content, $versionPattern)
 	$version = $versionMatches[0].Groups[1].Value
