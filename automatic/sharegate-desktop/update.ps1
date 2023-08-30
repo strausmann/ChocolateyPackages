@@ -36,4 +36,4 @@ function global:au_SearchReplace {
   }
 }
 
-Update-Package -ChecksumFor 32 -NoCheckChocoVersion $true
+Update-Package -ChecksumFor 32 -NoCheckChocoVersion $false
