@@ -40,7 +40,7 @@ The following install arguments can be passed:
 To append install arguments to the current silent arguments passed to the installer, use `--install-arguments="''"` or `--install-arguments-sensitive="''"`. To completely override the silent arguments with your own, also pass `--override-arguments`.
  Example: `choco install sharegate-desktop [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
-    
+	
 
 ## Links
 
@@ -48,5 +48,5 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 [Software Site](https://sharegate.com/products/sharegate-desktop)
 
-[Package Source](https://github.com/strausmann/ChocolateyPackages/tree/master/manual/sharegate-desktop)
+[Package Source](https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/sharegate-desktop)
 
