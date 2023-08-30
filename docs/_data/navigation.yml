@@ -9,24 +9,14 @@
         url: /packages/bitwardenedge.html
       - page: "Bitwarden for Firefox"
         url: /packages/bitwardenfirefox.html
-      - page: "DellBIOSProvider (PowerShell Module)"
-        url: /packages/dellbiosprovider.html
-      - page: "Dell Command | Monitor"
-        url: /packages/dellcommandmonitor.html
-      - page: "Dell SupportAssist (Install)"
-        url: /packages/dellsupportassist.html
       - page: "Disable Fast Startup - hiberboot (Windows Registry)"
         url: /packages/disablehiberboot.html
       - page: "Grammarly for Edge Chromium"
         url: /packages/grammarlyedge.html
       - page: "Update for Microsoft Windows (KB4554364)"
         url: /packages/KB4554364.html
-      - page: "Update for Microsoft Windows (KB5001567)"
-        url: /packages/KB5001567.html
       - page: "Logi Tune (Install)"
         url: /packages/logitune.html
-      - page: "Microsoft Edge Update (Install)"
-        url: /packages/microsoftedgeupdate.html
       - page: "Microsoft SQL Server Migration Assistant for Access (Install)"
         url: /packages/microsoftsqlservermigrationassistantforaccess.html
       - page: "MyJDownloader for Google Chrome"
@@ -39,12 +29,6 @@
         url: /packages/sharegatedesktop.html
       - page: "Snagit 2020 (Install)"
         url: /packages/snagit2020.html
-      - page: "Snagit 2021 (Install)"
-        url: /packages/snagit2021.html
       - page: "Speedtest by Ookla WinGUI"
         url: /packages/speedtestbyookla.html
-      - page: "Teleport CLI (tsh)"
-        url: /packages/teleportcli.html
-      - page: "VirtViewer (Install)"
-        url: /packages/virtviewer.html
 

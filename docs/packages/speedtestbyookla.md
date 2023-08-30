@@ -28,7 +28,7 @@ Running a speed test has never been so fast or easy. Download the free Speedtest
 * Upload speed
 * Ping rate
 * Available in 17 languages.
-	  
+	
 
 ## Links
 

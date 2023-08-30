@@ -12,7 +12,7 @@ $sourceLocation = 'https://github.com/strausmann/ChocolateyPackages/tree/master/
 $navigationFile = Join-Path $thisDirectory "docs\_data\navigation.yml"
 $docsFolder = [System.IO.Path]::GetFullPath("$thisDirectory\docs")
 $navigation = "toc:$lineFeed"
-$packagesFolder = @("automatic", "deprecated", "manual", "retired")
+$packagesFolder = @("automatic", "manual", "retired") # "deprecated",
 
 function Get-Aliases($commandName){
 
