@@ -36,7 +36,7 @@ For daily operations check out the AU packages [template README](https://github.
 
 ### Getting started
 
-1. Fork this repository and rename it to `chocolatey-packages` (on GitHub - go into Settings, Repository name and rename).
+1. Fork this repository and rename it to `ChocolateyPackages` (on GitHub - go into Settings, Repository name and rename).
 1. Clone the repository locally.
 1. Head into the `setup` folder and perform the proper steps for your choice of setup (or both if you plan to use both methods).
 1. Edit this README. Update the badges at the top.
