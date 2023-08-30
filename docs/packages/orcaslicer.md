@@ -1,4 +1,4 @@
-﻿# <img src="https://raw.githubusercontent.com/strausmann/ChocolateyPackages/36067a6ca0fde5ea168df1ebe192c9ffc55f614d/icons/orcaslicer.png" width="32" height="32"/> [![Orca Slicer (Portable)](https://img.shields.io/chocolatey/v/orcaslicer.svg?label=Orca+Slicer+(Portable))](https://community.chocolatey.org/packages/orcaslicer) [![Orca Slicer (Portable)](https://img.shields.io/chocolatey/dt/orcaslicer.svg)](https://community.chocolatey.org/packages/orcaslicer)
+﻿# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/36067a6ca0fde5ea168df1ebe192c9ffc55f614d/icons/orcaslicer.png" width="32" height="32"/> [![Orca Slicer (Portable)](https://img.shields.io/chocolatey/v/orcaslicer.svg?label=Orca+Slicer+(Portable))](https://community.chocolatey.org/packages/orcaslicer) [![Orca Slicer (Portable)](https://img.shields.io/chocolatey/dt/orcaslicer.svg)](https://community.chocolatey.org/packages/orcaslicer)
 
 ## Usage
 
@@ -23,13 +23,15 @@ choco uninstall orcaslicer
 ## Description
 
 Main features
-Auto calibrations for all printers
-Sandwich(inner-outer-inner) mode - an improved version of the External perimeters first mode
-Precise wall
-Klipper support
-More granular controls
-More features can be found in change notes
-    
+- Auto calibrations for all printers
+- Sandwich(inner-outer-inner) mode - an improved version of the External perimeters first mode
+- Precise wall
+- Klipper support
+- More granular controls
+- More features can be found in change notes
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
 
 ## Links
 

@@ -9,7 +9,7 @@ $s = {
 }
 
 function git_4windows() {
-    if (!(Get-Command git -ea ignore)) { "Installing git"; cinst git }
+    if (!(Get-Command git -ea ignore)) { "Installing git"; choco install git }
     git --version
 }
 
