@@ -54,16 +54,16 @@ You want to bring in all of your packages into the proper folders. We suggest us
 
 1. Bring over the following files to your package source repository:
 
-* [automatic\README.md](automatic/README.md)
-* `deprecated\README.md`
-* `icons\README.md`
-* `manual\README.md`
-* `retired\README.md`
-* `.appveyor.yml`
+* [automatic/README.md](automatic/README.md)
+* [deprecated/README.md](deprecated/README.md)
+* [icons/README.md](icons/README.md)
+* [manual/README.md](manual/README.md)
+* [retired/README.md](retired/README.md)
+* [.appveyor.yml](.appveyor.yml)
 
 1. Inspect the following file and add the differences:
 
-* `.gitignore`
+* [.gitignore](.gitignore)
 
 ## Automatic package update
 
