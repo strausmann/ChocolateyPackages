@@ -20,7 +20,7 @@ function GetResultInformation([string]$Url32) {
   @{
     Url32             = $Url32
     Version           = $version
-	Checksum32        = $checksum32
+	  Checksum32        = $checksum32
     ChecksumType32    = $ChecksumType
   }
 }
@@ -44,4 +44,4 @@ function global:au_SearchReplace {
   }
 }
 
-Update-Package -ChecksumFor all
+Update-Package -ChecksumFor 32
