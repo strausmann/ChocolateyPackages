@@ -54,7 +54,7 @@ You want to bring in all of your packages into the proper folders. We suggest us
 
 1. Bring over the following files to your package source repository:
 
-* [`automatic\README.md`](automatic\README.md)
+* [automatic\README.md](automatic/README.md)
 * `deprecated\README.md`
 * `icons\README.md`
 * `manual\README.md`
