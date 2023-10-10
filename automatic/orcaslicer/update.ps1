@@ -7,7 +7,6 @@ $release = Get-GitHubRelease SoftFever OrcaSlicer
 
 function global:au_GetLatest {
   $Url32 = $release.assets | ? {$_.name -match 'Windows' } | ? { $_.name.endswith('_portable.zip') } | select -First 1 -ExpandProperty browser_download_url
-  $Url64 = $Url32
 
   $version = $release.tag_name.Trim('v')
   $ChecksumType = 'sha256'
@@ -17,10 +16,8 @@ function global:au_GetLatest {
 
   @{
     Url32             = $Url32
-    Url64             = $Url64
     Version           = $version
     ChecksumType32    = $ChecksumType
-    ChecksumType64    = $ChecksumType
     ReleaseNotes      = $ReleaseNotes
   }
 }
@@ -31,9 +28,6 @@ function global:au_SearchReplace {
           "(^[$]url\s*=\s*)('.*')"            = "`$1'$($Latest.Url32)'"
           "(^[$]checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
           "(^[$]checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
-          "(^[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.Url64)'"
-          "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
-          "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
       }
   }
 }
@@ -42,4 +36,4 @@ function global:au_AfterUpdate {
   Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
 }
 
-Update-Package -ChecksumFor all
+Update-Package -ChecksumFor 32
