@@ -2,7 +2,7 @@
 $toolsDir     		   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                   = 'https://software.vc.logitech.com/downloads/tune/LogiTuneInstall.exe'
-$checksum              = '4f9ce11f9deddce4a19e8890c1edcbe03f0def5c3fcdd25bf5a2d494720526f1'
+$checksum              = '2397DDC32FEA59F0306816B7556BC899C6E0F39076C2BE584BF8AA433ECBBB73'
 $checksumType          = 'sha256'
 
 #Based on Custom

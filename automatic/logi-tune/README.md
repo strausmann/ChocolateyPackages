@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/2c34b56b9ed7520943c70939f8c4e33ec8196bc6/icons/logi-tune.png" width="48" height="48"/> [logi-tune](https://community.chocolatey.org/packages/logi-tune)
+# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/ab54d278870d964cb06908e77a67b3f4515ba02e/icons/logi-tune.png" width="48" height="48"/> [logi-tune](https://community.chocolatey.org/packages/logi-tune)
 
 SUPPORTED DEVICES
 Webcams:
