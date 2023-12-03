@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>orcaslicer</id>
-    <version>1.8.0</version>
+    <version>1.8.1</version>
     <owners>strausmann</owners>
     <title>Orca Slicer (Portable)</title>
     <authors>SoftFever</authors>
@@ -25,7 +25,7 @@ Bambu Studio is based on PrusaSlicer by Prusa Research, which is from Slic3r by 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 ]]></description>
-    <releaseNotes>https://github.com/SoftFever/OrcaSlicer/releases/tag/v1.8.0</releaseNotes>
+    <releaseNotes>https://github.com/SoftFever/OrcaSlicer/releases/tag/v1.8.1</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" />
       <dependency id="webview2-runtime" />
