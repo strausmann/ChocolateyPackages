@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference	= 'Stop';
 $toolsDir				= '$(Split-Path -parent $MyInvocation.MyCommand.Definition)'
-$url					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.229-1/virtio-win-gt-x86.msi'
-$url64					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.229-1/virtio-win-gt-x64.msi'
-$checksum				= '7513fad3040ba76455fda4488bde8ab3f1c0f5b6f1fcda0c7a751b2d34d06af5'
-$checksum64				= 'b26133dc7d193ea004767b227826bb04fea6cfa7a5f32c3022d875c2fdebe9af'
+$url					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.240-1/virtio-win-gt-x86.msi'
+$url64					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.240-1/virtio-win-gt-x64.msi'
+$checksum				= '7aece774405b26b9181acc2df76f8510237727bd519ffb520cebdbb83c1079a5'
+$checksum64				= '318702f2899a02e4a662e0e37874d58f88cd30c3bd81fcf4318e90729606ba9e'
 
 $packageArgs = @{
 	packageName    = $env:ChocolateyPackageName
