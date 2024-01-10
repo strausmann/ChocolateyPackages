@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bambustudio</id>
-    <version>01.08.02.56</version>
+    <version>01.08.03.89</version>
     <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/bambustudio</packageSourceUrl>
     <owners>strausmann</owners>
     <title>Bambu Studio (Install)</title>
@@ -22,7 +22,7 @@ It contains project-based workflows, systematically optimized slicing algorithms
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 ]]></description>
-    <releaseNotes>https://github.com/bambulab/BambuStudio/releases/tag/v01.08.02.56</releaseNotes>
+    <releaseNotes>https://github.com/bambulab/BambuStudio/releases/tag/v01.08.03.89</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" />
       <dependency id="webview2-runtime" />
