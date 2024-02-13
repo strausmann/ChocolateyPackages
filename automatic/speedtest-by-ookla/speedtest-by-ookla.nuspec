@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>speedtest-by-ookla</id>
-	<version>1.11.165</version>
+	<version>1.12.186</version>
 	<title>Speedtest by Ookla WinGUI</title>
 	<authors>Ookla</authors>
 	<owners>strausmann</owners>
 	<copyright>Copyright © 2006-2023 Ookla, LLC. All Rights Reserved</copyright>
 	<licenseUrl>https://www.speedtest.net/about/terms</licenseUrl>
 	<projectUrl>https://www.speedtest.net/de/apps/windows</projectUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/ookla.png</iconUrl>
+	<iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/17b3b7d6f418140a3828f9bedf56379cbe689827/icons/ookla.png</iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/speedtest-by-ookla</packageSourceUrl>
     <docsUrl>https://support.speedtest.net/hc/en-us</docsUrl>
@@ -21,7 +21,9 @@
 * Upload speed
 * Ping rate
 * Available in 17 languages.
-	</description>
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+</description>
 	<releaseNotes>
 Ookla does not publish release notes for Speedtest.
 	</releaseNotes>
