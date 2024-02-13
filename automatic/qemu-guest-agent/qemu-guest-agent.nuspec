@@ -7,15 +7,15 @@
     <title>Virtio Win Guest Tools (Install)</title>
     <authors>Red Hat Inc.</authors>
     <copyright>Red Hat, Inc.</copyright>
-	<projectUrl>https://github.com/virtio-win/kvm-guest-drivers-windows</projectUrl>
-	<bugTrackerUrl>https://github.com/virtio-win/kvm-guest-drivers-windows</bugTrackerUrl>
-	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/virtio-win/kvm-guest-drivers-windows</projectUrl>
+    <bugTrackerUrl>https://github.com/virtio-win/kvm-guest-drivers-windows</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>virtio win qemu guest tools admin</tags>
-	<licenseUrl>https://github.com/virtio-win/kvm-guest-drivers-windows/blob/master/LICENSE</licenseUrl>
-	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/qemu-guest-agent</packageSourceUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/qemu.png</iconUrl>
+    <licenseUrl>https://github.com/virtio-win/kvm-guest-drivers-windows/blob/master/LICENSE</licenseUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/qemu-guest-agent</packageSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/qemu.png</iconUrl>
     <summary>KVM Qemu Guest Agent / Driver - Binary drivers are provided by some Linux distributions including WHQL Certified drivers.</summary>
-	<description>Virtio-win-guest-tools
+    <description>Virtio-win-guest-tools
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
@@ -34,10 +34,10 @@ The following install arguments can be passed:
 To append install arguments to the current silent arguments passed to the installer, use `--install-arguments="''"` or `--install-arguments-sensitive="''"`. To completely override the silent arguments with your own, also pass `--override-arguments`.
  Example: `choco install packageId [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
-	</description>
-	<releaseNotes>
-	  https://fedorapeople.org/groups/virt/virtio-win/CHANGELOG
-	</releaseNotes>
+    </description>
+    <releaseNotes>
+        https://fedorapeople.org/groups/virt/virtio-win/CHANGELOG
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

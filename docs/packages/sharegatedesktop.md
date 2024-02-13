@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/sharegate-desktop.svg" width="32" height="32"/> [![ShareGate Desktop (Install)](https://img.shields.io/chocolatey/v/sharegate-desktop.svg?label=ShareGate+Desktop+(Install))](https://community.chocolatey.org/packages/sharegate-desktop) [![ShareGate Desktop (Install)](https://img.shields.io/chocolatey/dt/sharegate-desktop.svg)](https://community.chocolatey.org/packages/sharegate-desktop)
+# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/sharegate-desktop.svg" width="32" height="32"/> [![ShareGate Desktop (Install)](https://img.shields.io/chocolatey/v/sharegate-desktop.svg?label=ShareGate+Desktop+(Install))](https://community.chocolatey.org/packages/sharegate-desktop) [![ShareGate Desktop (Install)](https://img.shields.io/chocolatey/dt/sharegate-desktop.svg)](https://community.chocolatey.org/packages/sharegate-desktop)
 
 ## Usage
 

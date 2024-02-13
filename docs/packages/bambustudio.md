@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/2c34b56b9ed7520943c70939f8c4e33ec8196bc6/icons/bambulab.png" width="32" height="32"/> [![Bambu Studio (Install)](https://img.shields.io/chocolatey/v/bambustudio.svg?label=Bambu+Studio+(Install))](https://community.chocolatey.org/packages/bambustudio) [![Bambu Studio (Install)](https://img.shields.io/chocolatey/dt/bambustudio.svg)](https://community.chocolatey.org/packages/bambustudio)
+# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/2c34b56b9ed7520943c70939f8c4e33ec8196bc6/icons/bambulab.png" width="32" height="32"/> [![Bambu Studio (Install)](https://img.shields.io/chocolatey/v/bambustudio.svg?label=Bambu+Studio+(Install))](https://community.chocolatey.org/packages/bambustudio) [![Bambu Studio (Install)](https://img.shields.io/chocolatey/dt/bambustudio.svg)](https://community.chocolatey.org/packages/bambustudio)
 
 ## Usage
 

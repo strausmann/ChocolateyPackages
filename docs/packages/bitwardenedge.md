@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/bitwarden.png" width="32" height="32"/> [![Bitwarden for Edge Chromium](https://img.shields.io/chocolatey/v/bitwarden-edge.svg?label=Bitwarden+for+Edge+Chromium)](https://community.chocolatey.org/packages/bitwarden-edge) [![Bitwarden for Edge Chromium](https://img.shields.io/chocolatey/dt/bitwarden-edge.svg)](https://community.chocolatey.org/packages/bitwarden-edge)
+# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/bitwarden.png" width="32" height="32"/> [![Bitwarden for Edge Chromium](https://img.shields.io/chocolatey/v/bitwarden-edge.svg?label=Bitwarden+for+Edge+Chromium)](https://community.chocolatey.org/packages/bitwarden-edge) [![Bitwarden for Edge Chromium](https://img.shields.io/chocolatey/dt/bitwarden-edge.svg)](https://community.chocolatey.org/packages/bitwarden-edge)
 
 ## Usage
 

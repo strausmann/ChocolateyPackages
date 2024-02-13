@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/36067a6ca0fde5ea168df1ebe192c9ffc55f614d/icons/orcaslicer.png" width="32" height="32"/> [![Orca Slicer (Portable)](https://img.shields.io/chocolatey/v/orcaslicer.svg?label=Orca+Slicer+(Portable))](https://community.chocolatey.org/packages/orcaslicer) [![Orca Slicer (Portable)](https://img.shields.io/chocolatey/dt/orcaslicer.svg)](https://community.chocolatey.org/packages/orcaslicer)
+# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/36067a6ca0fde5ea168df1ebe192c9ffc55f614d/icons/orcaslicer.png" width="32" height="32"/> [![Orca Slicer (Portable)](https://img.shields.io/chocolatey/v/orcaslicer.svg?label=Orca+Slicer+(Portable))](https://community.chocolatey.org/packages/orcaslicer) [![Orca Slicer (Portable)](https://img.shields.io/chocolatey/dt/orcaslicer.svg)](https://community.chocolatey.org/packages/orcaslicer)
 
 ## Usage
 

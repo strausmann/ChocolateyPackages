@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/bitwarden.png" width="32" height="32"/> [![Bitwarden for Google Chrome](https://img.shields.io/chocolatey/v/bitwarden-chrome.svg?label=Bitwarden+for+Google+Chrome)](https://community.chocolatey.org/packages/bitwarden-chrome) [![Bitwarden for Google Chrome](https://img.shields.io/chocolatey/dt/bitwarden-chrome.svg)](https://community.chocolatey.org/packages/bitwarden-chrome)
+# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/bitwarden.png" width="32" height="32"/> [![Bitwarden for Google Chrome](https://img.shields.io/chocolatey/v/bitwarden-chrome.svg?label=Bitwarden+for+Google+Chrome)](https://community.chocolatey.org/packages/bitwarden-chrome) [![Bitwarden for Google Chrome](https://img.shields.io/chocolatey/dt/bitwarden-chrome.svg)](https://community.chocolatey.org/packages/bitwarden-chrome)
 
 ## Usage
 

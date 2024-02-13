@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/ookla.png" width="32" height="32"/> [![Speedtest by Ookla WinGUI](https://img.shields.io/chocolatey/v/speedtest-by-ookla.svg?label=Speedtest+by+Ookla+WinGUI)](https://community.chocolatey.org/packages/speedtest-by-ookla) [![Speedtest by Ookla WinGUI](https://img.shields.io/chocolatey/dt/speedtest-by-ookla.svg)](https://community.chocolatey.org/packages/speedtest-by-ookla)
+# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/ookla.png" width="32" height="32"/> [![Speedtest by Ookla WinGUI](https://img.shields.io/chocolatey/v/speedtest-by-ookla.svg?label=Speedtest+by+Ookla+WinGUI)](https://community.chocolatey.org/packages/speedtest-by-ookla) [![Speedtest by Ookla WinGUI](https://img.shields.io/chocolatey/dt/speedtest-by-ookla.svg)](https://community.chocolatey.org/packages/speedtest-by-ookla)
 
 ## Usage
 

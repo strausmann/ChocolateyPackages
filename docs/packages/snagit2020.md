@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/snagit.png" width="32" height="32"/> [![Snagit 2020 (Install)](https://img.shields.io/chocolatey/v/snagit-2020.svg?label=Snagit+2020+(Install))](https://community.chocolatey.org/packages/snagit-2020) [![Snagit 2020 (Install)](https://img.shields.io/chocolatey/dt/snagit-2020.svg)](https://community.chocolatey.org/packages/snagit-2020)
+# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/snagit.png" width="32" height="32"/> [![Snagit 2020 (Install)](https://img.shields.io/chocolatey/v/snagit-2020.svg?label=Snagit+2020+(Install))](https://community.chocolatey.org/packages/snagit-2020) [![Snagit 2020 (Install)](https://img.shields.io/chocolatey/dt/snagit-2020.svg)](https://community.chocolatey.org/packages/snagit-2020)
 
 ## Usage
 

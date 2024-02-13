@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/qemu.png" width="32" height="32"/> [![Virtio Win Guest Tools (Install)](https://img.shields.io/chocolatey/v/qemu-guest-agent.svg?label=Virtio+Win+Guest+Tools+(Install))](https://community.chocolatey.org/packages/qemu-guest-agent) [![Virtio Win Guest Tools (Install)](https://img.shields.io/chocolatey/dt/qemu-guest-agent.svg)](https://community.chocolatey.org/packages/qemu-guest-agent)
+# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/qemu.png" width="32" height="32"/> [![Virtio Win Guest Tools (Install)](https://img.shields.io/chocolatey/v/qemu-guest-agent.svg?label=Virtio+Win+Guest+Tools+(Install))](https://community.chocolatey.org/packages/qemu-guest-agent) [![Virtio Win Guest Tools (Install)](https://img.shields.io/chocolatey/dt/qemu-guest-agent.svg)](https://community.chocolatey.org/packages/qemu-guest-agent)
 
 ## Usage
 
@@ -41,13 +41,13 @@ The following install arguments can be passed:
 To append install arguments to the current silent arguments passed to the installer, use `--install-arguments="''"` or `--install-arguments-sensitive="''"`. To completely override the silent arguments with your own, also pass `--override-arguments`.
  Example: `choco install packageId [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
-	  
+    
 
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/qemu-guest-agent)
 
-[Software Site](https://fedorapeople.org/groups/virt/virtio-win/CHANGELOG)
+[Software Site](https://github.com/virtio-win/kvm-guest-drivers-windows)
 
-[Package Source](https://github.com/virtio-win/kvm-guest-drivers-windows https://github.com/strausmann/ChocolateyPackages/tree/master/manual/qemu-guest-agent)
+[Package Source](https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/qemu-guest-agent)
 

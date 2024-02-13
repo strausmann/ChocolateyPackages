@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/myjdownloader-chrome.png" width="32" height="32"/> [![MyJDownloader for Google Chrome](https://img.shields.io/chocolatey/v/myjdownloader-chrome.svg?label=MyJDownloader+for+Google+Chrome)](https://community.chocolatey.org/packages/myjdownloader-chrome) [![MyJDownloader for Google Chrome](https://img.shields.io/chocolatey/dt/myjdownloader-chrome.svg)](https://community.chocolatey.org/packages/myjdownloader-chrome)
+# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/myjdownloader-chrome.png" width="32" height="32"/> [![MyJDownloader for Google Chrome](https://img.shields.io/chocolatey/v/myjdownloader-chrome.svg?label=MyJDownloader+for+Google+Chrome)](https://community.chocolatey.org/packages/myjdownloader-chrome) [![MyJDownloader for Google Chrome](https://img.shields.io/chocolatey/dt/myjdownloader-chrome.svg)](https://community.chocolatey.org/packages/myjdownloader-chrome)
 
 ## Usage
 
