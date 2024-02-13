@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>pkt</id>
+    <title>PKT World Wallet</title>
+    <version>0.0</version>
+    <authors>PKT Cash</authors>
+    <owners>strausmann</owners>
+    <summary>PKT World Wallet (pktd) is the primary full node PKT Cash implementation, written in Go.</summary>
+    <projectUrl>https://github.com/pkt-cash/pktd</projectUrl>
+    <tags>pkt pktd wallet cash crypto</tags>
+    <copyright>©2024 PKT Cash</copyright>
+    <licenseUrl>https://github.com/pkt-cash/pktd/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/pkt-world-wallet.svg</iconUrl>
+    <releaseNotes>https://github.com/pkt-cash/pktd/releases</releaseNotes>
+    <docsUrl>https://docs.pkt.cash/en/latest/pktd/</docsUrl>
+    <bugTrackerUrl>https://github.com/pkt-cash/pktd/issues</bugTrackerUrl>
+    <projectSourceUrl>https://pkt.cash/wallet/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/pkt</packageSourceUrl>
+    <description>
+pktd is the primary full node PKT Cash implementation, written in Go.
+
+The PKT Cash project is currently under active development and considered to be beta quality software.
+
+In particular, the development branch of pktd is highly experimental, and should generally not be used in a production environment or on the PKT Cash mainnet.
+
+pktd is the primary mainnet node software for the PKT blockchain. It is known to correctly download, validate, and serve the chain, using rules for block acceptance based on Bitcoin Core, with the addition of PacketCrypt Proofs.
+
+It relays newly mined blocks, and individual transactions that have not yet made it into a block, as well as maintaining a transaction pool. All individual transactions admitted to the pool follow rules defined by the network operators, which include strict checks to filter transactions based on miner requirements ("standard" vs "non-standard" transactions).
+
+Unlike other similar software, pktd does NOT directly include wallet functionality - this was an intentional design decision. You will not be able to make or receive payments with pktd directly.
+
+Example wallet functionality is provided in the included, separate, pktwallet package.
+</description>
+  </metadata>
+  <files>
+    <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
+    <file src="tools\ChocolateyUninstall.ps1" target="tools\ChocolateyUninstall.ps1" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

@@ -26,7 +26,8 @@ For setting up your own automatic package repository, please see [Automatic Pack
 ### Requirements
 
 * Chocolatey (choco.exe)
-* [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module au` or `choco install au`.
+* [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `choco install au -y`.
+* [Wormies AU Helpers](https://community.chocolatey.org/packages/wormies-au-helpers): `choco install wormies-au-helpers -y`.
 
 #### AU
 
@@ -71,8 +72,10 @@ You want to bring in all of your packages into the proper folders. We suggest us
 
 Run from within the directory of the package to update that package:
 
-    cd <package_dir>
-    ./update.ps1
+```powershell
+cd <package_dir>
+./update.ps1
+```
 
 If this script is missing, the package is not automatic.
 Set `$au_Force = $true` prior to script call to update the package even if no new version is found.
@@ -98,7 +101,9 @@ $au_Push      = $false       #Do not push to chocolatey
 
 You can also call AU method `Update-AUPackages` (alias `updateall`) on its own in the repository root. This will just run the updater for the each package without any other option from `update_all.ps1` script. For example to force update of all packages with a single command execute:
 
-    updateall -Options ([ordered]@{ Force = $true })
+```powershell
+updateall -Options ([ordered]@{ Force = $true })
+```
 
 ## Testing all packages
 
@@ -130,8 +135,10 @@ You can also push manual packages with command `[PUSH pkg1 ... pkgN]`. This work
 
 If there are no changes in the repository use `--allow-empty` git parameter:
 
-    git commit -m '[AU copyq less:2.0]' --allow-empty
-    git push
+```powershell
+git commit -m '[AU copyq less:2.0]' --allow-empty
+git push
+```
 
 ## Start using AU with your own packages
 
