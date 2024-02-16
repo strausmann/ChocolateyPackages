@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference	= 'Stop';
 $toolsDir				= '$(Split-Path -parent $MyInvocation.MyCommand.Definition)'
 
-$url					= 'https://install.speedtest.net/app/windows/1.12.186/speedtestbyookla_x86.msi'
-$checksum				= '28e4e18f82a95bad8cd7547318618b25349443c7373804f54518788d967426c6'
+$url					= 'https://install.speedtest.net/app/windows/1.13.194/speedtestbyookla_x86.msi'
+$checksum				= '6563db0c4ac93250d899ec0cee7b75288e0f09c0d1ce65413e18fcfd0c1c143d'
 $checksumType           = 'sha256'
-$url64					= 'https://install.speedtest.net/app/windows/1.12.186/speedtestbyookla_x64.msi'
-$checksum64				= '87e528a644575a4774111d5694dc50ac4962abf50ad7b26c585a14820090a181'
+$url64					= 'https://install.speedtest.net/app/windows/1.13.194/speedtestbyookla_x64.msi'
+$checksum64				= 'b2f69cc7c8fcf6038a7f76773732f12268ad58c46b7164afb4475ac35afc2b5d'
 $checksumType64         = 'sha256'
 
 #Based on Custom
