@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>qemu-guest-agent</id>
-    <version>0.1.240</version>
+    <version>0.1.248</version>
     <owners>Bjoern Strausmann</owners>
     <title>Virtio Win Guest Tools (Install)</title>
     <authors>Red Hat Inc.</authors>
@@ -13,7 +13,7 @@
     <tags>virtio win qemu guest tools admin</tags>
     <licenseUrl>https://github.com/virtio-win/kvm-guest-drivers-windows/blob/master/LICENSE</licenseUrl>
     <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/qemu-guest-agent</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/qemu.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/327464104957ec03a1c55ab68e1a72281b04e7b0/icons/qemu.png</iconUrl>
     <summary>KVM Qemu Guest Agent / Driver - Binary drivers are provided by some Linux distributions including WHQL Certified drivers.</summary>
     <description>Virtio-win-guest-tools
 
@@ -24,17 +24,18 @@ let them know the package is no longer updating correctly.
 ### Package Specific
 #### Installer Properties
 The following install arguments can be passed:
- * `ALLUSERS`
- * `1`
- * `REGISTRY_PRODUCT_NAME`
- * `REGISTRYSEARCH_IS_TERMSERVICE_EXIST`
- * `REGISTRYSEARCH_IS_SPICEUSBREDIRECTOR_EXIST`
- * `REGISTRYSEARCH_OLD_WGT_UNINSTALL_PATH`
+* `ALLUSERS`
+* `1`
+* `REGISTRY_PRODUCT_NAME`
+* `REGISTRYSEARCH_IS_TERMSERVICE_EXIST`
+* `REGISTRYSEARCH_IS_SPICEUSBREDIRECTOR_EXIST`
+* `REGISTRYSEARCH_OLD_WGT_UNINSTALL_PATH`
 
 To append install arguments to the current silent arguments passed to the installer, use `--install-arguments="''"` or `--install-arguments-sensitive="''"`. To completely override the silent arguments with your own, also pass `--override-arguments`.
- Example: `choco install packageId [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
+Example: `choco install packageId [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
-    </description>
+
+</description>
     <releaseNotes>
         https://fedorapeople.org/groups/virt/virtio-win/CHANGELOG
     </releaseNotes>

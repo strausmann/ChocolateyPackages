@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/qemu.png" width="48" height="48"/> [qemu-guest-agent](https://community.chocolatey.org/packages/qemu-guest-agent)
+# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/327464104957ec03a1c55ab68e1a72281b04e7b0/icons/qemu.png" width="48" height="48"/> [qemu-guest-agent](https://community.chocolatey.org/packages/qemu-guest-agent)
 
 Virtio-win-guest-tools
 
