@@ -3,8 +3,8 @@
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileLocation = Join-Path $toolsDir 'BambuStudio.exe'
 
-$url                   = 'https://github.com/bambulab/BambuStudio/releases/download/v01.09.00.69/Bambu_Studio_win_public-v01.09.00.69-20240408205831.exe'
-$checksum              = 'f1b6dd5f346b96d0a1a2170e5cf979372de14a0fc081bcd1a9a4b447f8cb4327'
+$url                   = 'https://github.com/bambulab/BambuStudio/releases/download/v01.09.00.70/Bambu_Studio_win_public-v01.09.00.70-20240410162052.exe'
+$checksum              = '7fe8f533174d073f3126f8a4ab29f417b59f530f2e0644170a56cbc06f0dbda5'
 $ChecksumType          = 'sha256'
 
 $packageArgs = @{
