@@ -51,7 +51,7 @@ environment:
     secure: 7+0Aflu0WErIIW+yyRvSkLMQ143PdtYrRfZPvVK9I/W2YYIUDxMF/5TeGcCASkF5 # https://ci.appveyor.com/tools/encrypt
 
   #Chocolatey version we want to use when checking for updates.
-  choco_version: '2.2.0'
+  choco_version: '2.3.0'
   choco_version_pr: '1.4.0' # Should be kept to the version available one year ago
   nupkg_cache_path: C:\packages
 
@@ -61,6 +61,8 @@ init:
 - git config --global core.safecrlf false
 
 install:
+- ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
+- ps: $PSVersionTable
 - ps: |
     $chocoVersion = if (($Env:APPVEYOR_PULL_REQUEST_NUMBER -eq $null) -or ($ENV:APPVEYOR_PULL_REQUEST_NUMBER -eq '')) { $Env:choco_version } else { $Env:choco_version_pr }
     if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
@@ -69,17 +71,15 @@ install:
       'wormies-au-helpers' = '0.4.1'
       'chocolatey-compatibility.extension' = '1.0.0'
       'chocolatey-core.extension' = '1.4.0'
-      'autohotkey.portable' = '2.0.4'
+      'autohotkey.portable' = '2.0.17'
       'vt-cli' = '0.14.0'
-      'git' = '2.41.0'
+      'git' = '2.45.2'
     }.GetEnumerator() | % {
       if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; Invoke-WebRequest "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
       if ($_.Key -eq 'chocolatey') { cup $_.Key --version $_.Value --source "'${env:nupkg_cache_path};http://chocolatey.org/api/v2/'" --allow-downgrade }
       else { choco install $_.Key --version $_.Value --source "'${env:nupkg_cache_path};http://chocolatey.org/api/v2/'" --ignore-dependencies }
     }
     rm "$env:ChocolateyInstall\logs\*.log"
-- ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
-- ps: $PSVersionTable
 - git --version
 - choco --version
 - ps: |
