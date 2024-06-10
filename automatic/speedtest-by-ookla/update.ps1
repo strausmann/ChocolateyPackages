@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "../../scripts/au_extensions.psm1"
@@ -8,11 +8,11 @@ $ChecksumType    = 'sha256'
 
 function global:au_GetLatest {
 	$web = Invoke-WebRequest $releases
-	$currentVersion = $web.AllElements | ?{$_.tagname -eq 'SPAN' -and $_.class -eq 'u-note'} | select -First 1 -Expand InnerText
+	$currentVersion = $web.AllElements | ?{$_.tagname -eq 'SPAN' -and $_.class -eq 'u-note'} | Select-Object -First 1 -Expand InnerText
 	$version = $currentVersion.TrimStart("v")
 	
 	$req = Invoke-WebRequest -Uri $releases
-	$currentVersion = $req.AllElements | ?{$_.tagname -eq 'SPAN' -and $_.class -eq 'u-note'} | select -First 1 -Expand InnerText
+	$currentVersion = $req.AllElements | ?{$_.tagname -eq 'SPAN' -and $_.class -eq 'u-note'} | Select-Object -First 1 -Expand InnerText
 	$version = $currentVersion.TrimStart("v")
     
 	$Url32 = "https://install.speedtest.net/app/windows/$($version)/speedtestbyookla_x86.msi"

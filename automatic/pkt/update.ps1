@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "../../scripts/au_extensions.psm1"
@@ -10,16 +10,16 @@ function global:au_BeforeUpdate {
     Get-RemoteFiles -Purge -NoSuffix 
     Set-Alias 7z $Env:chocolateyInstall\tools\7z.exe
     7z e tools\*.zip -otools *.exe -r -y
-    rm tools\*.zip -ea 0
+    Remove-Item tools\*.zip -ea 0
 }
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $re      = '\PktWorldWalletSetup.exe$'
-    $url     = $download_page.links | ? href -match $re | select -First 1 -expand href
-    $domain  = $releases -split '(?<=//.+)/' | select -First 1
-    $version = $url -split '[._-]|.exe' | select -Last 1 -Skip 2
+    $url     = $download_page.links | ? href -match $re | Select-Object -First 1 -expand href
+    $domain  = $releases -split '(?<=//.+)/' | Select-Object -First 1
+    $version = $url -split '[._-]|.exe' | Select-Object -Last 1 -Skip 2
 
     @{
         Version      = $version

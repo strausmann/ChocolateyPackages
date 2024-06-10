@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "../../scripts/au_extensions.psm1"
@@ -6,7 +6,7 @@ Import-Module "../../scripts/au_extensions.psm1"
 $release = Get-GitHubRelease SoftFever OrcaSlicer
 
 function global:au_GetLatest {
-  $Url32 = $release.assets | ? {$_.name -match 'Windows' } | ? { $_.name.endswith('_portable.zip') } | select -First 1 -ExpandProperty browser_download_url
+  $Url32 = $release.assets | ? {$_.name -match 'Windows' } | ? { $_.name.endswith('_portable.zip') } | Select-Object -First 1 -ExpandProperty browser_download_url
 
   $version = $release.tag_name.Trim('v')
   $ChecksumType = 'sha256'

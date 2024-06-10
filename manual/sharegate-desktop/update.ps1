@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "../../scripts/au_extensions.psm1"
