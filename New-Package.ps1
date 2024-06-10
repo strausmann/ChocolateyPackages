@@ -24,10 +24,10 @@ function New-Package{
     if ($Name -eq $null) { throw "Name can't be empty" }
     if (Test-Path $Name) { throw "Package with that name already exists" }
     if (!(Test-Path _template)) { throw "Template for the packages not found" }
-    cp _template automatic\$Name -Recurse
+    Copy-Item _template automatic\$Name -Recurse
 
-    $nuspec = gc "automatic\$Name\template.nuspec"
-    rm "automatic\$Name\template.nuspec"
+    $nuspec = Get-Content "automatic\$Name\template.nuspec"
+    Remove-Item "automatic\$Name\template.nuspec"
 
     Write-Verbose 'Fixing nuspec'
     $nuspec = $nuspec -replace '<id>.+',               "<id>$Name</id>"
@@ -39,27 +39,27 @@ function New-Package{
     {
         'Installer' {
             Write-Verbose 'Using installer template'
-            mv "automatic\$Name\tools\chocolateyInstallExe.ps1" "automatic\$Name\tools\chocolateyInstall.ps1"
+            Move-Item "automatic\$Name\tools\chocolateyInstallExe.ps1" "automatic\$Name\tools\chocolateyInstall.ps1"
         }
         'Portable' {
             Write-Verbose 'Using portable template'
-            mv "automatic\$Name\tools\chocolateyInstallZip.ps1" "automatic\$Name\tools\chocolateyInstall.ps1"
+            Move-Item "automatic\$Name\tools\chocolateyInstallZip.ps1" "automatic\$Name\tools\chocolateyInstall.ps1"
         }
         'EInstaller' {
             Write-Verbose 'Using embedded installer template'
-            mv "automatic\$Name\tools\chocolateyInstallEmbeddedExe.ps1" "automatic\$Name\tools\chocolateyInstall.ps1"
+            Move-Item "automatic\$Name\tools\chocolateyInstallEmbeddedExe.ps1" "automatic\$Name\tools\chocolateyInstall.ps1"
         }
         'EPortable' {
             Write-Verbose 'Using embedded portable template'
-            mv "automatic\$Name\tools\chocolateyInstallEmbeddedZip.ps1" "automatic\$Name\tools\chocolateyInstall.ps1"
+            Move-Item "automatic\$Name\tools\chocolateyInstallEmbeddedZip.ps1" "automatic\$Name\tools\chocolateyInstall.ps1"
         }
 
         default { throw 'No template given' }
     }
-    rm "automatic\$Name\tools\*.ps1" -Exclude chocolateyInstall.ps1, chocolateyUninstall.ps1
+    Remove-Item "automatic\$Name\tools\*.ps1" -Exclude chocolateyInstall.ps1, chocolateyUninstall.ps1
 
     Write-Verbose 'Fixing chocolateyInstall.ps1'
-    $installer = gc "automatic\$Name\tools\chocolateyInstall.ps1"
+    $installer = Get-Content "automatic\$Name\tools\chocolateyInstall.ps1"
     $installer -replace "(^[$]packageName\s*=\s*)('.*')", "`$1'$($Name)'" | Set-Content "automatic\$Name\tools\chocolateyInstall.ps1"
 }
 

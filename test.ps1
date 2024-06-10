@@ -1,6 +1,5 @@
 param(
     [switch]$Chocolatey,
-
     [switch]$Pester,
     [string]$Tag,
     [switch]$CodeCoverage

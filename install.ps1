@@ -1,4 +1,4 @@
-#requires -version 2
+#Requires -Version 2
 
 <#
 .SYNOPSIS
@@ -19,7 +19,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$module_name = 'AU'
+$module_name = 'Chocolatey-AU'
 
 if ($PSVersionTable.PSEdition -ne "Core") {
     $module_dst  = "$Env:ProgramFiles\WindowsPowerShell\Modules"
@@ -68,6 +68,6 @@ $functions | ForEach-Object {
 }
 }
 
-remove-module $module_name
+Remove-Module $module_name
 Write-Host "`nTo learn more about ${module_name}:      man about_${module_name}"
 Write-Host "See help for any function:   man updateall`n"
