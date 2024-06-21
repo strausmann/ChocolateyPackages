@@ -6,8 +6,8 @@ $programs = "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\"
 $shortcutFilePath = Join-Path $programs $linkName
 $targetPath   = Join-Path $toolsDir $fileName
 
-$url                   = 'https://github.com/SoftFever/OrcaSlicer/releases/download/v2.0.0/OrcaSlicer_Windows_V2.0.0_portable.zip'
-$checksum              = '07302d6df926a7457f09c3be880a620af41d56cbb91550a8f16ec6208fdbd6ed'
+$url                   = 'https://github.com/SoftFever/OrcaSlicer/releases/download/v2.1.0/OrcaSlicer_Windows_V2.1.0_portable.zip'
+$checksum              = '227053bfd8cad22e9bf5dce2f8182906f567263a18820c3dc4e76e38823061bb'
 $ChecksumType          = 'sha256'
 
 #Based on Custom
