@@ -23,7 +23,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: strausmann/ChocolateyPackages
   github_api_key:
-    secure: C6b+CGtcbOyNJPZE691oORZcFQdWxApNwXm9k5WW8xXBFc0nHQPu6q1jcS9ZQpmJ # https://ci.appveyor.com/tools/encrypt
+    secure: NdG8z1aJ0RM0deOzU7QaL8umwA9qWe05f6Z8pxTsPGl5xNbvKAzHQSKLRvj9VoeR # https://ci.appveyor.com/tools/encrypt
 
   # VT API Key
   #VT_APIKEY:
