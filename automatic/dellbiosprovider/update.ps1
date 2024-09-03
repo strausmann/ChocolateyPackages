@@ -1,5 +1,7 @@
-import-module Chocolatey-AU
-. $PSScriptRoot\..\_scripts\all.ps1
+Import-Module Chocolatey-AU
+Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
+Import-Module "../../scripts/au_extensions.psm1"
 
 $releases = 'https://www.powershellgallery.com/packages/DellBIOSProvider'
 

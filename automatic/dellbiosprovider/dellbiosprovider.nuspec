@@ -41,8 +41,6 @@ The 'Dell Command | PowerShell Provider' provides native configuration capabilit
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@master/icons/powershell.png</iconUrl>
     <releaseNotes>http://en.community.dell.com/techcenter/enterprise-client/w/wiki/6901.dell-command-powershell-provider</releaseNotes>
-    <docsUrl></docsUrl>
-    <mailingListUrl></mailingListUrl>
     <bugTrackerUrl>https://www.powershellgallery.com/packages/DellBIOSProvider/2.8.0/ReportAbuse</bugTrackerUrl>
     <projectSourceUrl>https://www.powershellgallery.com/packages/DellBIOSProvider</projectSourceUrl>
     <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/dellbiosprovider</packageSourceUrl>
