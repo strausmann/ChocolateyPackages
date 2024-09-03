@@ -20,13 +20,13 @@ function GetResultInformation([string]$Url32) {
   @{
     Url32             = $Url32
     Version           = $version
-	  Checksum32        = $checksum32
+	Checksum32        = $checksum32
     ChecksumType32    = $ChecksumType
   }
 }
 
 function global:au_GetLatest {
-  $Url32 = $release.assets | Where-Object {$_.name -match 'Bambu_Studio_win_public' } | Where-Object { $_.name.endswith('.exe') } | Select-Object -First 1 -ExpandProperty browser_download_url
+  $Url32 = $release.assets | ? {$_.name -match 'Bambu_Studio_win_public' } | ? { $_.name.endswith('.exe') } | select -First 1 -ExpandProperty browser_download_url
 
   $version = $release.tag_name.Trim('v')
   $ChecksumType = 'sha256'
