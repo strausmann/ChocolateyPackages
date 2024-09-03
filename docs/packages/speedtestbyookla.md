@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/ookla.png" width="32" height="32"/> [![Speedtest by Ookla WinGUI](https://img.shields.io/chocolatey/v/speedtest-by-ookla.svg?label=Speedtest+by+Ookla+WinGUI)](https://community.chocolatey.org/packages/speedtest-by-ookla) [![Speedtest by Ookla WinGUI](https://img.shields.io/chocolatey/dt/speedtest-by-ookla.svg)](https://community.chocolatey.org/packages/speedtest-by-ookla)
+﻿# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/17b3b7d6f418140a3828f9bedf56379cbe689827/icons/ookla.png" width="32" height="32"/> [![Speedtest by Ookla WinGUI](https://img.shields.io/chocolatey/v/speedtest-by-ookla.svg?label=Speedtest+by+Ookla+WinGUI)](https://community.chocolatey.org/packages/speedtest-by-ookla) [![Speedtest by Ookla WinGUI](https://img.shields.io/chocolatey/dt/speedtest-by-ookla.svg)](https://community.chocolatey.org/packages/speedtest-by-ookla)
 
 ## Usage
 
@@ -28,7 +28,17 @@ Running a speed test has never been so fast or easy. Download the free Speedtest
 * Upload speed
 * Ping rate
 * Available in 17 languages.
-	
+
+---
+
+## [choco://speedtest-by-ookla](choco://speedtest-by-ookla)
+
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
 
 ## Links
 

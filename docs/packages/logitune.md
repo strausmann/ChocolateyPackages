@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/ab54d278870d964cb06908e77a67b3f4515ba02e/icons/logi-tune.png" width="32" height="32"/> [![Logi Tune (Install)](https://img.shields.io/chocolatey/v/logi-tune.svg?label=Logi+Tune+(Install))](https://community.chocolatey.org/packages/logi-tune) [![Logi Tune (Install)](https://img.shields.io/chocolatey/dt/logi-tune.svg)](https://community.chocolatey.org/packages/logi-tune)
+﻿# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/ab54d278870d964cb06908e77a67b3f4515ba02e/icons/logi-tune.png" width="32" height="32"/> [![Logi Tune (Install)](https://img.shields.io/chocolatey/v/logi-tune.svg?label=Logi+Tune+(Install))](https://community.chocolatey.org/packages/logi-tune) [![Logi Tune (Install)](https://img.shields.io/chocolatey/dt/logi-tune.svg)](https://community.chocolatey.org/packages/logi-tune)
 
 ## Usage
 

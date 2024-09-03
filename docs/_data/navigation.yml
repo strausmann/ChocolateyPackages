@@ -1,4 +1,4 @@
-toc:
+﻿toc:
   - title: Packages
     subfolderitems:
       - page: "Bambu Studio (Install)"
@@ -9,6 +9,8 @@ toc:
         url: /packages/bitwardenedge.html
       - page: "Bitwarden for Firefox"
         url: /packages/bitwardenfirefox.html
+      - page: "DellBIOSProvider (PowerShell Module)"
+        url: /packages/dellbiosprovider.html
       - page: "Disable Fast Startup - hiberboot (Windows Registry)"
         url: /packages/disablehiberboot.html
       - page: "Grammarly for Edge Chromium"

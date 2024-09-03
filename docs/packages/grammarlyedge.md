@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/grammarly-edge.png" width="32" height="32"/> [![Grammarly for Edge Chromium](https://img.shields.io/chocolatey/v/grammarly-edge.svg?label=Grammarly+for+Edge+Chromium)](https://community.chocolatey.org/packages/grammarly-edge) [![Grammarly for Edge Chromium](https://img.shields.io/chocolatey/dt/grammarly-edge.svg)](https://community.chocolatey.org/packages/grammarly-edge)
+﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/grammarly-edge.png" width="32" height="32"/> [![Grammarly for Edge Chromium](https://img.shields.io/chocolatey/v/grammarly-edge.svg?label=Grammarly+for+Edge+Chromium)](https://community.chocolatey.org/packages/grammarly-edge) [![Grammarly for Edge Chromium](https://img.shields.io/chocolatey/dt/grammarly-edge.svg)](https://community.chocolatey.org/packages/grammarly-edge)
 
 ## Usage
 

@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/ms-registry.png" width="32" height="32"/> [![Disable Fast Startup - hiberboot (Windows Registry)](https://img.shields.io/chocolatey/v/disable-hiberboot.svg?label=Disable+Fast+Startup+-+hiberboot+(Windows+Registry))](https://community.chocolatey.org/packages/disable-hiberboot) [![Disable Fast Startup - hiberboot (Windows Registry)](https://img.shields.io/chocolatey/dt/disable-hiberboot.svg)](https://community.chocolatey.org/packages/disable-hiberboot)
+﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/ms-registry.png" width="32" height="32"/> [![Disable Fast Startup - hiberboot (Windows Registry)](https://img.shields.io/chocolatey/v/disable-hiberboot.svg?label=Disable+Fast+Startup+-+hiberboot+(Windows+Registry))](https://community.chocolatey.org/packages/disable-hiberboot) [![Disable Fast Startup - hiberboot (Windows Registry)](https://img.shields.io/chocolatey/dt/disable-hiberboot.svg)](https://community.chocolatey.org/packages/disable-hiberboot)
 
 ## Usage
 
