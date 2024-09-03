@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>microsoft-sql-server-migration-assistant-for-access</id>
-    <version>9.0.0</version>
+    <version>9.5.0</version>
 	  <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/microsoft-sql-server-migration-assistant-for-access</packageSourceUrl>
 	  <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54255</projectUrl>
     <owners>Bjoern Strausmann</owners>
@@ -15,14 +15,7 @@
     <tags>microsoft sql server migration assistant access</tags>
     <summary>Automate the migration from Access DB to SQL Server or Azure Bases Databases</summary>
 	  <description>Microsoft SQL Server Migration Assistant (SSMA) for Access is a tool to automate migration from Microsoft Access database(s) to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance.</description>
-	  <releaseNotes>
-8.17.0.0: initial update
-8.20.0.0: maintenance update
-8.21.0.0: maintenance update
-8.22.0.0: maintenance update
-8.23.0.0: maintenance update
-9.0.0.0: maintenance update
-	  </releaseNotes>
+	  <releaseNotes>https://www.microsoft.com/en-us/download/details.aspx?id=54255</releaseNotes>
 	  <dependencies>
       <dependency id="dotnet4.7.2" version="4.7.2.20180712"/>
     </dependencies>
