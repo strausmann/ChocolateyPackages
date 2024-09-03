@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>dellbiosprovider</id>
+    <title>DellBIOSProvider (PowerShell Module)</title>
+    <version>2.8.0</version>
+    <authors>DELL Inc.</authors>
+    <owners>strausmann</owners>
+    <summary>The 'Dell Command | PowerShell Provider' provides native configuration capability of Dell Optiplex, Latitude, Precision, XPS Notebook and Venue 11 systems within PowerShell.</summary>
+    <description><![CDATA[---
+
+## Package Parameters
+
+This package is designed to install the `DellBiosProvider` PowerShell module for the `-Scope AllUsers` by default.
+
+The following parameter is available to install the module for `-Scope CurrentUser`.
+
+* `/CURRENTUSER`
+Example:
+
+```shell
+choco install dellbiosprovider --params='"/CURRENTUSER"'
+```
+
+---
+
+## [choco://dellbiosprovider](choco://dellbiosprovider)
+
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+The 'Dell Command | PowerShell Provider' provides native configuration capability of Dell Optiplex, Latitude, Precision, XPS Notebook and Venue 11 systems within PowerShell.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
+    <projectUrl>https://en.community.dell.com/techcenter/enterprise-client/w/wiki/6901.dell-command-powershell-provider</projectUrl>
+    <tags>dell powershell bios provider</tags>
+    <copyright>Copyright 2015 - 2024 Dell Inc. All rights reserved.</copyright>
+    <licenseUrl>https://en.community.dell.com/techcenter/enterprise-client/w/wiki/6901.dell-command-powershell-provider</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@master/icons/powershell.png</iconUrl>
+    <releaseNotes>http://en.community.dell.com/techcenter/enterprise-client/w/wiki/6901.dell-command-powershell-provider</releaseNotes>
+    <docsUrl></docsUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl>https://www.powershellgallery.com/packages/DellBIOSProvider/2.8.0/ReportAbuse</bugTrackerUrl>
+    <projectSourceUrl>https://www.powershellgallery.com/packages/DellBIOSProvider</projectSourceUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/dellbiosprovider</packageSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.4.0" />
+      <dependency id="chocolatey" version="2.0.0" />
+	  <dependency id="powershell" version="5.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
+    <file src="tools\ChocolateyUninstall.ps1" target="tools\ChocolateyUninstall.ps1" />
+  </files>
+</package>
