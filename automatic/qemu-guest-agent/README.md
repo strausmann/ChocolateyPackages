@@ -1,13 +1,9 @@
-# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/327464104957ec03a1c55ab68e1a72281b04e7b0/icons/qemu.png" width="48" height="48"/> [qemu-guest-agent](https://community.chocolatey.org/packages/qemu-guest-agent)
+﻿# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/327464104957ec03a1c55ab68e1a72281b04e7b0/icons/qemu.png" width="48" height="48"/> [qemu-guest-agent](https://community.chocolatey.org/packages/qemu-guest-agent)
 
 Virtio-win-guest-tools
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+## Package Parameters
 
-### Package Specific
-#### Installer Properties
 The following install arguments can be passed:
 * `ALLUSERS`
 * `1`
@@ -19,4 +15,14 @@ The following install arguments can be passed:
 To append install arguments to the current silent arguments passed to the installer, use `--install-arguments="''"` or `--install-arguments-sensitive="''"`. To completely override the silent arguments with your own, also pass `--override-arguments`.
 Example: `choco install packageId [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+---
+
+## [choco://qemu-guest-agent](choco://qemu-guest-agent)
+
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 

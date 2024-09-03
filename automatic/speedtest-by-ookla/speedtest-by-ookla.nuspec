@@ -22,6 +22,14 @@
 * Ping rate
 * Available in 17 languages.
 
+---
+
+## [choco://speedtest-by-ookla](choco://speedtest-by-ookla)
+
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
 	<releaseNotes>
