@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>microsoft-sql-server-migration-assistant-for-access</id>
-    <version>9.5.0</version>
+    <version>9.0.0</version>
 	  <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/microsoft-sql-server-migration-assistant-for-access</packageSourceUrl>
 	  <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54255</projectUrl>
     <owners>Bjoern Strausmann</owners>
