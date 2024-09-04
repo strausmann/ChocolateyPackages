@@ -27,6 +27,8 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 	</description>
 	<releaseNotes>https://www.microsoft.com/en-us/download/details.aspx?id=54255</releaseNotes>
+	<docsUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54255</docsUrl>
+	<projectSourceUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54255</projectSourceUrl>
 	<dependencies>
       <dependency id="dotnet4.7.2" version="4.7.2.20180712" />
     </dependencies>
