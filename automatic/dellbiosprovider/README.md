@@ -1,5 +1,8 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@master/icons/powershell.png" width="48" height="48"/> [dellbiosprovider](https://community.chocolatey.org/packages/dellbiosprovider)
 
+[![Chocolatey Version](https://img.shields.io/chocolatey/v/dellbiosprovider)](https://community.chocolatey.org/packages/dellbiosprovider)
+[![Chocolatey Downloads](https://img.shields.io/chocolatey/dt/dellbiosprovider)](https://community.chocolatey.org/packages/dellbiosprovider)
+
 DellBIOSProvider (PowerShell Module)
 
 ## Package Parameters
