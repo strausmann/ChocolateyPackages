@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bambustudio</id>
-    <version>01.09.07.50</version>
+    <version>01.09.07.52</version>
     <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/bambustudio</packageSourceUrl>
     <owners>strausmann</owners>
     <title>Bambu Studio (Install)</title>
@@ -17,7 +17,10 @@
     <tags>bambu lab slicer studio 3d print foss</tags>
     <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/2c34b56b9ed7520943c70939f8c4e33ec8196bc6/icons/bambulab.png</iconUrl>
     <summary>Bambu Studio is an open-source, cutting-edge, feature-rich slicing software. It contains project-based workflows, systematically optimized slicing algorithms, and an easy-to-use graphical interface, bringing users an incredibly smooth printing experience.</summary>
-    <description><![CDATA[Bambu Studio 3D Printer Slicer
+    <description><![CDATA[[![Chocolatey Version](https://img.shields.io/chocolatey/v/BambuStudio)](https://community.chocolatey.org/packages/bambustudio)
+[![Chocolatey Downloads](https://img.shields.io/chocolatey/dt/BambuStudio)](https://community.chocolatey.org/packages/bambustudio)
+
+Bambu Studio 3D Printer Slicer
 
 Bambu Studio is a cutting-edge, feature-rich slicing software.
 It contains project-based workflows, systematically optimized slicing algorithms, and an easy-to-use graphic interface, bringing users an incredibly smooth printing experience.
@@ -33,7 +36,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
 ]]></description>
-    <releaseNotes>https://github.com/bambulab/BambuStudio/releases/tag/v01.09.07.50</releaseNotes>
+    <releaseNotes>https://github.com/bambulab/BambuStudio/releases/tag/v01.09.07.52</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" />
       <dependency id="webview2-runtime" />
