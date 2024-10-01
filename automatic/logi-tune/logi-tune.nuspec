@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>logi-tune</id>
-    <version>3.6.373.0</version>
+    <version>3.7.187.0</version>
     <owners>strausmann</owners>
     <title>Logi Tune (Install)</title>
     <authors>Logitech</authors>
@@ -17,7 +17,10 @@
 	  <licenseUrl>https://www.logitech.com/footer/terms-of-use</licenseUrl>
 	  <releaseNotes>https://prosupport.logi.com/hc/en-us/articles/1500002852741</releaseNotes>
     <summary>Simplifies headset and webcam control for some Logitech Products</summary>
-	  <description><![CDATA[SUPPORTED DEVICES
+	  <description><![CDATA[[![Chocolatey Version](https://img.shields.io/chocolatey/v/logi-tune)](https://community.chocolatey.org/packages/logi-tune)
+[![Chocolatey Downloads](https://img.shields.io/chocolatey/dt/logi-tune)](https://community.chocolatey.org/packages/logi-tune)
+
+SUPPORTED DEVICES
 Webcams:
 
 * 4K Pro Magnetic Webcam
