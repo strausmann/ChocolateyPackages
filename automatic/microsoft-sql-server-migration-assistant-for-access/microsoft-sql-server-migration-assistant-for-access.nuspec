@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>microsoft-sql-server-migration-assistant-for-access</id>
-    <version>9.5</version>
+    <version>10.0</version>
 	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/microsoft-sql-server-migration-assistant-for-access</packageSourceUrl>
 	<projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54255</projectUrl>
     <owners>Bjoern Strausmann</owners>
@@ -14,7 +14,7 @@
 	<requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>microsoft sql server migration assistant access</tags>
     <summary>Automate the migration from Access DB to SQL Server or Azure Bases Databases</summary>
-	<description>Microsoft SQL Server Migration Assistant (SSMA) for Access is a tool to automate migration from Microsoft Access database(s) to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance.	
+	<description><![CDATA[Microsoft SQL Server Migration Assistant (SSMA) for Access is a tool to automate migration from Microsoft Access database(s) to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance.
 
 ---
 
@@ -25,7 +25,8 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 ---
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-	</description>
+
+]]></description>
 	<releaseNotes>https://www.microsoft.com/en-us/download/details.aspx?id=54255</releaseNotes>
 	<docsUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54255</docsUrl>
 	<projectSourceUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54255</projectSourceUrl>
