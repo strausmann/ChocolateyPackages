@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@master/icons/powershell.png" width="48" height="48"/> [dellbiosprovider](https://community.chocolatey.org/packages/dellbiosprovider)
+# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/47742fe1a3d9fdaf2f275d48cf6d6a024d4140fb/icons/powershell.png" width="48" height="48"/> [dellbiosprovider](https://community.chocolatey.org/packages/dellbiosprovider)
 
 [![Chocolatey Version](https://img.shields.io/chocolatey/v/dellbiosprovider)](https://community.chocolatey.org/packages/dellbiosprovider)
 [![Chocolatey Downloads](https://img.shields.io/chocolatey/dt/dellbiosprovider)](https://community.chocolatey.org/packages/dellbiosprovider)

@@ -1,13 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>dellbiosprovider</id>
     <title>DellBIOSProvider (PowerShell Module)</title>
-    <version>2.8.0</version>
+    <version>2.9.0</version>
     <authors>DELL Inc.</authors>
     <owners>strausmann</owners>
     <summary>The **Dell Command PowerShell Provider** provides native configuration capability of Dell Optiplex, Latitude, Precision, XPS Notebook and Venue 11 systems within PowerShell.</summary>
-    <description>DellBIOSProvider (PowerShell Module)
+    <description><![CDATA[[![Chocolatey Version](https://img.shields.io/chocolatey/v/dellbiosprovider)](https://community.chocolatey.org/packages/dellbiosprovider)
+[![Chocolatey Downloads](https://img.shields.io/chocolatey/dt/dellbiosprovider)](https://community.chocolatey.org/packages/dellbiosprovider)
+
+DellBIOSProvider (PowerShell Module)
 
 ## Package Parameters
 
@@ -33,13 +36,14 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 The **Dell PowerShell Provider** provides native configuration capability of Dell Optiplex, Latitude, Precision, XPS Notebook and Venue 11 systems within PowerShell.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-    </description>
+
+]]></description>
     <projectUrl>https://en.community.dell.com/techcenter/enterprise-client/w/wiki/6901.dell-command-powershell-provider</projectUrl>
     <tags>dell powershell bios provider</tags>
     <copyright>Copyright 2015 - 2024 Dell Inc. All rights reserved.</copyright>
     <licenseUrl>https://en.community.dell.com/techcenter/enterprise-client/w/wiki/6901.dell-command-powershell-provider</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@master/icons/powershell.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/47742fe1a3d9fdaf2f275d48cf6d6a024d4140fb/icons/powershell.png</iconUrl>
     <releaseNotes>http://en.community.dell.com/techcenter/enterprise-client/w/wiki/6901.dell-command-powershell-provider</releaseNotes>
     <bugTrackerUrl>https://www.powershellgallery.com/packages/DellBIOSProvider/2.8.0/ReportAbuse</bugTrackerUrl>
     <projectSourceUrl>https://www.powershellgallery.com/packages/DellBIOSProvider</projectSourceUrl>
