@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>qemu-guest-agent</id>
-    <version>0.1.262</version>
+    <version>0.1.266</version>
     <owners>Bjoern Strausmann</owners>
     <title>Virtio Win Guest Tools (Install)</title>
     <authors>Red Hat Inc.</authors>
@@ -40,7 +40,8 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 ---
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-	</description>
+
+</description>
     <releaseNotes>https://fedorapeople.org/groups/virt/virtio-win/CHANGELOG</releaseNotes>
   </metadata>
   <files>
