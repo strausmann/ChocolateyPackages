@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference	= 'Stop';
 $toolsDir				= '$(Split-Path -parent $MyInvocation.MyCommand.Definition)'
 
-$url					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.266-1/virtio-win-gt-x86.msi'
-$checksum				= 'c40043157c1b403721554e1d9841215438404a6580d360a7b080b209e9f30cf0'
+$url					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.271-1/virtio-win-gt-x86.msi'
+$checksum				= 'ec293eec55c177d2f6959cd07860ae1b45f7dbd31fe1c5933f9c3ef816cc2cba'
 $checksumType           = 'sha256'
-$url64					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.266-1/virtio-win-gt-x64.msi'
-$checksum64				= '37b9ee622cff30ad6e58dea42fd15b3acfc05fbb4158cf58d3c792b98dd61272'
+$url64					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.271-1/virtio-win-gt-x64.msi'
+$checksum64				= '20a15bc93da585f90b4ca3b315652a9478e4c4a76f444d379b357167d727fee4'
 $checksumType64         = 'sha256'
 
 $packageArgs = @{
