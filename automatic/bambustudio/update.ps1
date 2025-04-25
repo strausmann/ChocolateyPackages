@@ -28,7 +28,7 @@ function GetResultInformation([string]$Url32) {
 function global:au_GetLatest {
   $Url32 = $release.assets | ? {$_.name -match 'Bambu_Studio_win_public' } | ? { $_.name.endswith('.exe') } | select -First 1 -ExpandProperty browser_download_url
 
-  $version = $release.tag_name.Trim('v')
+  $version = $release.tag_name -replace '^[vV]', ''
   $ChecksumType = 'sha256'
 
   $tag = $release.tag_name
