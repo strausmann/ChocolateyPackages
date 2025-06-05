@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileName     = "OrcaSlicer\orca-slicer.exe"
+$fileName     = "orca-slicer.exe"
 $linkName     = "Orca Slicer.lnk"
 $programs = "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\"
 $shortcutFilePath = Join-Path $programs $linkName
