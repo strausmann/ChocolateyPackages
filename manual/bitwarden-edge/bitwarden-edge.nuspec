@@ -2,12 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>bitwarden-edge</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>Bitwarden for Edge Chromium</title>
     <authors>Bitwarden Inc.</authors>
     <owners>strausmann</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>https://bitwarden.com/terms/</licenseUrl>
     <projectUrl>https://microsoftedge.microsoft.com/addons/detail/jbkfoedolllekgbhcbcoahefnbanhhlh</projectUrl>
     <projectSourceUrl>https://github.com/bitwarden/browser/</projectSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages/icons/bitwarden.png</iconUrl>
@@ -24,14 +23,11 @@ Bitwarden is 100% open source software. The source code for Bitwarden is hosted 
     </description>
     <summary>A secure and free password manager for all of your devices.</summary>
     <tags>bitwarden password vault warden edge extension chromium</tags>
-	  <docsUrl>https://bitwarden.com/help/article/getting-started-browserext/</docsUrl>
-	  <releaseNotes>https://github.com/bitwarden/browser/releases</releaseNotes>
- 	  <bugTrackerUrl>https://github.com/bitwarden/browser/issues</bugTrackerUrl>
-	  <licenseUrl>https://github.com/bitwarden/browser/blob/master/LICENSE.txt</licenseUrl>
-    <copyright>Copyright © 2015-2023 Bitwarden Inc.</copyright>
-    <dependencies>
-      <dependency id="microsoft-edge" version="87.0.664.75" />
-    </dependencies>
+	<docsUrl>https://bitwarden.com/help/article/getting-started-browserext/</docsUrl>
+	<releaseNotes>https://github.com/bitwarden/browser/releases</releaseNotes>
+ 	<bugTrackerUrl>https://github.com/bitwarden/browser/issues</bugTrackerUrl>
+	<licenseUrl>https://github.com/bitwarden/browser/blob/master/LICENSE.txt</licenseUrl>
+    <copyright>Copyright © 2015-2025 Bitwarden Inc.</copyright>
   </metadata>
   <files>
     <file src="tools\ChocolateyInstall.ps1" target="tools\ChocolateyInstall.ps1" />
