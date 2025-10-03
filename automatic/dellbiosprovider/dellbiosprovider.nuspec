@@ -3,7 +3,7 @@
   <metadata>
     <id>dellbiosprovider</id>
     <title>DellBIOSProvider (PowerShell Module)</title>
-    <version>2.9.0</version>
+    <version>2.9.1</version>
     <authors>DELL Inc.</authors>
     <owners>strausmann</owners>
     <summary>The **Dell Command PowerShell Provider** provides native configuration capability of Dell Optiplex, Latitude, Precision, XPS Notebook and Venue 11 systems within PowerShell.</summary>
