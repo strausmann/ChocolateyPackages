@@ -28,7 +28,6 @@ Bambu Studio is based on PrusaSlicer by Prusa Research, which is from Slic3r by 
     <releaseNotes>https://github.com/SoftFever/OrcaSlicer/releases/tag/v2.3.1</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" />
-      <dependency id="webview2-runtime" />
     </dependencies>
   </metadata>
   <files>
