@@ -22,6 +22,9 @@ choco uninstall logi-tune
 
 ## Description
 
+[![Chocolatey Version](https://img.shields.io/chocolatey/v/logi-tune)](https://community.chocolatey.org/packages/logi-tune)
+[![Chocolatey Downloads](https://img.shields.io/chocolatey/dt/logi-tune)](https://community.chocolatey.org/packages/logi-tune)
+
 SUPPORTED DEVICES
 Webcams:
 

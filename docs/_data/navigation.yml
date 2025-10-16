@@ -1,6 +1,8 @@
 ﻿toc:
   - title: Packages
     subfolderitems:
+      - page: "Bambu Connect (Install)"
+        url: /packages/bambuconnect.html
       - page: "Bambu Studio (Install)"
         url: /packages/bambustudio.html
       - page: "Bitwarden for Google Chrome"
@@ -9,6 +11,8 @@
         url: /packages/bitwardenedge.html
       - page: "Bitwarden for Firefox"
         url: /packages/bitwardenfirefox.html
+      - page: "Orca Slicer (Portable)"
+        url: /packages/cmtrace.html
       - page: "DellBIOSProvider (PowerShell Module)"
         url: /packages/dellbiosprovider.html
       - page: "Disable Fast Startup - hiberboot (Windows Registry)"
@@ -25,8 +29,10 @@
         url: /packages/myjdownloaderchrome.html
       - page: "Orca Slicer (Portable)"
         url: /packages/orcaslicer.html
-      - page: "Virtio Win Guest Tools (Install)"
+      - page: "QEMU Guest Agent (Install)"
         url: /packages/qemuguestagent.html
+      - page: "Virtio Win Driver (Install)"
+        url: /packages/qemuvirtiodriver.html
       - page: "ShareGate Desktop (Install)"
         url: /packages/sharegatedesktop.html
       - page: "Snagit 2020 (Install)"

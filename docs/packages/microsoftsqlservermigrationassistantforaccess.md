@@ -22,7 +22,7 @@ choco uninstall microsoft-sql-server-migration-assistant-for-access
 
 ## Description
 
-Microsoft SQL Server Migration Assistant (SSMA) for Access is a tool to automate migration from Microsoft Access database(s) to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance.	
+Microsoft SQL Server Migration Assistant (SSMA) for Access is a tool to automate migration from Microsoft Access database(s) to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance.
 
 ---
 
@@ -33,7 +33,8 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 ---
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-	
+
+
 
 ## Links
 

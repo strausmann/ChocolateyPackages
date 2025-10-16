@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@master/icons/powershell.png" width="32" height="32"/> [![DellBIOSProvider (PowerShell Module)](https://img.shields.io/chocolatey/v/dellbiosprovider.svg?label=DellBIOSProvider+(PowerShell+Module))](https://community.chocolatey.org/packages/dellbiosprovider) [![DellBIOSProvider (PowerShell Module)](https://img.shields.io/chocolatey/dt/dellbiosprovider.svg)](https://community.chocolatey.org/packages/dellbiosprovider)
+﻿# <img src="https://rawcdn.githack.com/strausmann/ChocolateyPackages/47742fe1a3d9fdaf2f275d48cf6d6a024d4140fb/icons/powershell.png" width="32" height="32"/> [![DellBIOSProvider (PowerShell Module)](https://img.shields.io/chocolatey/v/dellbiosprovider.svg?label=DellBIOSProvider+(PowerShell+Module))](https://community.chocolatey.org/packages/dellbiosprovider) [![DellBIOSProvider (PowerShell Module)](https://img.shields.io/chocolatey/dt/dellbiosprovider.svg)](https://community.chocolatey.org/packages/dellbiosprovider)
 
 ## Usage
 
@@ -21,6 +21,9 @@ choco uninstall dellbiosprovider
 ```
 
 ## Description
+
+[![Chocolatey Version](https://img.shields.io/chocolatey/v/dellbiosprovider)](https://community.chocolatey.org/packages/dellbiosprovider)
+[![Chocolatey Downloads](https://img.shields.io/chocolatey/dt/dellbiosprovider)](https://community.chocolatey.org/packages/dellbiosprovider)
 
 DellBIOSProvider (PowerShell Module)
 
@@ -48,7 +51,8 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 The **Dell PowerShell Provider** provides native configuration capability of Dell Optiplex, Latitude, Precision, XPS Notebook and Venue 11 systems within PowerShell.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-    
+
+
 
 ## Links
 
