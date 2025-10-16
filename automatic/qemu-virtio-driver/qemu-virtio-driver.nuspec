@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>qemu-virtio-driver</id>
+    <version>0.1.285</version>
+    <owners>Bjoern Strausmann</owners>
+    <title>Virtio Win Driver (Install)</title>
+    <authors>Red Hat Inc.</authors>
+    <copyright>Red Hat, Inc.</copyright>
+    <projectUrl>https://github.com/virtio-win/kvm-guest-drivers-windows</projectUrl>
+    <bugTrackerUrl>https://github.com/virtio-win/kvm-guest-drivers-windows/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>virtio win qemu guest driver admin</tags>
+    <licenseUrl>https://github.com/virtio-win/kvm-guest-drivers-windows/blob/master/LICENSE</licenseUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/qemu-virtio-driver</packageSourceUrl>
+    <summary>KVM Qemu Guest Driver - Binary drivers are provided by some Linux distributions including WHQL Certified drivers.</summary>
+    <description>Virtio-win-guest-drivers
+
+## [choco://qemu-virtio-driver](choco://qemu-virtio-driver)
+
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+</description>
+    <releaseNotes>https://fedorapeople.org/groups/virt/virtio-win/CHANGELOG</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
