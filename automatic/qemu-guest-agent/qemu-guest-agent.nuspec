@@ -2,47 +2,52 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>qemu-guest-agent</id>
-    <version>0.1.285</version>
+    <version>110.0.2</version>
     <owners>Bjoern Strausmann</owners>
-    <title>Virtio Win Guest Tools (Install)</title>
+    <title>QEMU Guest Agent (Install)</title>
     <authors>Red Hat Inc.</authors>
-    <copyright>Red Hat, Inc.</copyright>
-    <projectUrl>https://github.com/virtio-win/kvm-guest-drivers-windows</projectUrl>
-    <bugTrackerUrl>https://github.com/virtio-win/kvm-guest-drivers-windows</bugTrackerUrl>
+    <copyright>© Red Hat, Inc.</copyright>
+    <projectUrl>https://gitlab.com/qemu-project/qemu</projectUrl>
+	<projectSourceUrl>https://gitlab.com/qemu-project/qemu/-/tree/master/qga</projectSourceUrl>
+    <bugTrackerUrl>https://gitlab.com/qemu-project/qemu/-/issues</bugTrackerUrl>
+	<docsUrl>https://www.qemu.org/docs/master/interop/qemu-ga.html</docsUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>virtio win qemu guest tools admin</tags>
-    <licenseUrl>https://github.com/virtio-win/kvm-guest-drivers-windows/blob/master/LICENSE</licenseUrl>
+    <tags>qemu kvm guest-agent virtio proxmox libvirt virtualization admin</tags>
+    <licenseUrl>https://www.qemu.org/docs/master/about/license.html</licenseUrl>
     <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/qemu-guest-agent</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/327464104957ec03a1c55ab68e1a72281b04e7b0/icons/qemu.png</iconUrl>
-    <summary>KVM Qemu Guest Agent / Driver - Binary drivers are provided by some Linux distributions including WHQL Certified drivers.</summary>
-    <description>Virtio-win-guest-tools
+    <summary>Windows service for tighter integration of QEMU/KVM guests (e.g., Proxmox VE). Enables guest shutdown, consistent snapshots, and guest information queries.</summary>
+    <description>
+The QEMU Guest Agent (QGA) is a Windows service that integrates virtual machines with QEMU/KVM-based hypervisors such as Proxmox VE, libvirt, oVirt/RHV, and OpenStack. It exposes an agent channel that allows the host to query information from the guest and perform certain coordinated actions inside the guest.
 
-## Package Parameters
+Features
+- Graceful guest shutdown/reboot initiated by the hypervisor
+- Consistent snapshots via file system freeze/thaw
+- Query of guest information (e.g., IP addresses, status) and execution of defined agent commands
 
-The following install arguments can be passed:
-* `ALLUSERS`
-* `1`
-* `REGISTRY_PRODUCT_NAME`
-* `REGISTRYSEARCH_IS_TERMSERVICE_EXIST`
-* `REGISTRYSEARCH_IS_SPICEUSBREDIRECTOR_EXIST`
-* `REGISTRYSEARCH_OLD_WGT_UNINSTALL_PATH`
+What this package does
+- Installs the official QEMU Guest Agent for Windows (x86/x64) via MSI
+- Creates and starts the "QEMU Guest Agent" Windows service (service name: qemu-ga)
+- Suitable for unattended deployments with Chocolatey
 
-To append install arguments to the current silent arguments passed to the installer, use `--install-arguments="''"` or `--install-arguments-sensitive="''"`. To completely override the silent arguments with your own, also pass `--override-arguments`.
-Example: `choco install packageId [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+Separation from VirtIO drivers
+This package contains only the QEMU Guest Agent. VirtIO drivers (e.g., network/block) are provided separately:
+- Chocolatey package "qemu-virtio-driver": https://community.chocolatey.org/packages/qemu-virtio-driver
 
----
+Verification after installation
+- Services console: "QEMU Guest Agent" should be set to Automatic and Running
+- Command line: sc query "QEMU Guest Agent"
+- In your hypervisor (e.g., Proxmox VE), enable the VM option for the QEMU guest agent
 
-## [choco://qemu-guest-agent](choco://qemu-guest-agent)
+Notes
+- Project: https://gitlab.com/qemu-project/qemu
+- Documentation (QGA): https://www.qemu.org/docs/master/interop/qemu-ga.html
+- License: https://www.qemu.org/docs/master/about/license.html
 
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-</description>
-    <releaseNotes>https://fedorapeople.org/groups/virt/virtio-win/CHANGELOG</releaseNotes>
+Disclaimer
+This Chocolatey package is community-maintained and is not created, endorsed, or supported by the QEMU project.
+    </description>
+    <releaseNotes>https://wiki.qemu.org/ChangeLog/</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
