@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bambuconnect</id>
-    <version>1.0.0.0</version>
+    <version>2.0.0</version>
     <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/bambuconnect</packageSourceUrl>
     <owners>strausmann</owners>
     <title>Bambu Connect (Install)</title>
@@ -32,7 +32,7 @@ This Beta version is being actively refined, with additional features and improv
 
 ---
 
-## [choco://bambuconnect](choco://bambuconnect)
+## [choco://bambustudio](choco://bambustudio)
 
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
 
