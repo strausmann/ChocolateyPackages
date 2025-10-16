@@ -6,7 +6,7 @@
 
 I am Björn Strausmann, hailing from the vicinity of Hamburg in Germany. 
 
-My journey with Chocolatey spans over 4 years, during which I've encountered situations where the extensive array of packages within the Chocolatey community did not cover my specific software needs. As time went on, this aspect grew increasingly apparent.
+My journey with Chocolatey spans over 6 years, during which I've encountered situations where the extensive array of packages within the Chocolatey community did not cover my specific software needs. As time went on, this aspect grew increasingly apparent.
 
 Over time, I created my own Chocolatey Packages and made them available to the community.
 I think it is an important part of the community not only to take, but also to give something back.
