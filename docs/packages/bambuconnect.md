@@ -37,7 +37,7 @@ This Beta version is being actively refined, with additional features and improv
 
 ---
 
-## [choco://bambuconnect](choco://bambuconnect)
+## [choco://bambustudio](choco://bambustudio)
 
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
 
