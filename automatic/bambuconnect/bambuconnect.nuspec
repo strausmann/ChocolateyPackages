@@ -3,51 +3,54 @@
   <metadata>
     <id>bambuconnect</id>
     <version>2.0.0</version>
-    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/bambuconnect</packageSourceUrl>
     <owners>strausmann</owners>
     <title>Bambu Connect (Install)</title>
     <authors>Bambu Lab</authors>
-    <projectUrl>https://wiki.bambulab.com/en/software/bambu-connect</projectUrl>
     <copyright>Copyright © 2025 Bambu Lab</copyright>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://wiki.bambulab.com/en/software/bambu-connect</projectSourceUrl>
+    <projectUrl>https://wiki.bambulab.com/en/software/bambu-connect</projectUrl>
     <docsUrl>https://wiki.bambulab.com/en/software/bambu-connect</docsUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://bambulab.com/en-us/legal</licenseUrl>
     <tags>bambu lab connect 3d print</tags>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/bambuconnect</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/2c34b56b9ed7520943c70939f8c4e33ec8196bc6/icons/bambulab.png</iconUrl>
-    <summary>Bambu Connect is an intuitive and efficient tool designed to seamlessly link with Bambu Lab 3D printers. 
+    <summary>Utility to connect to Bambu Lab 3D printers: sign in, discover printers (cloud or LAN), send Bambu G-code/3MF files, and perform basic control actions.</summary>
+    <description>Bambu Connect is a utility for integrating with Bambu Lab 3D printers via cloud or LAN.
 
-It securely transmits sliced Bambu Lab G-code and 3MF files to your printer, ensuring a smooth and reliable printing experience.</summary>
-    <description><![CDATA[[![Chocolatey Version](https://img.shields.io/chocolatey/v/BambuConnect)](https://community.chocolatey.org/packages/bambuconnect)
-[![Chocolatey Downloads](https://img.shields.io/chocolatey/dt/BambuConnect)](https://community.chocolatey.org/packages/bambuconnect)
+### Features
+- Sign in with a Bambu Lab cloud account
+- View printers linked to the account; discover and connect to LAN-mode printers
+- Import and send Bambu G-code or 3MF files to the printer
+- Basic printer control (e.g., axis movement); live view may not be available in current builds
 
-The current version of Bambu Connect is in Beta testing and offers the following features:
+### What this package does
+- Installs Bambu Connect for Windows via the official installer
+- Suitable for unattended/automated deployments with Chocolatey
 
-**Cloud Account Login:** Log in to your Bambu Lab cloud account.
-**Printer Management:** View printers linked to your cloud account. (Note: Binding the printer to the cloud is currently unavailable. Please use Bambu Handy or Bambu Studio for binding.)
-**LAN Mode Connectivity:** Discover and connect to printers in LAN Mode.
-**File Import and Printing:** Import Bambu Lab G-code or 3MF files and send them to the printer for seamless printing.
-**Basic Printer Controls:** Access control features like printer axis movement. (Note: Liveview functionality is not yet supported.)
+### Compatibility and requirements
+- Windows 10/11 (per upstream support)
+- Administrator privileges may be required
 
-This Beta version is being actively refined, with additional features and improvements expected in future updates.
+### Verification after installation
+- Launch “Bambu Connect” and sign in or connect via LAN mode
+- Send a small test file to verify connectivity
+
+### Disclaimer
+This Chocolatey package is community-maintained and is not created, endorsed, or supported by Bambu Lab.
 
 ---
 
-## [choco://bambustudio](choco://bambustudio)
+[choco://bambuconnect](choco://bambuconnect)
 
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
+To use choco:// protocol URLs, install the (unofficial) package “choco-protocol-support”.
 
 ---
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-]]></description>
-    <releaseNotes>https://github.com/bambulab/BambuStudio/releases/tag/v01.09.07.52</releaseNotes>
-    <dependencies>
-      <dependency id="vcredist140" />
-      <dependency id="webview2-runtime" />
-    </dependencies>
+**Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).
+</description>
+    <releaseNotes>https://wiki.bambulab.com/en/software/bambu-connect/releases</releaseNotes>
   </metadata>
   <files>
-    <file src="tools\chocolateyinstall.ps1" target="tools" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>
