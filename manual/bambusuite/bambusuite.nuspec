@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>bambusuite</id>
+    <version>1.1.2.50</version>
+    <owners>strausmann</owners>
+    <title>Bambu Suite (Install)</title>
+    <authors>Bambu Lab</authors>
+    <copyright>Copyright © 2025 Bambu Lab</copyright>
+    <projectUrl>https://bambulab.com/en-us/download/suite</projectUrl>
+    <docsUrl>https://wiki.bambulab.com/en/software/bambu-suite/manual/quick-start-guide</docsUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://bambulab.com/en-us/legal</licenseUrl>
+    <tags>bambu lab suite laser cutting engraving drawing</tags>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/bambusuite</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/2c34b56b9ed7520943c70939f8c4e33ec8196bc6/icons/bambulab.png</iconUrl>
+    <summary>Bambu Suite is Bambu Lab’s desktop application for laser engraving, blade cutting, and pen drawing, providing a unified workspace for layout, toolpath preparation, preview, and job management.</summary>
+    <description>Bambu Suite is a desktop application for integrating non-printing workflows with compatible Bambu hardware.
+
+### Features
+- Unified workspace for laser engraving, blade cutting, and pen drawing
+- Toolpath preparation with preview and optimizations
+- Project and job management for supported devices
+
+### What this package does
+- Installs Bambu Suite for Windows via the official installer
+- Suitable for unattended/automated deployments with Chocolatey
+
+### Compatibility and requirements
+- Windows 10/11 (per upstream support)
+- Administrator privileges may be required
+
+### Verification after installation
+- Launch “Bambu Suite”, create a sample project, and run a preview to verify the toolchain
+
+### Disclaimer
+This Chocolatey package is community-maintained and is not created, endorsed, or supported by Bambu Lab.
+
+---
+
+[choco://bambusuite](choco://bambusuite)
+
+To use choco:// protocol URLs, install the (unofficial) package “choco-protocol-support”.
+
+---
+</description>
+    <releaseNotes>https://wiki.bambulab.com/en/software/bambu-suite/release-notes</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
