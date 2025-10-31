@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cyberbrick</id>
+    <version>0.1.0-beta</version>
+    <owners>strausmann</owners>
+    <title>CyberBrick Desktop App (Install)</title>
+    <authors>Bambu Lab</authors>
+    <copyright>Copyright © 2025 Bambu Lab</copyright>
+    <projectUrl>https://bambulab.com/en-us/download/cyberbrick-apps</projectUrl>
+    <docsUrl>https://wiki.bambulab.com/en/software/cyberbrick-app</docsUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://bambulab.com/en-us/legal</licenseUrl>
+    <tags>bambu lab cyberbrick apps makerworld</tags>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/cyberbrick</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/e29f97a9fe1c6490d677f328af235221df1dc9f2/icons/cyberbrick.png</iconUrl>
+
+    <summary>CyberBrick Apps are the official tools for Bambu Lab’s CyberBrick ecosystem. The desktop app provides a streamlined environment to create, edit, and publish projects and to prepare/flash configurations to Core boards. The mobile apps (iOS/Android) add Bluetooth connectivity, on-the-go project import, and quick adjustments.</summary>
+
+    <description>CyberBrick Apps connect printable models, electronics, and coding into one end-to-end workflow—from downloading a project on MakerWorld to flashing it onto CyberBrick Core boards.
+
+### Features
+- **Desktop App:** Full editing of project/device configurations, spacious UI for efficient work; smooth handoff to your CAD and (for printed parts) Bambu Studio workflows.
+- **Mobile Apps (iOS/Android):** Browse community projects, preview control layouts and assembly notes, connect to CyberBrick microcontrollers via **Bluetooth**, wirelessly deploy projects, and tweak parameters live.
+- **Device Management:** Support for **MPY project flashing** and **firmware updates** (subject to version/release notes).
+
+### What this package does
+- Installs the **CyberBrick Desktop App for Windows** using the official installer.
+- Suitable for unattended/automated deployments with Chocolatey.
+
+### Compatibility / requirements
+- **Windows 10/11** (per upstream support).
+- Administrator privileges may be required.
+- Note: **Mobile apps** for iOS/Android are obtained separately from their respective app stores.
+
+### Post-install verification
+- Launch “CyberBrick”, import a sample project from MakerWorld, pair a device via Bluetooth, and validate a configuration/preview.
+
+### Disclaimer
+This Chocolatey package is **community-maintained** and is **not** created, endorsed, or supported by Bambu Lab.
+
+---
+
+[choco://cyberbrick](choco://cyberbrick)
+
+To use **choco://** URLs, install the (unofficial) package “choco-protocol-support”.
+</description>
+
+    <releaseNotes>https://wiki.bambulab.com/en/software/cyberbrick-apps/APP-release-notes</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
