@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>bambu-farm-manager-server</id>
+    <version>2.0.3.4</version>
+    <owners>strausmann</owners>
+    <title>Bambu Farm Manager Server (Install)</title>
+    <authors>Bambu Lab</authors>
+    <copyright>Copyright © 2025 Bambu Lab</copyright>
+    <projectUrl>https://wiki.bambulab.com/en/software/bambu-farm-manager</projectUrl>
+    <docsUrl>https://wiki.bambulab.com/en/software/bambu-farm-manager</docsUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://bambulab.com/en-us/legal</licenseUrl>
+    <tags>bambu lab farm manager server fleet lan windows print farm queue monitoring</tags>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/bambu-farm-manager-server</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/2c34b56b9ed7520943c70939f8c4e33ec8196bc6/icons/bambulab.png</iconUrl>
+    <summary>Bambu Farm Manager Server is the always-on local backend for managing multiple Bambu printers on a LAN. It coordinates device communication, central job queues, and dispatch to keep print farms running reliably after initial activation.</summary>
+    <description><![CDATA[
+Bambu Farm Manager Server is the background service of the Farm Manager suite. It discovers printers on the local network, coordinates communication, and orchestrates a shared job queue so multiple devices can be driven efficiently from one place.
+
+### Features
+- Central job queue and scheduling across multiple printers
+- Reliable LAN communication and status reporting
+- Batch operations (send, reorder, pause/resume, cancel) for farm workflows
+- Local-first operation after initial activation (privacy-friendly)
+- Basic logging and device availability checks
+
+### What this package does
+- Installs the **Farm Manager Server** for Windows using the official installer (silent "/S")
+- Suitable for unattended/automated deployments and AU-based updates
+
+### Compatibility and requirements
+- Windows 10/11 (per vendor support)
+- Administrator privileges may be required in some environments
+
+### Post-install verification
+- Start “Farm Manager Server” and confirm printers on the same LAN are discovered and report status in the client.
+
+---
+
+### Disclaimer
+This Chocolatey package is **community-maintained** and is **not** created, endorsed, or supported by Bambu Lab.
+
+---
+
+[choco://bambu-farm-manager-server](choco://bambu-farm-manager-server)
+
+To use **choco://** protocol URLs, install the (unofficial) package “choco-protocol-support”.
+
+---
+
+**Note:** This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).
+]]></description>
+    <releaseNotes>https://wiki.bambulab.com/en/software/bambu-farm-release-notes</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
