@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bambuconnect</id>
-    <version>2.0.0</version>
+    <version>2.1.0</version>
     <owners>strausmann</owners>
-    <title>Bambu Connect (Install)</title>
+    <title>Bambu Connect (Install) - Beta</title>
     <authors>Bambu Lab</authors>
     <copyright>Copyright © 2025 Bambu Lab</copyright>
     <projectUrl>https://wiki.bambulab.com/en/software/bambu-connect</projectUrl>
@@ -48,7 +48,7 @@ To use choco:// protocol URLs, install the (unofficial) package “choco-protoco
 
 **Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).
 </description>
-    <releaseNotes>https://wiki.bambulab.com/en/software/bambu-connect/releases</releaseNotes>
+    <releaseNotes>https://wiki.bambulab.com/en/software/bambu-connect</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
