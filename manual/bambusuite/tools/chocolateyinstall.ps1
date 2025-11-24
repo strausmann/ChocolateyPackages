@@ -9,7 +9,7 @@ $packageArgs = @{
   softwareName          = 'Bambu Suite*'
   fileType              = 'exe'
   silentArgs            = "/VERYSILENT /NORESTART /RESTARTEXITCODE=3010 /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /FORCECLOSEAPPLICATIONS /NOICONS"
-  validExitCodes        = @(0)
+  validExitCodes        = @(0, 3010, 1641)
   url                   = $url
   checksum              = $checksum
   checksumType          = $checksumType
