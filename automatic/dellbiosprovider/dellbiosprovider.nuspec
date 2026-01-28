@@ -3,48 +3,41 @@
   <metadata>
     <id>dellbiosprovider</id>
     <title>DellBIOSProvider (PowerShell Module)</title>
-    <version>2.9.1</version>
+    <version>2.10.0</version>
     <authors>DELL Inc.</authors>
     <owners>strausmann</owners>
     <summary>The Dell Command PowerShell Provider enables native BIOS configuration of supported Dell OptiPlex, Latitude, Precision, XPS Notebook, and Venue 11 systems from PowerShell.</summary>
-    <description>
-DellBIOSProvider is the Dell Command PowerShell Provider for managing BIOS settings on supported Dell client systems. It exposes a PowerShell provider and cmdlets that allow administrators to query, set, and persist BIOS options at scale, enabling scripted and automated configuration in enterprise environments.
+    <description><![CDATA[[![Chocolatey Version](https://img.shields.io/chocolatey/v/dellbiosprovider)](https://community.chocolatey.org/packages/dellbiosprovider)
+[![Chocolatey Downloads](https://img.shields.io/chocolatey/dt/dellbiosprovider)](https://community.chocolatey.org/packages/dellbiosprovider)
 
-### Features
-- Enumerate and read BIOS attributes and current values
-- Set and commit BIOS settings, including those requiring a password
-- Export and import BIOS configuration baselines
-- Support for secure boot, virtualization, boot order, and other platform features (as supported by the device)
-- Works with standard PowerShell tooling for automation and reporting
+DellBIOSProvider (PowerShell Module)
 
-### What this package does
-- Installs the DellBIOSProvider PowerShell module for all users by default (scope: AllUsers)
-- Optionally supports installation for the current user only via the package parameter /CURRENTUSER
-- Places module files so they are discoverable by PowerShell without additional configuration
+## Package Parameters
 
-### Requirements and compatibility
-- Supported hardware: Dell OptiPlex, Latitude, Precision, XPS Notebook, and Venue 11 systems (model support varies by Dell)
-- Windows client and server editions supported per Dell’s documentation
-- Administrative privileges are typically required to modify BIOS settings
-- Some operations may require a BIOS admin password if one is configured
+This package is designed to install the `DellBiosProvider` PowerShell module for the `-Scope AllUsers` by default.
 
-### Verification after installation
-- Launch PowerShell and import the module (if not auto-loaded) and list available commands
-- Query BIOS attributes to confirm access and visibility on a supported Dell system
+The following parameter is available to install the module for `-Scope CurrentUser`.
 
-### Disclaimer
-This Chocolatey package is community-maintained and is not created, endorsed, or supported by the DELL.
+* `/CURRENTUSER`
+Example:
+
+```shell
+choco install dellbiosprovider --params='"/CURRENTUSER"'
+```
 
 ---
 
-[choco://qemu-virtio-driver](choco://dellbiosprovider)
+## [choco://dellbiosprovider](choco://dellbiosprovider)
 
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
 
 ---
 
+The **Dell PowerShell Provider** provides native configuration capability of Dell Optiplex, Latitude, Precision, XPS Notebook and Venue 11 systems within PowerShell.
+
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-    </description>
+
+]]></description>
     <projectUrl>https://www.powershellgallery.com/packages/DellBIOSProvider</projectUrl>
     <licenseUrl>https://en.community.dell.com/techcenter/enterprise-client/w/wiki/6901.dell-command-powershell-provider</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
