@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>logi-tune</id>
-    <version>3.12.193.0</version>
+    <version>3.13.106.0</version>
     <owners>strausmann</owners>
     <title>Logi Tune (Install)</title>
     <authors>Logitech</authors>
