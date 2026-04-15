@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64                 = 'https://public-cdn.bblmw.com/upgrade/bambu-connect/updates/versions/2.3.0-beta.6/bambu-connect-v2.3.0-beta.6-win32-x64.exe'
-$checksum64            = '4071a8d69c463986445f21ef0294b46f67b18273ac2490748e3f4d6fba4eae18'
+$url64                 = 'https://public-cdn.bblmw.com/upgrade/bambu-connect/updates/versions/2.4.0-beta.10/bambu-connect-v2.4.0-beta.10-win32-x64.exe'
+$checksum64            = 'caf4af6c4884612ec6cfed07dfef12c56130e3b80abad3b2864d2799e1461bca'
 $checksumType64        = 'sha256'
 
 $packageArgs = @{
