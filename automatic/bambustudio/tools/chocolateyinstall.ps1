@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url                   = 'https://github.com/bambulab/BambuStudio/releases/download/v02.05.03.62/Bambu_Studio_win-v02.05.03.61-20260414213734.exe'
-$checksum              = '9fb80d2a9a3930a9218770d5e719b1360794d4b7270de39351a3a0fee2142e91'
+$url                   = 'https://github.com/bambulab/BambuStudio/releases/download/v02.06.00.51/Bambu_Studio_win-v02.06.00.51-20260417160415.exe'
+$checksum              = 'c56df1dc1ddf84fab7b34caee71eecfb9db96c6785bf467faced8006ce375600'
 $ChecksumType          = 'sha256'
 
 $packageArgs = @{
