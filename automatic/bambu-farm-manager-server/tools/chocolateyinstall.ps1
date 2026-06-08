@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 # --- Source / package info ---
-$url64          = 'https://public-cdn.bblmw.com/upgrade/farm-manager/Bambu_Farm_Manager_Server_win-v02.03.00.00-20260420101155.exe'
-$Checksum64     = 'acc8945cc45ce0057623a1ea9f55b01d93f42c2f46c0b778942322d51e07eef4'
+$url64          = 'https://public-cdn.bblmw.com/upgrade/farm-manager/Bambu_Farm_Manager_Server_win-v02.04.00.00-20260605153718.exe'
+$Checksum64     = '043be81c4cb71f3d8ca2b10ec4cb3aec915131212f53c74607fcb9640aa7ed84'
 $ChecksumType64 = 'sha256'
 
 # --- Target paths (per-user installation observed) ---
