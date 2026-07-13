@@ -15,18 +15,19 @@
     <releaseNotes>https://github.com/fosrl/cli/releases</releaseNotes>
     <copyright>© 2026 Fossorial, Inc</copyright>
     <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
-    <tags>pangolin cli vpn wireguard zero-trust proxy remote-access ztna tool</tags>
-    <summary>Identity-aware VPN and proxy CLI for zero-trust remote access (Pangolin)</summary>
-    <description>Pangolin CLI is the official command-line client for [Pangolin](https://pangolin.net/) — an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard.
+    <tags>pangolin cli wireguard zero-trust proxy remote-access ztna ssh automation tool</tags>
+    <summary>Command-line client for Pangolin — authenticate, apply blueprints, and reach resources via identity-aware ssh/scp</summary>
+    <description>Pangolin CLI is the official command-line client for [Pangolin](https://pangolin.net/) — an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard. It works with both Pangolin Cloud and self-hosted Community/Enterprise servers.
 
-The CLI connects a machine to a Pangolin network, manages remote-access sessions, and drives the Pangolin API from the terminal — enabling zero-trust (ZTNA) access to internal services without exposing them to the public internet.
+On **Linux** the CLI is also the official way to bring up the Pangolin VPN tunnel. On **Windows** the WireGuard tunnel is handled by the separate GUI client, so here the CLI is the management and automation tool for Pangolin:
 
-## Features
+* Authenticate to Pangolin Cloud or a self-hosted server (`pangolin login` / `pangolin auth`)
+* Apply configuration and blueprints as code (`pangolin apply`)
+* List resources and show client status (`pangolin list`, `pangolin status`)
+* Reach your resources with identity-aware `pangolin ssh` and `pangolin scp`
+* Select the active context and self-update (`pangolin select`, `pangolin update`)
 
-* Connect to a Pangolin server as a WireGuard-based VPN client
-* Identity-aware, zero-trust remote access (ZTNA)
-* Manage sites, tunnels and sessions from the command line
-* Script Pangolin operations for automation and CI
+Note: the VPN tunnel commands (`up` / `down`) are Linux-only and are not available on Windows — use the Pangolin GUI client for the tunnel on Windows.
 
 ## Package notes
 
