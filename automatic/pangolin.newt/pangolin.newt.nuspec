@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pangolin.newt</id>
+    <version>1.14.0</version>
+    <owners>strausmann</owners>
+    <title>Pangolin Newt (Connector)</title>
+    <authors>fosrl</authors>
+    <projectUrl>https://pangolin.net/</projectUrl>
+    <projectSourceUrl>https://github.com/fosrl/newt</projectSourceUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/pangolin.newt</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/fosrl/newt/issues</bugTrackerUrl>
+    <docsUrl>https://docs.pangolin.net/manage/sites/install-site</docsUrl>
+    <licenseUrl>https://github.com/fosrl/newt/blob/main/LICENSE</licenseUrl>
+    <releaseNotes>https://github.com/fosrl/newt/releases</releaseNotes>
+    <copyright>© 2026 Fossorial, Inc</copyright>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
+    <tags>pangolin newt vpn wireguard zero-trust proxy remote-access ztna connector tunnel service</tags>
+    <summary>Newt — the site and network connector for Pangolin (WireGuard-based zero-trust remote access)</summary>
+    <description>Newt is the official site and network connector for [Pangolin](https://pangolin.net/) — an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard.
+
+Newt runs on a machine inside a private network and establishes an outbound WireGuard tunnel to a Pangolin server, exposing local sites and services for zero-trust (ZTNA) remote access without opening inbound firewall ports.
+
+This package installs the official Windows `newt` binary from the [fosrl/newt](https://github.com/fosrl/newt) GitHub releases and puts it on the PATH as `newt`.
+
+## Optional Windows service
+
+Pass connection parameters and the package will register and start Newt as the **"Newt WireGuard Tunnel Service"**:
+
+    choco install pangolin.newt --params "/Id:<site-id> /Secret:<secret> /Endpoint:https://<pangolin-host>"
+
+Without parameters only the binary is placed on the system — set up the service yourself:
+
+    newt install
+    newt start --id <site-id> --secret <secret> --endpoint https://<pangolin-host>
+
+The service credentials are persisted by Newt itself to `%PROGRAMDATA%\newt\service_args.json`.
+
+## Package id note
+
+The plain `newt` id on the Community Repository belongs to an unrelated legacy tool, so this Pangolin connector is published as `pangolin.newt`. The installed command is still `newt`.
+
+Not affiliated with or endorsed by Fossorial, Inc.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
