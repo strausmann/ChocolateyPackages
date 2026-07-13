@@ -10,7 +10,9 @@ function global:au_GetLatest {
   if (-not $release -or [string]::IsNullOrWhiteSpace($release.tag_name)) {
     Write-Warning 'Get-GitHubRelease returned no data (GitHub API rate limit?) - keeping current nuspec version.'
     $nuspecPath = Join-Path $PSScriptRoot 'pangolin.newt.nuspec'
-    $currentVersion = ([xml](Get-Content -LiteralPath $nuspecPath)).package.metadata.version
+    if (-not (Test-Path -LiteralPath $nuspecPath)) { $nuspecPath = 'pangolin.newt.nuspec' }
+    # Regex statt [xml]: die nuspec hat einen Default-Namespace, an dem .package.metadata.version scheitert.
+    $currentVersion = ([regex]::Match((Get-Content -Raw -LiteralPath $nuspecPath), '<version>\s*([^<\s]+)')).Groups[1].Value
     return @{ Version = $currentVersion }
   }
 
