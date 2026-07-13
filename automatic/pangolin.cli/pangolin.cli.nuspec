@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pangolin.cli</id>
+    <version>0.13.0</version>
+    <owners>strausmann</owners>
+    <title>Pangolin CLI</title>
+    <authors>fosrl</authors>
+    <projectUrl>https://pangolin.net/</projectUrl>
+    <projectSourceUrl>https://github.com/fosrl/cli</projectSourceUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/pangolin.cli</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/fosrl/cli/issues</bugTrackerUrl>
+    <docsUrl>https://docs.pangolin.net</docsUrl>
+    <licenseUrl>https://github.com/fosrl/cli/blob/main/LICENSE</licenseUrl>
+    <releaseNotes>https://github.com/fosrl/cli/releases</releaseNotes>
+    <copyright>© 2026 Fossorial, Inc</copyright>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
+    <tags>pangolin cli vpn wireguard zero-trust proxy remote-access ztna tool</tags>
+    <summary>Identity-aware VPN and proxy CLI for zero-trust remote access (Pangolin)</summary>
+    <description>Pangolin CLI is the official command-line client for [Pangolin](https://pangolin.net/) — an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard.
+
+The CLI connects a machine to a Pangolin network, manages remote-access sessions, and drives the Pangolin API from the terminal — enabling zero-trust (ZTNA) access to internal services without exposing them to the public internet.
+
+## Features
+
+* Connect to a Pangolin server as a WireGuard-based VPN client
+* Identity-aware, zero-trust remote access (ZTNA)
+* Manage sites, tunnels and sessions from the command line
+* Script Pangolin operations for automation and CI
+
+## Package notes
+
+This package installs the official Windows MSI from the [fosrl/cli](https://github.com/fosrl/cli) GitHub releases and is maintained automatically. It is not affiliated with or endorsed by Fossorial, Inc.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
