@@ -3,26 +3,36 @@ Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "../../scripts/au_extensions.psm1"
 
-$releases        = 'https://www.speedtest.net/de/apps/windows'
-$ChecksumType    = 'sha256'
+$Url32        = 'https://install.speedtest.net/app/windows/latest/speedtestbyookla_x86.msi'
+$Url64        = 'https://install.speedtest.net/app/windows/latest/speedtestbyookla_x64.msi'
+$ChecksumType = 'sha256'
 
 function global:au_GetLatest {
-	$web = Invoke-WebRequest $releases
-	$currentVersion = $web.AllElements | ?{$_.tagname -eq 'SPAN' -and $_.class -eq 'u-note'} | Select-Object -First 1 -Expand InnerText
-	$version = $currentVersion.TrimStart("v")
-	
-	$req = Invoke-WebRequest -Uri $releases
-	$currentVersion = $req.AllElements | ?{$_.tagname -eq 'SPAN' -and $_.class -eq 'u-note'} | Select-Object -First 1 -Expand InnerText
-	$version = $currentVersion.TrimStart("v")
-    
-	$Url32 = "https://install.speedtest.net/app/windows/$($version)/speedtestbyookla_x86.msi"
-	$Url64 = "https://install.speedtest.net/app/windows/$($version)/speedtestbyookla_x64.msi"
-	
-    return @{
-        Url32           = $Url32
-        Url64           = $Url64
-		Version         = $version
-    }
+	# Ookla retired the versioned download path (`/app/windows/<version>/...msi`) -
+	# requests to it now return 403 Forbidden. Only the static `/latest/` path still
+	# works, but it no longer encodes the version in the URL or on the download page.
+	# So the version has to be read from the downloaded MSI's ProductVersion property
+	# instead of being scraped from https://www.speedtest.net/de/apps/windows.
+	$fileName = Split-Path -Leaf $Url64
+	$dest     = "$env:TEMP\$fileName"
+
+	Get-WebFile $Url64 $dest | Out-Null
+	try {
+		$version = (Get-MsiInformation -Path $dest -Property ProductVersion).ProductVersion
+	}
+	finally {
+		Remove-Item $dest -Force -ErrorAction SilentlyContinue
+	}
+
+	if ([string]::IsNullOrWhiteSpace($version)) {
+		throw "Could not determine ProductVersion from $Url64"
+	}
+
+	return @{
+		Url32   = $Url32
+		Url64   = $Url64
+		Version = $version
+	}
 }
 
 function global:au_SearchReplace {
