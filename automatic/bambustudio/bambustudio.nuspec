@@ -38,8 +38,8 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 ]]></description>
     <releaseNotes>https://github.com/bambulab/BambuStudio/releases/tag/v02.07.01.62</releaseNotes>
     <dependencies>
-      <dependency id="vcredist140" />
-      <dependency id="webview2-runtime" />
+      <dependency id="vcredist140" version="14.0.24215.1" />
+      <dependency id="webview2-runtime" version="109.0.1518.52" />
     </dependencies>
   </metadata>
   <files>
