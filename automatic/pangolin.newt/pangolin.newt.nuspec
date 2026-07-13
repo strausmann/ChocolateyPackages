@@ -17,30 +17,39 @@
     <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
     <tags>pangolin newt vpn wireguard zero-trust proxy remote-access ztna connector tunnel service</tags>
     <summary>Newt — the site and network connector for Pangolin (WireGuard-based zero-trust remote access)</summary>
-    <description><![CDATA[Newt is the official site and network connector for [Pangolin](https://pangolin.net/) — an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard.
+    <description><![CDATA[Newt is the official site and network connector for Pangolin, an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard. It runs on a machine inside a private network and opens an outbound WireGuard tunnel to a Pangolin server, exposing local sites and services for zero-trust remote access without inbound firewall ports.
 
-Newt runs on a machine inside a private network and establishes an outbound WireGuard tunnel to a Pangolin server, exposing local sites and services for zero-trust (ZTNA) remote access without opening inbound firewall ports.
+### Features
+- Outbound WireGuard tunnel to a Pangolin server (no inbound ports required)
+- Exposes local sites and services for zero-trust (ZTNA) remote access
+- Optional Windows service ("Newt WireGuard Tunnel Service") for unattended operation
+- `newt` command available on the PATH
 
-This package installs the official Windows `newt` binary from the [fosrl/newt](https://github.com/fosrl/newt) GitHub releases and puts it on the PATH as `newt`.
+### What this package does
+- Installs the official Windows `newt` binary
+- Optionally registers and starts the Newt Windows service when connection parameters are supplied: `choco install pangolin.newt --params "/Id:SITE_ID /Secret:SECRET /Endpoint:https://PANGOLIN_HOST"`
+- Suitable for unattended/automated deployments with Chocolatey
 
-## Optional Windows service
+### Compatibility and requirements
+- Windows 10/11 (per upstream support)
+- Administrator privileges may be required
 
-Pass connection parameters and the package will register and start Newt as the **"Newt WireGuard Tunnel Service"**:
+### Verification after installation
+- Run `newt status`, or check the "Newt WireGuard Tunnel Service" in services.msc when installed as a service
 
-    choco install pangolin.newt --params "/Id:<site-id> /Secret:<secret> /Endpoint:https://<pangolin-host>"
+### Disclaimer
+This Chocolatey package is community-maintained and is not created, endorsed, or supported by Fossorial, Inc.
 
-Without parameters only the binary is placed on the system — set up the service yourself:
+---
 
-    newt install
-    newt start --id <site-id> --secret <secret> --endpoint https://<pangolin-host>
+[choco://pangolin.newt](choco://pangolin.newt)
 
-The service credentials are persisted by Newt itself to `%PROGRAMDATA%\newt\service_args.json`.
+To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-support".
 
-## Package id note
+---
 
-The plain `newt` id on the Community Repository belongs to an unrelated legacy tool, so this Pangolin connector is published as `pangolin.newt`. The installed command is still `newt`.
-
-Not affiliated with or endorsed by Fossorial, Inc.]]></description>
+**Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).
+]]></description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

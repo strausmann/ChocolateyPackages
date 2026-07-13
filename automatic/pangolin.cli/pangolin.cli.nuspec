@@ -17,21 +17,39 @@
     <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
     <tags>pangolin cli wireguard zero-trust proxy remote-access ztna ssh automation tool</tags>
     <summary>Command-line client for Pangolin — authenticate, apply blueprints, and reach resources via identity-aware ssh/scp</summary>
-    <description>Pangolin CLI is the official command-line client for [Pangolin](https://pangolin.net/) — an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard. It works with both Pangolin Cloud and self-hosted Community/Enterprise servers.
+    <description><![CDATA[Pangolin CLI is the official command-line client for Pangolin, an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard. It works with both Pangolin Cloud and self-hosted Community/Enterprise servers.
 
-On **Linux** the CLI is also the official way to bring up the Pangolin VPN tunnel. On **Windows** the WireGuard tunnel is handled by the separate GUI client, so here the CLI is the management and automation tool for Pangolin:
+### Features
+- Authenticate to Pangolin Cloud or a self-hosted server (`pangolin login`)
+- Apply configuration and blueprints as code (`pangolin apply`)
+- List resources and show client status (`pangolin list`, `pangolin status`)
+- Reach resources with identity-aware `pangolin ssh` and `pangolin scp`
 
-* Authenticate to Pangolin Cloud or a self-hosted server (`pangolin login` / `pangolin auth`)
-* Apply configuration and blueprints as code (`pangolin apply`)
-* List resources and show client status (`pangolin list`, `pangolin status`)
-* Reach your resources with identity-aware `pangolin ssh` and `pangolin scp`
-* Select the active context and self-update (`pangolin select`, `pangolin update`)
+### What this package does
+- Installs the official Pangolin CLI for Windows via the official installer
+- Suitable for unattended/automated deployments with Chocolatey
 
-Note: the VPN tunnel commands (`up` / `down`) are Linux-only and are not available on Windows — use the Pangolin GUI client for the tunnel on Windows.
+### Compatibility and requirements
+- Windows 10/11 (per upstream support)
+- Administrator privileges may be required
+- The VPN tunnel commands (`up`/`down`) are Linux-only; on Windows the tunnel is handled by the Pangolin GUI client
 
-## Package notes
+### Verification after installation
+- Run `pangolin version`, then `pangolin login`
 
-This package installs the official Windows MSI from the [fosrl/cli](https://github.com/fosrl/cli) GitHub releases and is maintained automatically. It is not affiliated with or endorsed by Fossorial, Inc.</description>
+### Disclaimer
+This Chocolatey package is community-maintained and is not created, endorsed, or supported by Fossorial, Inc.
+
+---
+
+[choco://pangolin.cli](choco://pangolin.cli)
+
+To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-support".
+
+---
+
+**Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).
+]]></description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
