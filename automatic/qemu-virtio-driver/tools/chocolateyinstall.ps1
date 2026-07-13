@@ -27,7 +27,10 @@ Install-ChocolateyPackage @packageArgs
 # aber nicht -> ohne ihn liefert der Gast keine Memory-Stats / kein dynamisches
 # Ballooning (z.B. Proxmox). Idempotent: nur registrieren, wenn der Dienst noch fehlt.
 if (-not (Get-Service -Name 'BalloonService' -ErrorAction SilentlyContinue)) {
-  $blnsvr = Get-ChildItem -Path (Join-Path $env:ProgramFiles 'Virtio-Win\Balloon') -Recurse -Filter 'blnsvr.exe' -ErrorAction SilentlyContinue | Select-Object -First 1
+  $blnsvr = @($env:ProgramW6432, $env:ProgramFiles, ${env:ProgramFiles(x86)}) | Where-Object { $_ } | Select-Object -Unique |
+    ForEach-Object { Join-Path $_ 'Virtio-Win\Balloon' } | Where-Object { Test-Path $_ } |
+    ForEach-Object { Get-ChildItem -Path $_ -Recurse -Filter 'blnsvr.exe' -ErrorAction SilentlyContinue } |
+    Select-Object -First 1
   if ($blnsvr) {
     Write-Host "Registering VirtIO Balloon Service: $($blnsvr.FullName) -i"
     & $blnsvr.FullName '-i'
