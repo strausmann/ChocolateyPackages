@@ -63,18 +63,20 @@ function Get-FixVersionInstallVariable {
   <#
   .SYNOPSIS
      Internal helper for Get-FixVersion. Robustly reads a
-     $name/$name64 = '...'-style assignment from a chocolateyinstall.ps1's
-     raw content. Tries the 64-suffixed variable name first, then the
-     plain name, since packages use either depending on which ChecksumFor
-     the au_SearchReplace block targets.
+     $name/$name64/$name32 = '...'-style assignment from a
+     chocolateyinstall.ps1's raw content. Tries the 64-suffixed variable
+     name first, then the 32-suffixed name, then the plain name, since
+     packages use whichever depending on which ChecksumFor the
+     au_SearchReplace block targets. Matching is case-insensitive since
+     PowerShell variable names are case-insensitive.
   #>
   param(
     [string] $Content,
     [string] $Name
   )
 
-  foreach ($candidate in @("$($Name)64", $Name)) {
-    $pattern = '(?m)^\s*\$' + [regex]::Escape($candidate) + '\s*=\s*([''"])(.*?)\1'
+  foreach ($candidate in @("$($Name)64", "$($Name)32", $Name)) {
+    $pattern = '(?mi)^\s*\$' + [regex]::Escape($candidate) + '\s*=\s*([''"])(.*?)\1'
     $match = [regex]::Match($Content, $pattern)
     if ($match.Success) {
       return $match.Groups[2].Value
@@ -206,9 +208,13 @@ function Get-FixVersion {
     $publishedUrl = $null
     $publishedChecksum = $null
     if ($installFile) {
-      $installContent = Get-Content -Path $installFile.FullName -Raw
-      $publishedUrl = Get-FixVersionInstallVariable -Content $installContent -Name 'url'
-      $publishedChecksum = Get-FixVersionInstallVariable -Content $installContent -Name 'checksum'
+      try {
+        $installContent = Get-Content -Path $installFile.FullName -Raw -ErrorAction Stop
+        $publishedUrl = Get-FixVersionInstallVariable -Content $installContent -Name 'url'
+        $publishedChecksum = Get-FixVersionInstallVariable -Content $installContent -Name 'checksum'
+      } catch {
+        Write-Warning "Get-FixVersion: could not read or parse '$($installFile.FullName)': $($_.Exception.Message)"
+      }
     }
 
     $urlChanged = [string]::IsNullOrEmpty($publishedUrl) -or ($NewUrl -ne $publishedUrl)
