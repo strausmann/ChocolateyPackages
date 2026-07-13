@@ -7,6 +7,7 @@
 $funcs = @(
   'Get-GitHubRelease'
   'Get-MsiInformation'
+  'Get-RedirectedUrl'
   'Set-DescriptionFromReadme'
   'Update-ChangelogVersion'
   'Update-OnETagChanged'

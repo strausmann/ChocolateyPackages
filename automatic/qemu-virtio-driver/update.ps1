@@ -3,49 +3,33 @@ Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "../../scripts/au_extensions.psm1"
 
-# Bugfix (Invalid version / leerer Version-String im CI):
-# Die alte Logik scrapte archive-virtio/ und sortierte die Verzeichnis-Links als
-# Strings (Sort-Object -Descending ohne Cast). Das ist fragil und lieferte im CI
-# ein leeres $link/$version -> "ERROR: Invalid version:".
-# Neu: latest-virtio/ ist ein von Upstream bereitgestellter 301-Redirect-Ordner,
-# der immer auf den aktuellen versionierten Ordner zeigt. Die Version wird direkt
-# aus dem Redirect-Ziel extrahiert (kein Scraping/Sortieren mehr noetig).
+# Bugfix (Invalid version / empty version string in CI):
+# The old logic scraped archive-virtio/ and sorted the directory links as plain
+# strings (Sort-Object -Descending without a cast). This is fragile and produced
+# an empty $link/$version in CI -> "ERROR: Invalid version:".
+# New: latest-virtio/ is an upstream-provided 301 redirect folder that always
+# points to the current versioned folder. The version is extracted directly from
+# the redirect target (no more scraping/sorting needed).
 $latestFolder = 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/'
 $ChecksumType = 'sha256'
 
-function Get-RedirectedUrl {
-    param ([Parameter(Mandatory = $true)][string]$Url)
-
-    $request = [System.Net.WebRequest]::Create($Url)
-    $request.Method = 'HEAD'
-    $request.AllowAutoRedirect = $false
-    $response = $request.GetResponse()
-    try {
-        return $response.GetResponseHeader('Location')
-    } finally {
-        $response.Close()
-    }
-}
-
 function global:au_GetLatest {
 
-    # Location-Header zeigt z.B. auf .../archive-virtio/virtio-win-0.1.285-1/
+    # Location header points e.g. to .../archive-virtio/virtio-win-0.1.285-1/
     $resolved = Get-RedirectedUrl $latestFolder
-    if (-not $resolved) { throw "Konnte Redirect von $latestFolder nicht aufloesen." }
+    if (-not $resolved) { throw "Could not resolve redirect from $latestFolder." }
 
-    # Upstream liefert den Redirect teils als http:// -> auf https pinnen.
+    # Upstream sometimes returns the redirect as http:// -> pin to https.
     $resolved = $resolved -replace '^http://', 'https://'
 
-    if ($resolved -notmatch 'virtio-win-(?<ver>\d+\.\d+\.\d+)-\d+') {
-        throw "Konnte Version aus Redirect-Ziel nicht extrahieren: $resolved"
-    }
-    $Version = $Matches['ver']
-    if ([string]::IsNullOrWhiteSpace($Version)) {
-        throw "Invalid version: Redirect-Ziel enthielt keine gueltige Versionsnummer ($resolved)."
+    if ($resolved -match 'virtio-win-(?<ver>\d+\.\d+\.\d+)-\d+') {
+        $Version = $Matches['ver']
+    } else {
+        throw "Could not extract version from redirect target: $resolved"
     }
 
-    # Auf das aufgeloeste, versionierte Ziel pinnen (nicht auf latest-virtio/ selbst),
-    # damit eine veroeffentlichte Package-Version dauerhaft ihr MSI behaelt.
+    # Pin to the resolved, versioned target (not to latest-virtio/ itself), so a
+    # published package version keeps its MSI permanently.
     $base = $resolved.TrimEnd('/')
     $Url32 = "$base/virtio-win-gt-x86.msi"
     $Url64 = "$base/virtio-win-gt-x64.msi"
