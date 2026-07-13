@@ -5,7 +5,7 @@ $release = Get-GitHubRelease fosrl cli
 
 function global:au_GetLatest {
   $version = $release.tag_name
-  $asset = $release.assets | Where-Object { $_.name -match 'pangolin-cli_windows_installer.msi' } | Select-Object -First 1
+  $asset = $release.assets | Where-Object { $_.name -match 'pangolin-cli_windows_installer\.msi' } | Select-Object -First 1
   $Url64 = $asset.browser_download_url
 
   return @{
@@ -21,8 +21,8 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     'tools\chocolateyInstall.ps1' = @{
-      "(?i)(^\`$url64\s*=\s*)'.*'"      = "`${1}'$($Latest.Url64)'"
-      "(?i)(^\`$checksum64\s*=\s*)'.*'" = "`${1}'$($Latest.Checksum64)'"
+      "(?i)(^`$url64\s*=\s*)'.*'"      = "`${1}'$($Latest.Url64)'"
+      "(?i)(^`$checksum64\s*=\s*)'.*'" = "`${1}'$($Latest.Checksum64)'"
     }
   }
 }

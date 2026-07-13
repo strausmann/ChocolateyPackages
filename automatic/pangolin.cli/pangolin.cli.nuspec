@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pangolin.cli</id>
+    <version>0.13.0</version>
+    <owners>strausmann</owners>
+    <title>Pangolin CLI</title>
+    <authors>fosrl</authors>
+    <projectUrl>https://pangolin.net/</projectUrl>
+    <projectSourceUrl>https://github.com/fosrl/cli</projectSourceUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/pangolin.cli</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/fosrl/cli/issues</bugTrackerUrl>
+    <docsUrl>https://docs.pangolin.net</docsUrl>
+    <licenseUrl>https://github.com/fosrl/cli/blob/main/LICENSE</licenseUrl>
+    <releaseNotes>https://github.com/fosrl/cli/releases</releaseNotes>
+    <copyright>© 2026 Fossorial, Inc</copyright>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
+    <tags>pangolin cli wireguard zero-trust proxy remote-access ztna ssh automation tool</tags>
+    <summary>Command-line client for Pangolin — authenticate, apply blueprints, and reach resources via identity-aware ssh/scp</summary>
+    <description>Pangolin CLI is the official command-line client for [Pangolin](https://pangolin.net/) — an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard. It works with both Pangolin Cloud and self-hosted Community/Enterprise servers.
+
+On **Linux** the CLI is also the official way to bring up the Pangolin VPN tunnel. On **Windows** the WireGuard tunnel is handled by the separate GUI client, so here the CLI is the management and automation tool for Pangolin:
+
+* Authenticate to Pangolin Cloud or a self-hosted server (`pangolin login` / `pangolin auth`)
+* Apply configuration and blueprints as code (`pangolin apply`)
+* List resources and show client status (`pangolin list`, `pangolin status`)
+* Reach your resources with identity-aware `pangolin ssh` and `pangolin scp`
+* Select the active context and self-update (`pangolin select`, `pangolin update`)
+
+Note: the VPN tunnel commands (`up` / `down`) are Linux-only and are not available on Windows — use the Pangolin GUI client for the tunnel on Windows.
+
+## Package notes
+
+This package installs the official Windows MSI from the [fosrl/cli](https://github.com/fosrl/cli) GitHub releases and is maintained automatically. It is not affiliated with or endorsed by Fossorial, Inc.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
