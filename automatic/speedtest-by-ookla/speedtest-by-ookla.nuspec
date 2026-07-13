@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>speedtest-by-ookla</id>
-	<version>1.14.198</version>
+	<version>1.15.200.001</version>
 	<title>Speedtest by Ookla WinGUI</title>
 	<authors>Ookla</authors>
 	<owners>strausmann</owners>

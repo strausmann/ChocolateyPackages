@@ -3,39 +3,35 @@ Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "../../scripts/au_extensions.psm1"
 
-$releases     = 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-qemu-ga/'
+# Robustness improvement (not an active bugfix, this package resolves the current
+# version 110.0.2 correctly even with the old scraping logic):
+# latest-qemu-ga/ is an upstream-provided 301 redirect folder that always points
+# to the current versioned folder under archive-qemu-ga/. This replaces scraping
+# archive-qemu-ga/, where legacy `-el7ev` directories are mixed in alongside
+# current ones and could confuse a plain version sort.
+$latestFolder = 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/'
 $ChecksumType = 'sha256'
 
 function global:au_GetLatest {
 
-    $web = Invoke-WebRequest $releases
+    # Location header points e.g. to .../archive-qemu-ga/qemu-ga-win-110.0.2-1.el10/
+    $resolved = Get-RedirectedUrl $latestFolder
+    if (-not $resolved) { throw "Could not resolve redirect from $latestFolder." }
 
-    # passt auch auf ...-1.el10/ etc.
-    $rx = 'qemu-ga-win-(?<ver>\d+(?:\.\d+){2})-(?<rel>\d+)(?:\.[^/]+)?/'
+    # Upstream sometimes returns the redirect as http:// -> pin to https.
+    $resolved = $resolved -replace '^http://', 'https://'
 
-    $candidates = foreach ($a in $web.Links) {
-        if ($a.href -match $rx) {
-            [pscustomobject]@{
-                Href = $a.href
-                Ver  = [version]$Matches['ver']   # z.B. 110.0.2
-                Rel  = [int]$Matches['rel']       # z.B. 1
-            }
-        }
-    }
-	
-    $latest = $candidates | Sort-Object Ver, Rel -Descending | Select-Object -First 1
-    if (-not $latest) { throw "Keine passenden qemu-ga-win-Verzeichnisse gefunden." }
-
-    $href = if ($latest.Href -match '/$') { $latest.Href } else { "$($latest.Href)/" }
-    $folderUri = if ([Uri]::IsWellFormedUriString($href, [UriKind]::Absolute)) {
-        [Uri]$href
+    if ($resolved -match 'qemu-ga-win-(?<ver>\d+(?:\.\d+){2})-\d+') {
+        $Version = $Matches['ver']
     } else {
-        [Uri]::new([Uri]$releases, $href)
+        throw "Could not extract version from redirect target: $resolved"
     }
-    $base = $folderUri.AbsoluteUri.TrimEnd('/')
+
+    # Pin to the resolved, versioned target (not to latest-qemu-ga/ itself), so a
+    # published package version keeps its MSI permanently.
+    $base = $resolved.TrimEnd('/')
     $Url32 = "$base/qemu-ga-i386.msi"
     $Url64 = "$base/qemu-ga-x86_64.msi"
-    $Version = $latest.Ver.ToString()
 
     return @{
         Url32   = $Url32

@@ -28,8 +28,12 @@ function GetResultInformation([string]$Url32) {
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
+  # Logitech offers both a standard (x64) and an "arm64" Windows installer on
+  # this page. Neither the '\.exe' match nor -First 1 alone qualify by arch,
+  # so the previous selection depended on DOM order and could silently pick
+  # LogiTuneInstall-arm64.exe instead of LogiTuneInstall.exe (x64).
   $re = '\.exe'
-  $Url32 = $download_page.Links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
+  $Url32 = $download_page.Links | Where-Object { $_.href -match $re -and $_.href -notmatch '(?i)arm64' } | Select-Object -First 1 -ExpandProperty href
 
   Update-OnETagChanged -execUrl $Url32 -OnETagChanged { GetResultInformation $Url32 } -OnUpdated { @{ Url32 = $Url32 } }
 }
