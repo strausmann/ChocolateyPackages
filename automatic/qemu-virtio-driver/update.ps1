@@ -3,24 +3,41 @@ Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "../../scripts/au_extensions.psm1"
 
-$releases        = 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio'
-$ChecksumType    = 'sha256'
+# Bugfix (Invalid version / empty version string in CI):
+# The old logic scraped archive-virtio/ and sorted the directory links as plain
+# strings (Sort-Object -Descending without a cast). This is fragile and produced
+# an empty $link/$version in CI -> "ERROR: Invalid version:".
+# New: latest-virtio/ is an upstream-provided 301 redirect folder that always
+# points to the current versioned folder. The version is extracted directly from
+# the redirect target (no more scraping/sorting needed).
+$latestFolder = 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/'
+$ChecksumType = 'sha256'
 
 function global:au_GetLatest {
 
-    $web = Invoke-WebRequest $releases
-    $links = $web.Links | Where-Object { $_.href -match "virtio-win-\d+\.\d+\.\d+-\d+/" } | Select-Object -ExpandProperty href
-    
-    $link = $links | Sort-Object -Descending | Select-Object -First 1
-    $version = $link -replace '^virtio-win-(\d+\.\d+\.\d+)-\d+/.*$', '$1'
-    
-	$Url32 = "$($releases)/$($link)virtio-win-gt-x86.msi"
-	$Url64 = "$($releases)/$($link)virtio-win-gt-x64.msi"
-	
+    # Location header points e.g. to .../archive-virtio/virtio-win-0.1.285-1/
+    $resolved = Get-RedirectedUrl $latestFolder
+    if (-not $resolved) { throw "Could not resolve redirect from $latestFolder." }
+
+    # Upstream sometimes returns the redirect as http:// -> pin to https.
+    $resolved = $resolved -replace '^http://', 'https://'
+
+    if ($resolved -match 'virtio-win-(?<ver>\d+\.\d+\.\d+)-\d+') {
+        $Version = $Matches['ver']
+    } else {
+        throw "Could not extract version from redirect target: $resolved"
+    }
+
+    # Pin to the resolved, versioned target (not to latest-virtio/ itself), so a
+    # published package version keeps its MSI permanently.
+    $base = $resolved.TrimEnd('/')
+    $Url32 = "$base/virtio-win-gt-x86.msi"
+    $Url64 = "$base/virtio-win-gt-x64.msi"
+
     return @{
-        Url32           = $Url32
-        Url64           = $Url64
-		Version         = $version
+        Url32   = $Url32
+        Url64   = $Url64
+        Version = $Version
     }
 }
 
