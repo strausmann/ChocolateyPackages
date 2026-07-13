@@ -14,10 +14,10 @@ function global:au_GetLatest {
 	# So the version has to be read from the downloaded MSI's ProductVersion property
 	# instead of being scraped from https://www.speedtest.net/de/apps/windows.
 	$fileName = Split-Path -Leaf $Url64
-	$dest     = "$env:TEMP\$fileName"
+	$dest     = Join-Path $env:TEMP $fileName
 
-	Get-WebFile $Url64 $dest | Out-Null
 	try {
+		Get-WebFile $Url64 $dest | Out-Null
 		$version = (Get-MsiInformation -Path $dest -Property ProductVersion).ProductVersion
 	}
 	finally {
