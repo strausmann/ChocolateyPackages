@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>qemu-virtio-driver</id>
-    <version>0.1.285</version>
+    <version>0.1.285.1</version>
     <owners>Bjoern Strausmann</owners>
     <title>Virtio Win Driver (Install)</title>
     <authors>Red Hat Inc.</authors>
@@ -57,7 +57,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 ---
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-</description>
+ This package also registers and starts the VirtIO Balloon service (blnsvr) so guest memory stats and dynamic ballooning work (e.g. on Proxmox).</description>
     <releaseNotes>https://fedorapeople.org/groups/virt/virtio-win/CHANGELOG</releaseNotes>
   </metadata>
   <files>

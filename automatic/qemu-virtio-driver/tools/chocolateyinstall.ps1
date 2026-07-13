@@ -22,3 +22,23 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
+# --- VirtIO Balloon Service (Issue #11) ---
+# Die virtio-win-gt MSI installiert blnsvr.exe, registriert den Dienst 'BalloonService'
+# aber nicht -> ohne ihn liefert der Gast keine Memory-Stats / kein dynamisches
+# Ballooning (z.B. Proxmox). Idempotent: nur registrieren, wenn der Dienst noch fehlt.
+if (-not (Get-Service -Name 'BalloonService' -ErrorAction SilentlyContinue)) {
+  $blnsvr = Get-ChildItem -Path (Join-Path $env:ProgramFiles 'Virtio-Win\Balloon') -Recurse -Filter 'blnsvr.exe' -ErrorAction SilentlyContinue | Select-Object -First 1
+  if ($blnsvr) {
+    Write-Host "Registering VirtIO Balloon Service: $($blnsvr.FullName) -i"
+    & $blnsvr.FullName '-i'
+  } else {
+    Write-Warning "blnsvr.exe not found under '$env:ProgramFiles\Virtio-Win\Balloon' - Balloon service not registered."
+  }
+}
+
+# InstallService setzt Auto-Start, startet aber nicht zwingend sofort -> sicher starten.
+$balloonSvc = Get-Service -Name 'BalloonService' -ErrorAction SilentlyContinue
+if ($balloonSvc -and $balloonSvc.Status -ne 'Running') {
+  try { Start-Service -Name 'BalloonService' -ErrorAction Stop }
+  catch { Write-Warning "Could not start BalloonService: $($_.Exception.Message)" }
+}
