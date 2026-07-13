@@ -17,7 +17,7 @@
     <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
     <tags>pangolin newt vpn wireguard zero-trust proxy remote-access ztna connector tunnel service</tags>
     <summary>Newt — the site and network connector for Pangolin (WireGuard-based zero-trust remote access)</summary>
-    <description>Newt is the official site and network connector for [Pangolin](https://pangolin.net/) — an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard.
+    <description><![CDATA[Newt is the official site and network connector for [Pangolin](https://pangolin.net/) — an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard.
 
 Newt runs on a machine inside a private network and establishes an outbound WireGuard tunnel to a Pangolin server, exposing local sites and services for zero-trust (ZTNA) remote access without opening inbound firewall ports.
 
@@ -40,7 +40,7 @@ The service credentials are persisted by Newt itself to `%PROGRAMDATA%\newt\serv
 
 The plain `newt` id on the Community Repository belongs to an unrelated legacy tool, so this Pangolin connector is published as `pangolin.newt`. The installed command is still `newt`.
 
-Not affiliated with or endorsed by Fossorial, Inc.</description>
+Not affiliated with or endorsed by Fossorial, Inc.]]></description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
