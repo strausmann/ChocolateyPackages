@@ -1,15 +1,21 @@
 Import-Module Chocolatey-AU
 Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
-# Meta package: keeps its own version in lockstep with the upstream release (and thus with
-# the cli .install/.portable package) so `choco upgrade` propagates new versions. The
-# dependency uses a fixed minimum floor and therefore never needs to be rewritten.
+# Meta package: Version UND Dependency bleiben im Lockstep mit dem Unterpaket
+# (Exakt-Pin [X], wie die git/nodejs/7zip-Metas). au_SearchReplace schreibt die
+# Dependency-Version in der nuspec mit; AU bumpt die Meta-Version automatisch.
 $release = Get-GitHubRelease fosrl cli
 
 function global:au_GetLatest {
   return @{ Version = $release.tag_name }
 }
 
-function global:au_SearchReplace { @{} }
+function global:au_SearchReplace {
+  @{
+    "pangolin-cli.nuspec" = @{
+      "(<dependency id=`"pangolin-cli.install`" version=`")[^`"]*(`")" = "`${1}[$($Latest.Version)]`${2}"
+    }
+  }
+}
 
 Update-Package -ChecksumFor none

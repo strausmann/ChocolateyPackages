@@ -46,7 +46,7 @@ To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-
 
 **Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).]]></description>
     <dependencies>
-      <dependency id="pangolin-cli.install" version="0.13.0" />
+      <dependency id="pangolin-cli.install" version="[0.13.0]" />
     </dependencies>
   </metadata>
 </package>
