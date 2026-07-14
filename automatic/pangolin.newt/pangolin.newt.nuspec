@@ -27,7 +27,7 @@
 
 ### What this package does
 - Installs the official Windows `newt` binary
-- Optionally registers and starts the Newt Windows service when connection parameters are supplied: `choco install pangolin.newt --params "/Id:SITE_ID /Secret:SECRET /Endpoint:https://PANGOLIN_HOST"`
+- Optionally registers and starts the Newt Windows service when connection parameters are supplied: `choco install pangolin.newt --params "/Id:SITE_ID /Secret:SECRET /Endpoint:https://pangolin.example.com"`
 - Suitable for unattended/automated deployments with Chocolatey
 
 ### Compatibility and requirements
