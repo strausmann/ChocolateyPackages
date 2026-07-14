@@ -39,4 +39,4 @@ function global:au_SearchReplace {
   }
 }
 
-Update-Package -ChecksumFor none
+if ($MyInvocation.InvocationName -ne '.') { Update-Package -ChecksumFor none }  # dot-source-fest: laeuft nur bei direktem Aufruf
