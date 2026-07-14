@@ -31,6 +31,7 @@ This is a **meta package**: it installs the Pangolin CLI by taking a dependency 
 - Windows 10/11 (per upstream support)
 - Administrator privileges may be required
 - The VPN tunnel commands (`up`/`down`) are Linux-only; on Windows the tunnel is handled by the Pangolin GUI client
+- For the tunnel-based commands (`ssh`/`scp`) on Windows, also install the Pangolin GUI client (`choco install pangolin`) — it provides the VPN tunnel the CLI connects through
 
 ### Disclaimer
 This Chocolatey package is community-maintained and is not created, endorsed, or supported by Fossorial, Inc.

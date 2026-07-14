@@ -33,6 +33,7 @@
 - Windows 10/11 (per upstream support)
 - Administrator privileges may be required
 - The VPN tunnel commands (`up`/`down`) are Linux-only; on Windows the tunnel is handled by the Pangolin GUI client
+- For the tunnel-based commands (`ssh`/`scp`) on Windows, also install the Pangolin GUI client (`choco install pangolin`) — it provides the VPN tunnel the CLI connects through
 
 ### Verification after installation
 - Run `pangolin version`, then `pangolin login`
