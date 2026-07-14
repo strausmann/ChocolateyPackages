@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pangolin-newt</id>
+    <version>1.14.0</version>
+    <owners>strausmann</owners>
+    <title>Pangolin Newt (Connector)</title>
+    <authors>fosrl</authors>
+    <projectUrl>https://pangolin.net/</projectUrl>
+    <projectSourceUrl>https://github.com/fosrl/newt</projectSourceUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/pangolin-newt</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/fosrl/newt/issues</bugTrackerUrl>
+    <docsUrl>https://docs.pangolin.net/manage/sites/install-site</docsUrl>
+    <licenseUrl>https://github.com/fosrl/newt/blob/main/LICENSE</licenseUrl>
+    <releaseNotes>https://github.com/fosrl/newt/releases</releaseNotes>
+    <copyright>© 2026 Fossorial, Inc</copyright>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
+    <tags>pangolin newt vpn wireguard zero-trust proxy remote-access ztna connector tunnel service</tags>
+    <summary>Site and network connector for Pangolin (meta package -> pangolin-newt.portable)</summary>
+    <description><![CDATA[Newt is the official site and network connector for Pangolin, an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard. It runs on a machine inside a private network and opens an outbound WireGuard tunnel to a Pangolin server, exposing local sites and services for zero-trust remote access without inbound firewall ports.
+
+This is a **meta package**: it installs Newt by taking a dependency on [pangolin-newt.portable](https://community.chocolatey.org/packages/pangolin-newt.portable). Install `pangolin-newt` if you prefer the plain package name; it always pulls the matching portable package.
+
+### Features
+- Outbound WireGuard tunnel to a Pangolin server (no inbound ports required)
+- Exposes local sites and services for zero-trust (ZTNA) remote access
+- Optional Windows service ("Newt WireGuard Tunnel Service") for unattended operation
+- `newt` command available on the PATH
+
+### Compatibility and requirements
+- Windows 10/11 (per upstream support)
+- Administrator privileges may be required
+- For the optional Windows service via `--params`, install `pangolin-newt.portable` directly (package parameters are not forwarded through a meta package)
+
+### Disclaimer
+This Chocolatey package is community-maintained and is not created, endorsed, or supported by Fossorial, Inc.
+
+---
+
+[choco://pangolin-newt](choco://pangolin-newt)
+
+To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-support".
+
+---
+
+**Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).]]></description>
+    <dependencies>
+      <dependency id="pangolin-newt.portable" version="1.14.0" />
+    </dependencies>
+  </metadata>
+</package>
