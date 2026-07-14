@@ -38,7 +38,7 @@ Dienst manuell einrichten:
   newt start --id <SITE_ID> --secret <SECRET> --endpoint https://<pangolin-host>
 
 Oder mit Parametern neu installieren:
-  choco install pangolin-newt --params "/Id:<id> /Secret:<secret> /Endpoint:https://<host>"
+  choco install pangolin-newt.portable --params "/Id:<id> /Secret:<secret> /Endpoint:https://<host>"
 
 "@
 }
