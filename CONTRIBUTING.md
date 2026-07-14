@@ -42,6 +42,11 @@ You should also know how to [deprecate a package](https://docs.chocolatey.org/en
 
 Decide if package is **manual or automatic**. Generally, packages without vendor updates for **minimum 3 years** should be considered manual. Automatic packages must use [AU](https://github.com/majkinetor/au) module.
 
+Packages are published to the Community Repository via git commit-message triggers (see [README](README.md#pushing-to-community-repository-via-commit-message)):
+
+- `[AU pkg1 pkg2]` — run the AU updater for the given package(s): fetch the latest version, rewrite the install script, then pack and push.
+- `[PUSH pkg1 ... pkgN]` — **pack and push the package(s) exactly as committed, without running the AU updater**. Use this for manual packages and for re-pushing a version that AU would not bump (e.g. a moderation re-upload). Add `git commit --allow-empty` when there are no file changes.
+
 ### 1.1.3 Naming
 
 Both *package root directory* and  *nuspec file* should be named **the same as the package Id** with all lower letters. *This is only relevant for new packages, as changing casing on existing packages may have negative side effects*

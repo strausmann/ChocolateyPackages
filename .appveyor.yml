@@ -117,7 +117,7 @@ build_script:
 
                     if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
                     pushd $package_dir
-                      if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
+                      # [PUSH] is a pure pack+push - it does NOT run update.ps1 (use [AU] to update a package first).
                       choco pack; Push-Package -All;
                     popd
                 }
