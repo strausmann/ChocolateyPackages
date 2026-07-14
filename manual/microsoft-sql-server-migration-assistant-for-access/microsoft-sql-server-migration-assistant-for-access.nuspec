@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>microsoft-sql-server-migration-assistant-for-access</id>
-    <version>10.0</version>
-	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/microsoft-sql-server-migration-assistant-for-access</packageSourceUrl>
+    <version>10.5.26034</version>
+	<packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/microsoft-sql-server-migration-assistant-for-access</packageSourceUrl>
 	<projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54255</projectUrl>
     <owners>Bjoern Strausmann</owners>
     <title>Microsoft SQL Server Migration Assistant for Access (Install)</title>
@@ -24,7 +24,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 
 ---
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+**Please Note**: This package is maintained **manually** and is no longer updated automatically (Microsoft's download page can no longer be scraped reliably). If you find it is out of date, please contact the maintainer so a new version can be published.
 
 ]]></description>
 	<releaseNotes>https://www.microsoft.com/en-us/download/details.aspx?id=54255</releaseNotes>

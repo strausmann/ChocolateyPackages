@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url                   = 'https://download.microsoft.com/download/D/B/D/DBDECC99-4DCA-4674-983A-CC1ABABA2B37/SSMAforAccess_10.0.0_x86.msi'
-$checksum              = '92419568d8cd08b6e08005ceb2ac23802c215424349833cb9ea36c790f731e5d'
+$url                   = 'https://download.microsoft.com/download/a253d8fc-5e5e-4510-bdc2-885b98050574/SSMAforAccess_10.5.26034_x86.msi'
+$checksum              = 'a118ae64189df2d62d0892c91dba77966d038c9ccb5cae58137135b80127d9dc'
 $checksumType          = 'sha256'
-$url64                 = 'https://download.microsoft.com/download/D/B/D/DBDECC99-4DCA-4674-983A-CC1ABABA2B37/SSMAforAccess_10.0.0.msi'
-$checksum64            = '41c941c9f9f2da5c63030d4608fc6829f109273654558e740a724a0bb048261c'
+$url64                 = 'https://download.microsoft.com/download/a253d8fc-5e5e-4510-bdc2-885b98050574/SSMAforAccess_10.5.26034.msi'
+$checksum64            = '1cd733c844d69702a1789a8044367ce2e2351971abd96b04a739fa3f3d27411a'
 $checksumType64        = 'sha256'
 
 $packageArgs = @{
