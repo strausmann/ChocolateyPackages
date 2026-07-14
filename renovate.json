@@ -1,13 +1,32 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
   ],
-  "assignees": ["virtualex-itv"],
+  "assignees": ["strausmann"],
   "labels": ["renovate"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "AppVeyor CI-Tool-Pins (chocolatey-au, vt-cli, wormies-au-helpers, git, ...) gegen den Chocolatey-Feed aktualisieren",
+      "fileMatch": ["^\\.appveyor\\.yml$"],
+      "matchStrings": [
+        "'(?<depName>[A-Za-z0-9._-]+)'\\s*=\\s*'(?<currentValue>[0-9][0-9A-Za-z.-]*)'"
+      ],
+      "datasourceTemplate": "nuget",
+      "registryUrlTemplate": "https://community.chocolatey.org/api/v2/"
+    }
+  ],
   "packageRules": [
-  {
-    "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-    "automerge": true
-  }
- ]
+    {
+      "description": "Risikoarme Updates automergen (bestehendes Verhalten)",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "description": "Build-kritische CI-Tool-Pins aus .appveyor.yml: nur PR zur Review, KEIN Automerge",
+      "matchFileNames": [".appveyor.yml"],
+      "automerge": false
+    }
+  ]
 }
