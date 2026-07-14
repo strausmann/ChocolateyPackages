@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>pangolin.newt</id>
+    <id>pangolin-newt</id>
     <version>1.14.0</version>
     <owners>strausmann</owners>
     <title>Pangolin Newt (Connector)</title>
     <authors>fosrl</authors>
     <projectUrl>https://pangolin.net/</projectUrl>
     <projectSourceUrl>https://github.com/fosrl/newt</projectSourceUrl>
-    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/pangolin.newt</packageSourceUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/pangolin-newt</packageSourceUrl>
     <bugTrackerUrl>https://github.com/fosrl/newt/issues</bugTrackerUrl>
     <docsUrl>https://docs.pangolin.net/manage/sites/install-site</docsUrl>
     <licenseUrl>https://github.com/fosrl/newt/blob/main/LICENSE</licenseUrl>
@@ -27,7 +27,7 @@
 
 ### What this package does
 - Installs the official Windows `newt` binary
-- Optionally registers and starts the Newt Windows service when connection parameters are supplied: `choco install pangolin.newt --params "/Id:SITE_ID /Secret:SECRET /Endpoint:https://pangolin.example.com"`
+- Optionally registers and starts the Newt Windows service when connection parameters are supplied: `choco install pangolin-newt --params "/Id:SITE_ID /Secret:SECRET /Endpoint:https://pangolin.example.com"`
 - Suitable for unattended/automated deployments with Chocolatey
 
 ### Compatibility and requirements
@@ -42,7 +42,7 @@ This Chocolatey package is community-maintained and is not created, endorsed, or
 
 ---
 
-[choco://pangolin.newt](choco://pangolin.newt)
+[choco://pangolin-newt](choco://pangolin-newt)
 
 To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-support".
 

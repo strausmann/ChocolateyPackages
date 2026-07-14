@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>pangolin.cli</id>
+    <id>pangolin-cli.install</id>
     <version>0.13.0</version>
     <owners>strausmann</owners>
     <title>Pangolin CLI</title>
     <authors>fosrl</authors>
     <projectUrl>https://pangolin.net/</projectUrl>
     <projectSourceUrl>https://github.com/fosrl/cli</projectSourceUrl>
-    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/pangolin.cli</packageSourceUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/pangolin-cli.install</packageSourceUrl>
     <bugTrackerUrl>https://github.com/fosrl/cli/issues</bugTrackerUrl>
     <docsUrl>https://docs.pangolin.net</docsUrl>
     <licenseUrl>https://github.com/fosrl/cli/blob/main/LICENSE</licenseUrl>
@@ -42,7 +42,7 @@ This Chocolatey package is community-maintained and is not created, endorsed, or
 
 ---
 
-[choco://pangolin.cli](choco://pangolin.cli)
+[choco://pangolin-cli.install](choco://pangolin-cli.install)
 
 To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-support".
 

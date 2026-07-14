@@ -9,8 +9,8 @@ function global:au_GetLatest {
   # [PUSH]/choco pack weiterlaufen (Url/Checksum stehen fest in chocolateyinstall.ps1).
   if (-not $release -or [string]::IsNullOrWhiteSpace($release.tag_name)) {
     Write-Warning 'Get-GitHubRelease returned no data (GitHub API rate limit?) - keeping current nuspec version.'
-    $nuspecPath = Join-Path $PSScriptRoot 'pangolin.newt.nuspec'
-    if (-not (Test-Path -LiteralPath $nuspecPath)) { $nuspecPath = 'pangolin.newt.nuspec' }
+    $nuspecPath = Join-Path $PSScriptRoot 'pangolin-newt.nuspec'
+    if (-not (Test-Path -LiteralPath $nuspecPath)) { $nuspecPath = 'pangolin-newt.nuspec' }
     # Regex statt [xml]: die nuspec hat einen Default-Namespace, an dem .package.metadata.version scheitert.
     $currentVersion = ([regex]::Match((Get-Content -Raw -LiteralPath $nuspecPath), '<version>\s*([^<\s]+)')).Groups[1].Value
     return @{ Version = $currentVersion }
