@@ -37,6 +37,10 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 
 ]]></description>
     <releaseNotes>https://github.com/bambulab/BambuStudio/releases/tag/v02.07.01.62</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140" />
+      <dependency id="webview2-runtime" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\chocolateyinstall.ps1" target="tools" />
