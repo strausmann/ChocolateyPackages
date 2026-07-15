@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://bambulab.com/en-us/legal</licenseUrl>
     <tags>bambu lab suite laser cutting engraving drawing</tags>
-    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/manual/bambusuite</packageSourceUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/bambusuite</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/2c34b56b9ed7520943c70939f8c4e33ec8196bc6/icons/bambulab.png</iconUrl>
     <summary>Bambu Suite is Bambu Lab’s desktop application for laser engraving, blade cutting, and pen drawing, providing a unified workspace for layout, toolpath preparation, preview, and job management.</summary>
     <description>Bambu Suite is a desktop application for integrating non-printing workflows with compatible Bambu hardware.
