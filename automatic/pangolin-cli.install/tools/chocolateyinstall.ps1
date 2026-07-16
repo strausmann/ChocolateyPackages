@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url64      = 'https://github.com/fosrl/cli/releases/download/0.13.0/pangolin-cli_windows_installer.msi'
-$checksum64 = '7e6cef68193ff93dc8c7c2b9e84b90067b94754eac2bd7d70b4d56b137abfb87'
+$url64      = 'https://github.com/fosrl/cli/releases/download/0.14.0/pangolin-cli_windows_installer.msi'
+$checksum64 = '97ac42455d9fcbd9b6dd7955ea8b0777f2bc457aed32d03b9695911001e06038'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
