@@ -14,6 +14,7 @@
     <licenseUrl>https://github.com/Infisical/cli/blob/main/LICENSE</licenseUrl>
     <releaseNotes>https://github.com/Infisical/cli/releases</releaseNotes>
     <copyright>© 2026 Infisical, Inc.</copyright>
+    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@753fe4afabd11885c12276b90409c5d8e89e97bf/icons/infisical.png</iconUrl>
     <tags>infisical cli secrets secret-management secrets-manager devsecops dotenv pki ssh vault security automation tool</tags>
     <summary>Infisical CLI (meta package -&gt; infisical-cli.portable)</summary>
     <description><![CDATA[The Infisical CLI is the official command-line client for [Infisical](https://infisical.com/), an open-source, end-to-end encrypted secret management platform. It lets you pull secrets from an Infisical project and inject them into any process, manage secrets from the terminal, and integrate secret management into local development and CI/CD.
