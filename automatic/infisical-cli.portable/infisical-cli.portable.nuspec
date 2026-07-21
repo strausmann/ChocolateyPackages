@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>infisical-cli.portable</id>
+    <version>0.43.111</version>
+    <owners>strausmann</owners>
+    <title>Infisical CLI</title>
+    <authors>Infisical</authors>
+    <projectUrl>https://infisical.com/</projectUrl>
+    <projectSourceUrl>https://github.com/Infisical/cli</projectSourceUrl>
+    <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/infisical-cli.portable</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/Infisical/cli/issues</bugTrackerUrl>
+    <docsUrl>https://infisical.com/docs/cli/overview</docsUrl>
+    <licenseUrl>https://github.com/Infisical/cli/blob/main/LICENSE</licenseUrl>
+    <releaseNotes>https://github.com/Infisical/cli/releases</releaseNotes>
+    <copyright>© 2026 Infisical, Inc.</copyright>
+    <tags>infisical cli secrets secret-management secrets-manager devsecops dotenv pki ssh vault security automation tool portable</tags>
+    <summary>Infisical CLI — fetch, inject and manage secrets from Infisical (open-source secret management platform)</summary>
+    <description><![CDATA[The Infisical CLI is the official command-line client for [Infisical](https://infisical.com/), an open-source, end-to-end encrypted secret management platform. It lets you pull secrets from an Infisical project and inject them into any process, manage secrets from the terminal, and integrate secret management into local development and CI/CD.
+
+### Features
+- Inject secrets into any command at runtime: `infisical run -- <command>` (no secrets written to disk)
+- Bind a working directory to an Infisical project: `infisical init`
+- Read, create, update and delete secrets: `infisical secrets ...`
+- Export secrets in multiple formats (dotenv, json, yaml): `infisical export`
+- Machine Identity / Universal Auth login for automation: `infisical login --method=universal-auth`
+- Works against Infisical Cloud and self-hosted Infisical instances
+
+### What this package does
+- Installs the official Windows `infisical` binary (portable, extracted from the upstream release zip)
+- Registers an `infisical` command shim on the PATH — no administrator privileges required
+
+### Compatibility and requirements
+- Windows 10/11, x64 (amd64)
+- The Windows build is distributed by Infisical as a portable binary (no native installer upstream)
+
+### Verification after installation
+- Run `infisical --version` or `infisical user` to confirm the CLI is on the PATH
+
+### Documentation and research
+- CLI overview: https://infisical.com/docs/cli/overview
+- CLI commands: https://infisical.com/docs/cli/commands/run
+- Machine Identities / Universal Auth: https://infisical.com/docs/documentation/platform/identities/universal-auth
+
+### Disclaimer
+This Chocolatey package is community-maintained and is not created, endorsed, or supported by Infisical, Inc.
+
+---
+
+[choco://infisical-cli.portable](choco://infisical-cli.portable)
+
+To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-support".
+
+---
+
+**Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).
+]]></description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
