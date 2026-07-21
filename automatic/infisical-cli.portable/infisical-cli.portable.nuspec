@@ -20,7 +20,7 @@
     <description><![CDATA[The Infisical CLI is the official command-line client for [Infisical](https://infisical.com/), an open-source, end-to-end encrypted secret management platform. It lets you pull secrets from an Infisical project and inject them into any process, manage secrets from the terminal, and integrate secret management into local development and CI/CD.
 
 ### Features
-- Inject secrets into any command at runtime: `infisical run -- <command>` (no secrets written to disk)
+- Inject secrets into any command at runtime, e.g. `infisical run -- npm run dev` (no secrets written to disk)
 - Bind a working directory to an Infisical project: `infisical init`
 - Read, create, update and delete secrets: `infisical secrets ...`
 - Export secrets in multiple formats (dotenv, json, yaml): `infisical export`

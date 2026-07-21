@@ -22,7 +22,7 @@
 This is a **meta package**: it installs the Infisical CLI by taking a dependency on [infisical-cli.portable](https://community.chocolatey.org/packages/infisical-cli.portable). Install `infisical` if you prefer the plain package name; it always pulls the matching binary package.
 
 ### Features
-- Inject secrets into any command at runtime: `infisical run -- <command>` (no secrets written to disk)
+- Inject secrets into any command at runtime, e.g. `infisical run -- npm run dev` (no secrets written to disk)
 - Bind a working directory to an Infisical project: `infisical init`
 - Read, create, update and delete secrets: `infisical secrets ...`
 - Export secrets in multiple formats (dotenv, json, yaml): `infisical export`
