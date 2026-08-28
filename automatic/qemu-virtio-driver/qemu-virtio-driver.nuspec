@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>qemu-virtio-driver</id>
-    <version>0.1.285.1</version>
+    <version>0.1.302</version>
     <owners>Bjoern Strausmann</owners>
     <title>Virtio Win Driver (Install)</title>
     <authors>Red Hat Inc.</authors>
@@ -15,49 +15,33 @@
     <packageSourceUrl>https://github.com/strausmann/ChocolateyPackages/tree/master/automatic/qemu-virtio-driver</packageSourceUrl>
 	<iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/42ce175aa29adbed0f958bb9d1f748118c5d56ab/icons/virtio.png</iconUrl>
     <summary>WHQL-signed VirtIO drivers for Windows guests on QEMU/KVM (e.g., Proxmox, libvirt): paravirtualized devices for network, storage, ballooning, and more.</summary>
-    <description>VirtIO drivers for Windows guests on QEMU/KVM
+    <description>Virtio-win-guest-tools
 
-This package installs the official virtio-win drivers from Red Hat for Windows guest systems in QEMU/KVM environments (e.g., Proxmox VE, libvirt, oVirt/RHV, OpenStack). The paravirtualized drivers improve performance and integration compared to fully emulated devices.
+## Package Parameters
 
-### Included components (depending on guest and selected hardware)
-- NetKVM (VirtIO network)
-- viostor / vioscsi (VirtIO block / SCSI)
-- Balloon (memory ballooning)
-- viorng (VirtIO RNG)
-- vioinput / vioserial
-- optionally qxldod / SPICE display drivers
+The following install arguments can be passed:
+* `ALLUSERS`
+* `1`
+* `REGISTRY_PRODUCT_NAME`
+* `REGISTRYSEARCH_IS_TERMSERVICE_EXIST`
+* `REGISTRYSEARCH_IS_SPICEUSBREDIRECTOR_EXIST`
+* `REGISTRYSEARCH_OLD_WGT_UNINSTALL_PATH`
 
-### What this package does
-- Installs VirtIO drivers via the official MSIs (virtio-win-gt-x86/x64.msi)
-- Deploys signed (partly WHQL-certified) drivers for the relevant device classes
-- Suitable for unattended/automated deployments with Chocolatey
-
-### Not included
-- QEMU Guest Agent (install separately):
-  Chocolatey package: https://community.chocolatey.org/packages/qemu-guest-agent
-
-### Compatibility and requirements
-- Windows 10/11 and Windows Server (per upstream support)
-- Administrator privileges required; a reboot may be required
-- Hypervisor: QEMU/KVM (e.g., Proxmox VE, libvirt)
-
-### Verification after installation
-- Device Manager: VirtIO devices should bind to Red Hat drivers (NetKVM, viostor/vioscsi, etc.)
-- Optional: verify driver versions under Properties → Driver
-
-### Disclaimer
-This Chocolatey package is community-maintained and is not created, endorsed, or supported by the Red Hat.
+To append install arguments to the current silent arguments passed to the installer, use `--install-arguments="''"` or `--install-arguments-sensitive="''"`. To completely override the silent arguments with your own, also pass `--override-arguments`.
+Example: `choco install packageId [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ---
 
-[choco://qemu-virtio-driver](choco://qemu-virtio-driver)
+## [choco://qemu-guest-agent](choco://qemu-guest-agent)
 
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
 
 ---
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
- This package also registers and starts the VirtIO Balloon service (blnsvr) so guest memory stats and dynamic ballooning work (e.g. on Proxmox).</description>
+
+</description>
     <releaseNotes>https://fedorapeople.org/groups/virt/virtio-win/CHANGELOG</releaseNotes>
   </metadata>
   <files>

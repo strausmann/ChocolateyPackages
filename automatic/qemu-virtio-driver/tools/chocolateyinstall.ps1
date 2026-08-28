@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference	= 'Stop';
 
-$url					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.285-1/virtio-win-gt-x86.msi'
-$checksum				= 'e2ee7bc04e24ed3a3c90d573b75e5e809846db3c4de4e78655c1cc77ad2e2a3d'
+$url					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.302-1/virtio-win-gt-x86.msi'
+$checksum				= '91304cc747cb13abb34accb5b449e906ab6e9474f54193f340eb8e1f4cfbcc02'
 $checksumType           = 'sha256'
-$url64					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.285-1/virtio-win-gt-x64.msi'
-$checksum64				= 'fafd93cb12b8a5df2668d3459d8b5589e7195a28424f9a40e16b50f462cf8fab'
+$url64					= 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.302-1/virtio-win-gt-x64.msi'
+$checksum64				= '4f4388468a7ac5286bd1f1924ef02e7281a60a600390a7cfcfd55809efc0889f'
 $checksumType64         = 'sha256'
 
 $packageArgs = @{
