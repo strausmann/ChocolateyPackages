@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>infisical</id>
-    <version>0.43.128</version>
+    <version>0.43.129</version>
     <owners>strausmann</owners>
     <title>Infisical CLI</title>
     <authors>Infisical</authors>
@@ -51,7 +51,7 @@ To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-
 
 **Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).]]></description>
     <dependencies>
-      <dependency id="infisical-cli.portable" version="[0.43.128]" />
+      <dependency id="infisical-cli.portable" version="[0.43.129]" />
     </dependencies>
   </metadata>
 </package>
