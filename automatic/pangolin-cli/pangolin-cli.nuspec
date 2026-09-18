@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pangolin-cli</id>
-    <version>0.13.0</version>
+    <version>0.17.0</version>
     <owners>strausmann</owners>
     <title>Pangolin CLI</title>
     <authors>fosrl</authors>
@@ -14,9 +14,9 @@
     <licenseUrl>https://github.com/fosrl/cli/blob/main/LICENSE</licenseUrl>
     <releaseNotes>https://github.com/fosrl/cli/releases</releaseNotes>
     <copyright>© 2026 Fossorial, Inc</copyright>
-    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
     <tags>pangolin cli wireguard zero-trust proxy remote-access ztna ssh automation tool</tags>
-    <summary>Command-line client for Pangolin (meta package -> pangolin-cli.install)</summary>
+    <summary>Command-line client for Pangolin (meta package -&gt; pangolin-cli.install)</summary>
     <description><![CDATA[Pangolin CLI is the official command-line client for Pangolin, an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard. It works with both Pangolin Cloud and self-hosted Community/Enterprise servers.
 
 This is a **meta package**: it installs the Pangolin CLI by taking a dependency on [pangolin-cli.install](https://community.chocolatey.org/packages/pangolin-cli.install). Install `pangolin-cli` if you prefer the plain package name; it always pulls the matching installer package.
@@ -46,7 +46,7 @@ To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-
 
 **Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).]]></description>
     <dependencies>
-      <dependency id="pangolin-cli.install" version="[0.13.0]" />
+      <dependency id="pangolin-cli.install" version="[0.17.0]" />
     </dependencies>
   </metadata>
 </package>
