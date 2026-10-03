@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url64      = 'https://github.com/fosrl/newt/releases/download/1.18.0/newt_windows_amd64.exe'
-$checksum64 = '962c8727124a74433b7e9ad5cc158f77c78062ebc85056ba9518c701799be34d'
+$url64      = 'https://github.com/fosrl/newt/releases/download/1.18.1/newt_windows_amd64.exe'
+$checksum64 = '21fba75f998e17b31dcf20901c81917291fd45d0853c3d8b47692b13ca470d7c'
 
 $exe = Join-Path $toolsDir 'newt.exe'
 $packageArgs = @{
