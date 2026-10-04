@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pangolin-newt</id>
-    <version>1.14.0</version>
+    <version>1.18.1</version>
     <owners>strausmann</owners>
     <title>Pangolin Newt (Connector)</title>
     <authors>fosrl</authors>
@@ -14,9 +14,9 @@
     <licenseUrl>https://github.com/fosrl/newt/blob/main/LICENSE</licenseUrl>
     <releaseNotes>https://github.com/fosrl/newt/releases</releaseNotes>
     <copyright>© 2026 Fossorial, Inc</copyright>
-    <iconUrl>https://cdn.jsdelivr.net/gh/strausmann/ChocolateyPackages@502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/502da828ff77bbc4ace5cb8f2683a47ce9858719/icons/pangolin.png</iconUrl>
     <tags>pangolin newt vpn wireguard zero-trust proxy remote-access ztna connector tunnel service</tags>
-    <summary>Site and network connector for Pangolin (meta package -> pangolin-newt.portable)</summary>
+    <summary>Site and network connector for Pangolin (meta package -&gt; pangolin-newt.portable)</summary>
     <description><![CDATA[Newt is the official site and network connector for Pangolin, an identity-aware, self-hostable tunneled reverse proxy and mesh VPN built on WireGuard. It runs on a machine inside a private network and opens an outbound WireGuard tunnel to a Pangolin server, exposing local sites and services for zero-trust remote access without inbound firewall ports.
 
 This is a **meta package**: it installs Newt by taking a dependency on [pangolin-newt.portable](https://community.chocolatey.org/packages/pangolin-newt.portable). Install `pangolin-newt` if you prefer the plain package name; it always pulls the matching portable package.
@@ -45,7 +45,7 @@ To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-
 
 **Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).]]></description>
     <dependencies>
-      <dependency id="pangolin-newt.portable" version="[1.14.0]" />
+      <dependency id="pangolin-newt.portable" version="[1.18.1]" />
     </dependencies>
   </metadata>
 </package>
