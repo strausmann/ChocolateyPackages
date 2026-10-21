@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pangolin-newt</id>
-    <version>1.18.1</version>
+    <version>1.19.0</version>
     <owners>strausmann</owners>
     <title>Pangolin Newt (Connector)</title>
     <authors>fosrl</authors>
@@ -45,7 +45,7 @@ To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-
 
 **Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).]]></description>
     <dependencies>
-      <dependency id="pangolin-newt.portable" version="[1.18.1]" />
+      <dependency id="pangolin-newt.portable" version="[1.19.0]" />
     </dependencies>
   </metadata>
 </package>
