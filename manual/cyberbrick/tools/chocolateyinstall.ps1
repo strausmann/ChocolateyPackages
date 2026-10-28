@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 # --- Source / package info ---
-$url          = 'https://public-cdn.bblmw.com/upgrade/cyber-brick/updates/Release_win32_x64/versions/0.1.0-beta.1/cyber-brick-v0.1.0-beta.1-win32-x64.exe'
-$checksum     = '6310e76bfa691b8ded01a973b996c91d3aad6d57af28f4be8e49bd7f16e9911e'
+$url          = 'https://public-cdn.bblmw.com/upgrade/cyber-brick/updates/Release_win32_x64/versions/0.6.2/cyber-brick-v0.6.2-win32-x64.exe'
+$checksum     = 'e90800cec4607f3bb6dcdbde48b7943309773be051eaf85e73367317d587e2ee'
 $checksumType = 'sha256'
 
 # --- Target paths (per-user installation observed) ---
