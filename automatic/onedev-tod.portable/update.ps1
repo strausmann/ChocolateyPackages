@@ -15,13 +15,21 @@ function global:au_GetLatest {
     throw 'OneDev API returned no successful Release build for onedev/tod.'
   }
 
+  # projectId and number go into the download path: accept integers only, so a malformed
+  # API response cannot steer the URL to another path on the host.
+  $projectId = 0; $number = 0
+  if (-not [int]::TryParse([string]$build.projectId, [ref]$projectId) -or -not [int]::TryParse([string]$build.number, [ref]$number)) {
+    throw "OneDev API returned a non-numeric projectId/number: '$($build.projectId)'/'$($build.number)'."
+  }
+  # Same for the version: it ends up in the nuspec and must be a plain dotted version.
   $version = $build.version -replace '^v', ''
-  $Url64   = 'https://code.onedev.io/~downloads/projects/{0}/builds/{1}/artifacts/windows-amd64/tod.exe' -f $build.projectId, $build.number
+  if ($version -notmatch '^\d+(\.\d+){1,3}$') { throw "OneDev API returned an unexpected version: '$version'." }
+  $Url64   = 'https://code.onedev.io/~downloads/projects/{0}/builds/{1}/artifacts/windows-amd64/tod.exe' -f $projectId, $number
 
   return @{
     Version      = $version
     Url64        = $Url64
-    ReleaseNotes = 'https://code.onedev.io/onedev/tod/~builds/{0}/fixed-issues' -f $build.number
+    ReleaseNotes = 'https://code.onedev.io/onedev/tod/~builds/{0}/fixed-issues' -f $number
   }
 }
 
