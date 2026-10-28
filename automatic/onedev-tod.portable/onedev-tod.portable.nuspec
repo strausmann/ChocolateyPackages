@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>onedev-tod.portable</id>
-    <version>4.4.0</version>
+    <version>4.4.0.20261028</version>
     <owners>strausmann</owners>
     <title>OneDev CLI (tod)</title>
     <authors>OneDev Pty</authors>
@@ -18,31 +18,12 @@
     <tags>onedev tod cli git devops ci-cd pull-request issues build command-line foss cross-platform</tags>
     <releaseNotes>https://code.onedev.io/onedev/tod/~builds/239/fixed-issues</releaseNotes>
     <summary>Command-line client for OneDev: run CI jobs on local changes, check out PRs, manage issues and builds</summary>
-    <description><![CDATA[TOD (TheOneDev) is the official command-line tool for [OneDev](https://onedev.io/), the self-hosted Git server with integrated CI/CD, issue tracking and pull requests. It requires OneDev 16.9.5 or newer.
+    <description><![CDATA[Chocolatey package for [tod](https://code.onedev.io/onedev/tod), the official command-line tool for [OneDev](https://onedev.io/).
 
-### Features
-- Run CI/CD jobs against uncommitted local changes, branches or tags with live log streaming (`tod build run --local`)
-- Check out issues and pull requests into a local working directory (`tod issue checkout`, `tod pr checkout`)
-- Query and edit issues, pull requests and builds from the shell
-- Inspect build logs, changes and code problem reports
-- Check and migrate `.onedev-buildspec.yml` to the latest version (`tod build check-spec`)
-- Ships agent skill files so AI coding agents can drive OneDev workflows through `tod`
+Downloads the upstream `tod.exe` (64-bit) and puts a `tod` shim on the PATH. Automatically maintained (chocolatey-au) against the `Release` builds of `onedev/tod` on code.onedev.io, which publishes no GitHub release assets.
 
-### Getting started
-
-    tod config set server-url https://onedev.example.com
-    tod config set access-token YOUR_PERSONAL_ACCESS_TOKEN
-
-The environment variables `ONEDEV_SERVER_URL`, `ONEDEV_ACCESS_TOKEN` and `ONEDEV_TRUST_CERTS_FILE` override the config file.
-
-This is the **portable** package: it downloads the single upstream `tod.exe` (64-bit) and puts a `tod` shim on the PATH. No administrator rights are required.
-
-### Disclaimer
-This Chocolatey package is community-maintained and is not created, endorsed, or supported by OneDev Pty.
-
----
-
-**Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).]]></description>
+The meta package [onedev-tod](https://community.chocolatey.org/packages/onedev-tod) always pulls the matching portable version.
+]]></description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

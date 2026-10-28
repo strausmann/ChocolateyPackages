@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>onedev-tod</id>
-    <version>4.4.0</version>
+    <version>4.4.0.20261028</version>
     <owners>strausmann</owners>
     <title>OneDev CLI (tod)</title>
     <authors>OneDev Pty</authors>
@@ -44,7 +44,7 @@ This Chocolatey package is community-maintained and is not created, endorsed, or
 
 **Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).]]></description>
     <dependencies>
-      <dependency id="onedev-tod.portable" version="[4.4.0]" />
+      <dependency id="onedev-tod.portable" version="[4.4.0.20261028]" />
     </dependencies>
   </metadata>
 </package>
