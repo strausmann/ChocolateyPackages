@@ -46,7 +46,7 @@ To use choco:// protocol URLs, install the (unofficial) package “choco-protoco
 </description>
     <releaseNotes>https://wiki.bambulab.com/en/software/bambu-suite/release-notes</releaseNotes>
     <dependencies>
-      <dependency id="vcredist140" />
+      <dependency id="vcredist140" version="14.51.36247" />
     </dependencies>
   </metadata>
   <files>
