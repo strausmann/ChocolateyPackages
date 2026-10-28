@@ -11,8 +11,6 @@
         url: /packages/bitwardenedge.html
       - page: "Bitwarden for Firefox"
         url: /packages/bitwardenfirefox.html
-      - page: "Orca Slicer (Portable)"
-        url: /packages/cmtrace.html
       - page: "DellBIOSProvider (PowerShell Module)"
         url: /packages/dellbiosprovider.html
       - page: "Disable Fast Startup - hiberboot (Windows Registry)"
