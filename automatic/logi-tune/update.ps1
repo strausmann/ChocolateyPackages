@@ -3,7 +3,10 @@ Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "../../scripts/au_extensions.psm1"
 
-$releases = 'https://www.logitech.com/en-us/video-collaboration/software/logi-tune-software.html'
+# Stable direct download of the x64 Windows installer. The product page used to list it,
+# but since 10/2026 it redirects to /business/video-collaboration/logi-tune and only
+# renders the macOS .dmg server-side, so page scraping returned no .exe link at all.
+$Url32 = 'https://software.vc.logitech.com/downloads/tune/LogiTuneInstall.exe'
 
 function GetResultInformation([string]$Url32) {
   $fileName = Split-Path -Leaf $Url32
@@ -26,15 +29,8 @@ function GetResultInformation([string]$Url32) {
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-  # Logitech offers both a standard (x64) and an "arm64" Windows installer on
-  # this page. Neither the '\.exe' match nor -First 1 alone qualify by arch,
-  # so the previous selection depended on DOM order and could silently pick
-  # LogiTuneInstall-arm64.exe instead of LogiTuneInstall.exe (x64).
-  $re = '\.exe'
-  $Url32 = $download_page.Links | Where-Object { $_.href -match $re -and $_.href -notmatch '(?i)arm64' } | Select-Object -First 1 -ExpandProperty href
-
+  # Version and checksum come from the downloaded file; the ETag avoids re-downloading
+  # the ~200 MB installer when nothing changed.
   Update-OnETagChanged -execUrl $Url32 -OnETagChanged { GetResultInformation $Url32 } -OnUpdated { @{ Url32 = $Url32 } }
 }
 
