@@ -2,8 +2,8 @@
 
 # --- Source / package info ---
 $url          = 'https://public-cdn.bblmw.com/upgrade/cyber-brick/updates/Release_win32_x64/versions/0.6.2/cyber-brick-v0.6.2-win32-x64.exe'
-$checksum     = 'e90800cec4607f3bb6dcdbde48b7943309773be051eaf85e73367317d587e2ee'
-$checksumType = 'sha256'
+$checksum     = '810ff9b9b19707ecaed487344e7adc98a813f7f843c887ee6951e72a10f6bd9435223ff416bbadb673a7395264038a9db72c4053577a742b30ac44706be609eb'
+$checksumType = 'sha512'
 
 # --- Target paths (per-user installation observed) ---
 $installDir = Join-Path $env:LOCALAPPDATA 'Programs\CyberBrick'
