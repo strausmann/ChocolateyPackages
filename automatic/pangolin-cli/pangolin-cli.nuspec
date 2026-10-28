@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pangolin-cli</id>
-    <version>0.19.0</version>
+    <version>0.19.1</version>
     <owners>strausmann</owners>
     <title>Pangolin CLI</title>
     <authors>fosrl</authors>
@@ -46,7 +46,7 @@ To use choco:// protocol URLs, install the (unofficial) package "choco-protocol-
 
 **Note**: This package is automatically updated. If it is out of date by more than a day or two, please contact the maintainer(s).]]></description>
     <dependencies>
-      <dependency id="pangolin-cli.install" version="[0.19.0]" />
+      <dependency id="pangolin-cli.install" version="[0.19.1]" />
     </dependencies>
   </metadata>
 </package>
