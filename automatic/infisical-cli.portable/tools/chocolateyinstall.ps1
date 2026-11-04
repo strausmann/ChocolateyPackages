@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url64      = 'https://github.com/Infisical/cli/releases/download/v0.44.13/cli_0.44.13_windows_amd64.zip'
-$checksum64 = '6cf5b24572d3d2b6e629ee355e71f60498927c8c6b5517ccd018e6a4a34ce0d7'
+$url64      = 'https://github.com/Infisical/cli/releases/download/v0.44.14/cli_0.44.14_windows_amd64.zip'
+$checksum64 = '148cc96fb177aae772b48e01268790f64912d727346b6ed6aa310a4e95c622c0'
 
 # Upstream liefert fuer Windows ein Portable-Binary im Zip (infisical.exe) - keinen nativen Installer.
 # Install-ChocolateyZipPackage entpackt nach $toolsDir; Chocolatey legt automatisch einen 'infisical'-Shim
