@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url64      = 'https://code.onedev.io/~downloads/projects/1076/builds/239/artifacts/windows-amd64/tod.exe'
-$checksum64 = '484fcff4d2c89120ff5692c59a3f872dc1ba8ad384d91985d8b1650ad2a901a4'
+$url64      = 'https://code.onedev.io/~downloads/projects/1076/builds/243/artifacts/windows-amd64/tod.exe'
+$checksum64 = 'df0784b6ed0d53fe1ae71c35ae0a6dc5b096a768643e43786e1634c0fdf036ae'
 
 # Upstream ships a single portable tod.exe (no installer). Chocolatey creates a 'tod' shim
 # on the PATH automatically; no admin rights and no uninstall script are needed.

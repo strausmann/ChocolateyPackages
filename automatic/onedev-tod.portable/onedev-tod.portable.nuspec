@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>onedev-tod.portable</id>
-    <version>4.4.0.20261028</version>
+    <version>4.5.0</version>
     <owners>strausmann</owners>
     <title>OneDev CLI (tod)</title>
     <authors>OneDev Pty</authors>
@@ -16,7 +16,7 @@
     <copyright>Copyright (c) 2022-present OneDev Pty</copyright>
     <iconUrl>https://rawcdn.githack.com/strausmann/ChocolateyPackages/abb46e32c11403fd6d6e75e9fa113cbd8dedc07b/icons/onedev.png</iconUrl>
     <tags>onedev tod cli git devops ci-cd pull-request issues build command-line foss cross-platform</tags>
-    <releaseNotes>https://code.onedev.io/onedev/tod/~builds/239/fixed-issues</releaseNotes>
+    <releaseNotes>https://code.onedev.io/onedev/tod/~builds/243/fixed-issues</releaseNotes>
     <summary>Command-line client for OneDev: run CI jobs on local changes, check out PRs, manage issues and builds</summary>
     <description><![CDATA[Chocolatey package for [tod](https://code.onedev.io/onedev/tod), the official command-line tool for [OneDev](https://onedev.io/).
 
