@@ -1,18 +1,27 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url                   = 'https://public-cdn.bblmw.com/general_pkg/prod/setup/20250925_193959_685/Bambu_Suite_Public_Win_01.01.02.50.exe'
-$checksum              = '8e80fd11d8dd56c203f2946f6b6619f5991fb7e85a500cc94b84ca947f531edc'
-$ChecksumType          = 'sha256'
-
+# Bambu Suite uses an Inno Setup installer; uninstall through its registered uninstaller.
 $packageArgs = @{
-  packageName           = $env:ChocolateyPackageName
-  softwareName          = 'Bambu Suite*'
-  fileType              = 'exe'
-  silentArgs            = "/VERYSILENT /NORESTART /RESTARTEXITCODE=3010 /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /FORCECLOSEAPPLICATIONS /NOICONS"
-  validExitCodes        = @(0)
-  url                   = $url
-  checksum              = $checksum
-  checksumType          = $checksumType
+  packageName    = $env:ChocolateyPackageName
+  softwareName   = 'Bambu Suite*'
+  fileType       = 'exe'
+  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+  validExitCodes = @(0, 3010, 1605, 1614, 1641)
 }
 
-Install-ChocolateyPackage @packageArgs
+[array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
+
+if ($key.Count -eq 1) {
+  $key | ForEach-Object {
+    # Inno Setup registers the uninstaller path in quotes.
+    $packageArgs['file'] = "$($_.UninstallString)" -replace '"', ''
+    Uninstall-ChocolateyPackage @packageArgs
+  }
+} elseif ($key.Count -eq 0) {
+  Write-Warning "$env:ChocolateyPackageName has already been uninstalled by other means."
+} elseif ($key.Count -gt 1) {
+  Write-Warning "$($key.Count) matches found!"
+  Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
+  Write-Warning "Please alert package maintainer the following keys were matched:"
+  $key | ForEach-Object { Write-Warning "- $($_.DisplayName)" }
+}
