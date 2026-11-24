@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url                   = 'https://public-cdn.bblmw.com/general_pkg/prod/setup/20260922_143208_30/BambuSuite_Public_Win_01.05.00.00.exe'
-$checksum              = 'd325fdc9e27b62ff19aa21c7b8d01226f763ff1be96fe9888418debc38412d86'
+$url                   = 'https://public-cdn.bblmw.com/general_pkg/prod/setup/20261103_152935_990/Bambu_Suite_Public_Win_01.06.00.00.exe'
+$checksum              = '987bc405212f58ecb12566cabc83d4048656e2a0bf27e84e411f25a8155fa8b7'
 $ChecksumType          = 'sha256'
 
 $packageArgs = @{
